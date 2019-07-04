@@ -6,118 +6,193 @@ function func1()
   var desc;
   var image;
   var timelineglobe;
+  var title;
+
     //BEIJING
+  
+    
+    
+    
+    //$(".ball").animate({ top: 960,left:60, width:30 ,height:30 }, 5000 );
     setTimeout(function() {
+    $("h6").css("display","block").animate({ top:0},3000 );
+    $("h6").css("display","block").animate({ top:-400},1000 );
+
+    $(".ball").css("background-image", "url('assets/5beijing.png')");
+
+    $("#dot1world").css("background-image", "url('assets/china.png')").animate({left: "40"}, 3000); 
+    },0)
+
+    setTimeout(function() {
+      
+      //$("#dot1world").src="assets/5Beijing.png";//365 520 655 805 973 1128 1295 1545 1793
+      $(".beijing").css("color","white");
+
+      //document.getElementById("title").display="none";
       //document.getElementById("mainimg").src="assets/2.png"
       image = $("#mainimg");
       image.fadeOut('fast', function () {
-        image.attr('src', 'assets/2007-Beijing/3-templeofheaven.jpg');
-        image.fadeIn('slow');
+        image.attr('src', '');
+
+        image.attr('src', 'assets/2007-Beijing/3-templeofheaven.jpg').fadeIn('slow');
+      });
         $("h5").html("Temple of Heaven ");
-   
       
-    });
     },5000)
     setTimeout(function() {
       image.fadeOut('fast', function () {
-        image.attr('src', 'assets/2007-Beijing/2-tienanmen_night.jpg');
-      image.fadeIn('slow');
+        image.attr('src', '');
+
+        image.attr('src', 'assets/2007-Beijing/2-tienanmen_night.jpg').fadeIn('slow');
+
+      });
       $("h5").html("Tienanmen Square");
 
-    });
+    
     },10000)
     setTimeout(function() {
       image.fadeOut('fast', function () {
-      image.attr('src', 'assets/2007-Beijing/8-greatwall2.jpg');
-      image.fadeIn('slow');
+        image.attr('src', '');
+
+        image.attr('src', 'assets/2007-Beijing/8-greatwall2.jpg').fadeIn('slow');
+
+      });
       $("h5").html("The Great Wall");
 
-    });
     },15000)
     setTimeout(function() {
-      image.fadeOut('fast', function () {
-      image.attr('src', 'assets/2007-Beijing/9-greatwall1.jpg');
-      image.fadeIn('slow');
+      image.fadeOut( function () {
+        image.fadeOut('fast', function () {
+          image.attr('src', '');
+
+          image.attr('src', 'assets/2007-Beijing/9-greatwall1.jpg').fadeIn('slow');
+
+        });
       $("h5").html("The Great Wall");
     });
     },20000)
     setTimeout(function() {
       image.fadeOut('fast', function () {
-      image.attr('src', 'assets/2007-Beijing/10-forbiddencity2.jpg');
-      image.fadeIn('slow');
+        image.attr('src', '');
+
+        image.attr('src', 'assets/2007-Beijing/10-forbiddencity2.jpg').fadeIn('slow');
+
+      });
       $("h5").html("The Forbidden City");
-    });
     },25000)
     setTimeout(function() {
       image.fadeOut('fast', function () {
-      image.attr('src', 'assets/2007-Beijing/12-birdsnest.jpg');
-      image.fadeIn('slow');
+        image.attr('src', '');
+
+        image.attr('src', 'assets/2007-Beijing/12-birdsnest.jpg').fadeIn('slow');
+
+      });
       $("h5").html("Beijing Olympic Stadium");
-    });
     },30000)
     setTimeout(function() {
       image.fadeOut('fast', function () {
-      image.attr('src', 'assets/2007-Beijing/13-hall.jpg');
-      image.fadeIn('slow');
+        image.attr('src', '');
+
+        image.attr('src', 'assets/2007-Beijing/13-hall.jpg').fadeIn('slow');
+
+      });
       $("h5").html("Conference Hall");
-    });
+
     },35000)
 
 
    
     //SAN DIEGO
     setTimeout(function() {
-      $("#dot1world").animate({left: "210"}, 2000);//365 520 655 805 973 1128 1295 1545 1793
+      $(".ball").css("background-image", "url('assets/5sandiego.png')");
+
+      $("h6").html("San Diego");
+      $("h6").css("display","block").animate({ top:0},3000 );
+      $("h6").css("display","block").animate({ top:-400},1000 );
+
+
+
+      $(".beijing").css("color","#d6d6d6");
+
+      $(".sandiego").css("color","white");
+      $("#dot1world").css("background-image", "url('assets/usa.png')").animate({left: "190"}, 2000); 
+
+
 
       image.fadeOut('fast', function () {
-      image.attr('src', 'assets/2009-San Diego/3-skyline_night2.jpg');
-      image.fadeIn('slow');
+        image.attr('src', '');
+
+        image.attr('src', 'assets/2009-San Diego/3-skyline_night2.jpg').fadeIn('slow');
+
+      });
       $("h5").html("San Diego");
 
-    });
     },40000)
     setTimeout(function() {
       image.fadeOut('fast', function () {
-      image.attr('src', 'assets/2009-San Diego/5-marina.jpg');
-      image.fadeIn('slow');
+        image.attr('src', '');
+
+        image.attr('src', 'assets/2009-San Diego/5-marina.jpg').fadeIn('slow');
+
+      });
       $("h5").html("Marina View");
 
-    });
     },45000)
     setTimeout(function() {
       image.fadeOut('fast', function () {
-      image.attr('src', 'assets/2009-San Diego/6-harbour.jpg');
-      image.fadeIn('slow');
+        image.attr('src', '');
+
+        image.attr('src', 'assets/2009-San Diego/6-harbour.jpg').fadeIn('slow');
+
+      });
       $("h5").html("Harbour View");
-    });
+
+
     },50000)
 
     //ORLANDO
     setTimeout(function() {
-      $("#dot1world").animate({left: "365"}, 2000);//365 520 655 805 973 1128 1295 1545 1793
+      $(".ball").css("background-image", "url('assets/5orlando.png')").fadeIn('slow');
+
+      $("h6").html("Orlando");
+      $("h6").css("display","block").animate({ top:0},3000 );
+      $("h6").css("display","block").animate({ top:-400},1000 );
+
+      $(".sandiego").css("color","#d6d6d6");
+
+      $(".orlando1").css("color","white");
+
+      $("#dot1world").animate({left: "345"}, 2000);//365 520 655 805 973 1128 1295 1545 1793
 
       image.fadeOut('fast', function () {
-      image.attr('src', 'assets/2011,2019-Orlando/1-swandolphin.jpg');
-      image.fadeIn('slow');
+        image.attr('src', '');
+
+        image.attr('src', 'assets/2011,2019-Orlando/1-swandolphin.jpg').fadeIn('slow');
+
+      });
       $("h5").html("Orlando");
 
-    });
+   
     },55000)
     setTimeout(function() {
       image.fadeOut('fast', function () {
-      image.attr('src', 'assets/2011,2019-Orlando/2-kennedyspacecenter-RocketGardenandengine.jpg');
-      image.fadeIn('slow');
+        image.attr('src', '');
+
+        image.attr('src', 'assets/2011,2019-Orlando/2-kennedyspacecenter-RocketGardenandengine.jpg').fadeIn('slow');
+
+      });
       $("h5").html("Kennedy Space Center");
 
-    });
     },60000)
     setTimeout(function() {
       image.fadeOut('fast', function () {
-      image.attr('src', 'assets/2011,2019-Orlando/3-kennedyspacecenter-SpaceXCRS62.jpg');
-      image.fadeIn('slow');
+        image.attr('src', '');
+
+        image.attr('src', 'assets/2011,2019-Orlando/3-kennedyspacecenter-SpaceXCRS62.jpg').fadeIn('slow');
+
+      });
       $("h5").html("Kennedy Space Center");
 
-    });
     },65000)
 
 
@@ -125,9 +200,21 @@ function func1()
 
      //VEGAS
      setTimeout(function() {
-      $("#dot1world").animate({left: "520"}, 2000);//365 520 655 805 973 1128 1295 1545 1793
+      $(".ball").css("background-image", "url('assets/5lasvegas.png')");
+
+      $("h6").html("Las Vegas");
+      $("h6").css("display","block").animate({ top:0},3000 );
+      $("h6").css("display","block").animate({ top:-400},1000 );
+
+      $(".orlando1").css("color","#d6d6d6");
+
+      $(".lasvegas1").css("color","white");
+
+      $("#dot1world").animate({left: "500"}, 2000);//365 520 655 805 973 1128 1295 1545 1793
 
       image.fadeOut('fast', function () {
+        image.attr('src', '');
+
       image.attr('src', 'assets/2013,2018-Las Vegas/1-skyline_night.jpg');
       image.fadeIn('slow');
       $("h5").html("Las Vegas");
@@ -137,6 +224,8 @@ function func1()
     setTimeout(function() {
 
       image.fadeOut('fast', function () {
+        image.attr('src', '');
+
       image.attr('src', 'assets/2013,2018-Las Vegas/2-signs.jpg');
       image.fadeIn('slow');
       $("h5").html("Las Vegas Signs");
@@ -146,6 +235,8 @@ function func1()
     setTimeout(function() {
 
       image.fadeOut('fast', function () {
+        image.attr('src', '');
+
       image.attr('src', 'assets/2013,2018-Las Vegas/3-road.jpg');
       image.fadeIn('slow');
       $("h5").html("Eiffel Tower of Las Vegas");
@@ -155,6 +246,8 @@ function func1()
     setTimeout(function() {
 
       image.fadeOut('fast', function () {
+        image.attr('src', '');
+
       image.attr('src', 'assets/2013,2018-Las Vegas/7-city_night.jpg');
       image.fadeIn('slow');
       $("h5").html("Downtown Las Vegas");
@@ -164,9 +257,13 @@ function func1()
     setTimeout(function() {
 
       image.fadeOut('fast', function () {
+        image.attr('src', '');
+
       image.attr('src', 'assets/2013,2018-Las Vegas/8-bellagio.jpg');
       image.fadeIn('slow');
       $("h5").html("Bellagio Fountains");
+
+
 
     });
     },90000)
@@ -175,7 +272,19 @@ function func1()
 
      //Crete
      setTimeout(function() {
-      $("#dot1world").animate({left: "655"}, 2000);//365 520 655 805 973 1128 1295 1545 1793
+      $(".ball").css("background-image", "url('assets/5crete.png')");
+
+      $("h6").html("Crete");
+      $("h6").css("display","block").animate({ top:0},3000 );
+      $("h6").css("display","block").animate({ top:-400},1000 );
+
+      $("#dot1world").css("background-image", "url('assets/greece.png')"); 
+
+      $(".lasvegas1").css("color","#d6d6d6");
+
+      $(".crete").css("color","white");
+
+      $("#dot1world").animate({left: "635"}, 2000);//365 520 655 805 973 1128 1295 1545 1793
 
       image.fadeOut('fast', function () {
         image.attr('src', 'assets/2014-Crete/7-chania2.jpg');
@@ -187,6 +296,8 @@ function func1()
     },95000)
     setTimeout(function() {
       image.fadeOut('fast', function () {
+        image.attr('src', '');
+
       image.attr('src', 'assets/2014-Crete/4-knossos.jpg');
       image.fadeIn('slow');
       $("h5").html("Knossos Palace");
@@ -195,6 +306,8 @@ function func1()
     },100000)
     setTimeout(function() {
       image.fadeOut('fast', function () {
+        image.attr('src', '');
+
         image.attr('src', 'assets/2014-Crete/1-spinalonga.jpg');
         image.fadeIn('slow');
         $("h5").html("Spinalonga");
@@ -203,6 +316,8 @@ function func1()
     },105000)
     setTimeout(function() {
       image.fadeOut('fast', function () {
+        image.attr('src', '');
+
       image.attr('src', 'assets/2014-Crete/9-balos.jpg');
       image.fadeIn('slow');
       $("h5").html("Balos Beach");
@@ -211,6 +326,8 @@ function func1()
     },110000)
     setTimeout(function() {
       image.fadeOut('fast', function () {
+        image.attr('src', '');
+
       image.attr('src', 'assets/2014-Crete/11-agiosnikolaos.jpg');
       image.fadeIn('slow');
       $("h5").html("Agios Nikolaos");
@@ -219,9 +336,14 @@ function func1()
     },115000)
     setTimeout(function() {
       image.fadeOut('fast', function () {
+        image.attr('src', '');
+
       image.attr('src', 'assets/2014-Crete/14-openong_session2.jpeg');
       image.fadeIn('slow');
       $("h5").html("Opening Session");
+
+
+
 
     });
     },120000)
@@ -231,9 +353,23 @@ function func1()
 
        //Los Angeles
        setTimeout(function() {
-        $("#dot1world").animate({left: "805"}, 2000);//365 520 655 805 973 1128 1295 1545 1793
+        $(".ball").css("background-image", "url('assets/5losangeles.png')");
+
+        $("h6").html("Los Angeles");
+        $("h6").css("display","block").animate({ top:0},3000 );
+        $("h6").css("display","block").animate({ top:-400},1000 );
+
+        $("#dot1world").css("background-image", "url('assets/usa.png')"); 
+
+        $(".crete").css("color","#d6d6d6");
+
+        $(".losangeles").css("color","white");
+
+        $("#dot1world").animate({left: "789"}, 2000);//365 520 655 805 973 1128 1295 1545 1793
   
         image.fadeOut('fast', function () {
+          image.attr('src', '');
+
           image.attr('src', 'assets/2015-Los Angeles/7-skyline1.jpg');
           image.fadeIn('slow');
           $("h5").html("Los Angeles");
@@ -243,6 +379,8 @@ function func1()
       },125000)
       setTimeout(function() {  
         image.fadeOut('fast', function () {
+          image.attr('src', '');
+
         image.attr('src', 'assets/2015-Los Angeles/2-the-westin-bonaventure-hotel-and-suites-los-angeles-santamonicapier.jpg');
         image.fadeIn('slow');
         $("h5").html("Santa Monica Pier");
@@ -251,6 +389,8 @@ function func1()
       },130000)
       setTimeout(function() {  
         image.fadeOut('fast', function () {
+          image.attr('src', '');
+
         image.attr('src', 'assets/2015-Los Angeles/3-the-westin-bonaventure-hotel-and-suites-los-angeles-griffith.jpg');
         image.fadeIn('slow');
         $("h5").html("Griffith Observatory");
@@ -259,6 +399,8 @@ function func1()
       },135000)
       setTimeout(function() {  
         image.fadeOut('fast', function () {
+          image.attr('src', '');
+
         image.attr('src', 'assets/2015-Los Angeles/4-the-westin-bonaventure-hotel-and-suites-los-angeles-exterior.jpg');
         image.fadeIn('slow');
         $("h5").html("Westin Bonaventure Hotel");
@@ -267,14 +409,18 @@ function func1()
       },140000)
       setTimeout(function() {  
         image.fadeOut('fast', function () {
+          image.attr('src', '');
+
         image.attr('src', 'assets/2015-Los Angeles/5-waltdisney.jpg');
         image.fadeIn('slow');
-        $("h5").html("Walt Disney Cocncert Hall");
+        $("h5").html("Walt Disney Concert Hall");
   
       });
       },145000)
       setTimeout(function() {  
         image.fadeOut('fast', function () {
+          image.attr('src', '');
+
           image.attr('src', 'assets/2015-Los Angeles/1-hollywood.jpg');
           image.fadeIn('slow');
           $("h5").html("Hollywood Sign");
@@ -283,6 +429,8 @@ function func1()
       },150000)
       setTimeout(function() {  
         image.fadeOut('fast', function () {
+          image.attr('src', '');
+
         image.attr('src', 'assets/2015-Los Angeles/9-santamonica.jpg');
         image.fadeIn('slow');
         $("h5").html("Santa Monica Pier");
@@ -291,10 +439,14 @@ function func1()
       },155000)
       setTimeout(function() {  
         image.fadeOut('fast', function () {
+          image.attr('src', '');
+
         image.attr('src', 'assets/2015-Los Angeles/10-observatory.png');
         image.fadeIn('slow');
         $("h5").html("Griffith Observatory");
   
+
+
       });
       },160000)
 
@@ -302,9 +454,23 @@ function func1()
 
        //Toronto
        setTimeout(function() {
-        $("#dot1world").animate({left: "973"}, 2000);//365 520 655 805 973 1128 1295 1545 1793
+        $(".ball").css("background-image", "url('assets/5toronto.png')");
+
+        $("h6").html("Toronto");
+        $("h6").css("display","block").animate({ top:0},3000 );
+        $("h6").css("display","block").animate({ top:-400},1000 );
+
+        $("#dot1world").css("background-image", "url('assets/canada.png')"); 
+
+        $(".losangeles").css("color","#d6d6d6");
+
+        $(".toronto").css("color","white");
+
+        $("#dot1world").animate({left: "953"}, 2000);//365 520 655 805 973 1128 1295 1545 1793
   
         image.fadeOut('fast', function () {
+          image.attr('src', '');
+
         image.attr('src', 'assets/2016-Toronto/4-skyline_night.jpg');
         image.fadeIn('slow');
         $("h5").html("Toronto");
@@ -314,6 +480,8 @@ function func1()
       },165000)
       setTimeout(function() {  
         image.fadeOut('fast', function () {
+          image.attr('src', '');
+
           image.attr('src', 'assets/2016-Toronto/1-torontosign2.jpg');
           image.fadeIn('slow');
           $("h5").html("Nathan Phillips Square");
@@ -322,6 +490,8 @@ function func1()
       },170000)
       setTimeout(function() {
         image.fadeOut('fast', function () {
+          image.attr('src', '');
+
         image.attr('src', 'assets/2016-Toronto/5-harbour.jpg');
         image.fadeIn('slow');
         $("h5").html("Harbourfront");
@@ -330,10 +500,15 @@ function func1()
       },175000)
       setTimeout(function() {
         image.fadeOut('fast', function () {
+          image.attr('src', '');
+
         image.attr('src', 'assets/2016-Toronto/6-gooderham_building.jpg');
         image.fadeIn('slow');
         $("h5").html("Gooderham Building");
   
+
+
+
       });
       },180000)
      
@@ -341,9 +516,23 @@ function func1()
 
       //Vancouver
       setTimeout(function() {
-        $("#dot1world").animate({left: "1128"}, 2000);//365 520 655 805 973 1128 1295 1545 1793
+        $(".ball").css("background-image", "url('assets/5vancouver.png')");
+
+        $("h6").html("Vancouver");
+        $("h6").css("display","block").animate({ top:0},3000 );
+        $("h6").css("display","block").animate({ top:-400},1000 );
+
+        $("#dot1world").css("background-image", "url('assets/canada.png')"); 
+
+        $(".toronto").css("color","#d6d6d6");
+
+        $(".vancouver").css("color","white");
+
+        $("#dot1world").animate({left: "1107"}, 2000);//365 520 655 805 973 1128 1295 1545 1793
 
         image.fadeOut('fast', function () {
+          image.attr('src', '');
+
         image.attr('src', 'assets/2017-Vancouver/2-skyline_night.jpg');
         image.fadeIn('slow');
         $("h5").html("Vancouver");
@@ -352,6 +541,8 @@ function func1()
       },185000)
       setTimeout(function() {
         image.fadeOut('fast', function () {
+          image.attr('src', '');
+
         image.attr('src', 'assets/2017-Vancouver/3-sea.jpg');
         image.fadeIn('slow');
         $("h5").html("Coal Harbour");
@@ -360,6 +551,8 @@ function func1()
       },190000)
       setTimeout(function() {
         image.fadeOut('fast', function () {
+          image.attr('src', '');
+
         image.attr('src', 'assets/2017-Vancouver/8-harbour.jpg');
         image.fadeIn('slow');
         $("h5").html("English Bay");
@@ -368,6 +561,8 @@ function func1()
       },195000)
       setTimeout(function() {
         image.fadeOut('fast', function () {
+          image.attr('src', '');
+
         image.attr('src', 'assets/2017-Vancouver/9-bay_night.jpg');
         image.fadeIn('slow');
         $("h5").html("Science World");
@@ -376,9 +571,14 @@ function func1()
       },200000)
       setTimeout(function() {
         image.fadeOut('fast', function () {
+          image.attr('src', '');
+
         image.attr('src', 'assets/2017-Vancouver/11-expo.jpg');
         image.fadeIn('slow');
         $("h5").html("Science World");
+
+
+
 
       });
       },205000)
@@ -389,9 +589,23 @@ function func1()
 
      //VEGAS
      setTimeout(function() {
-      $("#dot1world").animate({left: "1295"}, 2000);//365 520 655 805 973 1128 1295 1545 1793
+      $(".ball").css("background-image", "url('assets/5lasvegas.png')");
+
+      $("h6").html("Las Vegas");
+      $("h6").css("display","block").animate({ top:0},3000 );
+      $("h6").css("display","block").animate({ top:-400},1000 );
+
+      $("#dot1world").css("background-image", "url('assets/usa.png')"); 
+
+      $(".vancouver").css("color","#d6d6d6");
+
+      $(".lasvegas2").css("color","white");
+
+      $("#dot1world").animate({left: "1276"}, 2000);//365 520 655 805 973 1128 1295 1545 1793
 
       image.fadeOut('fast', function () {
+        image.attr('src', '');
+
       image.attr('src', 'assets/2013,2018-Las Vegas/1-skyline_night.jpg');
       image.fadeIn('slow');
       $("h5").html("Las Vegas");
@@ -401,6 +615,8 @@ function func1()
     setTimeout(function() {
 
       image.fadeOut('fast', function () {
+        image.attr('src', '');
+
       image.attr('src', 'assets/2013,2018-Las Vegas/2-signs.jpg');
       image.fadeIn('slow');
       $("h5").html("Las Vegas Signs");
@@ -410,6 +626,8 @@ function func1()
     setTimeout(function() {
 
       image.fadeOut('fast', function () {
+        image.attr('src', '');
+
       image.attr('src', 'assets/2013,2018-Las Vegas/3-road.jpg');
       image.fadeIn('slow');
       $("h5").html("Downtown Las Vegas");
@@ -419,6 +637,8 @@ function func1()
     setTimeout(function() {
 
       image.fadeOut('fast', function () {
+        image.attr('src', '');
+
       image.attr('src', 'assets/2013,2018-Las Vegas/7-city_night.jpg');
       image.fadeIn('slow');
       $("h5").html("Eiffel Tower of Las Vegas");
@@ -428,9 +648,13 @@ function func1()
     setTimeout(function() {
 
       image.fadeOut('fast', function () {
+        image.attr('src', '');
+
       image.attr('src', 'assets/2013,2018-Las Vegas/8-bellagio.jpg');
       image.fadeIn('slow');
       $("h5").html("Bellagio Fountains");
+
+
 
     });
     },230000)
@@ -443,31 +667,49 @@ function func1()
 
   //ORLANDO
   setTimeout(function() {
-    $("#dot1world").animate({left: "1545"}, 2000);//365 520 655 805 973 1128 1295 1545 1793
+    $(".ball").css("background-image", "url('assets/5orlando.png')");
+
+    $("h6").html("Orlando");
+    $("h6").css("display","block").animate({ top:0},3000 );
+    $("h6").css("display","block").animate({ top:-400},1000 );
+
+    $(".lasvegas2").css("color","#d6d6d6");
+
+    //$(".orlando2").css("color","white");
+    $("#dot1world").css("box-shadow","0px 45px 30px 30px rgba(255, 255, 255, 0)");
+    $("#dot1world").animate({left: "1592"}, 2000);//365 520 655 805 973 1128 1295 1545 1793
 
     image.fadeOut('fast', function () {
+      image.attr('src', '');
+
     image.attr('src', 'assets/2011,2019-Orlando/1-swandolphin.jpg');
     image.fadeIn('slow');
     $("h5").html("Orlando");
 
   });
-  },235000)
+  },240000)
   setTimeout(function() {
     image.fadeOut('fast', function () {
+      image.attr('src', '');
+
     image.attr('src', 'assets/2011,2019-Orlando/2-kennedyspacecenter-RocketGardenandengine.jpg');
     image.fadeIn('slow');
     $("h5").html("Kennedy Space Center");
 
   });
-  },240000)
+  },250000)
   setTimeout(function() {
     image.fadeOut('fast', function () {
+      image.attr('src', '');
+
     image.attr('src', 'assets/2011,2019-Orlando/3-kennedyspacecenter-SpaceXCRS62.jpg');
     image.fadeIn('slow');
     $("h5").html("Kennedy Space Center");
 
+
+
   });
-  },245000)
+  },260000)
 
 
 
@@ -475,78 +717,111 @@ function func1()
 
       //Copenhagen
       setTimeout(function() {
-        $("#dot1world").animate({left: "1793"}, 2000);//365 520 655 805 973 1128 1295 1545 1793
+        $(".ball").css("background-image", "url('assets/5copenhagen.png')");
+
+        $("h6").html("Copenhagen");
+        $("h6").css("display","block").animate({ top:0},3000 );
+        $("h6").css("display","block").animate({ top:-400},1000 );
+
+        $("#dot1world").css("background-image", "url('assets/denmark.png')"); 
+
+        //$(".orlando2").css("color","#152f3d");
+
+        //$(".copenhagen").css("color","white");
+
+        $("#dot1world").animate({left: "1775"}, 2000);//365 520 655 805 973 1128 1295 1545 1793
 
         image.fadeOut('fast', function () {
+          image.attr('src', '');
+
         image.attr('src', 'assets/2020-Copenhagen/5-nyhavn2.jpg');
         image.fadeIn('slow');
         $("h5").html("Copenhagen");
 
       });
-      },250000)
+      },270000)
       setTimeout(function() {
         image.fadeOut('fast', function () {
+          image.attr('src', '');
+
         image.attr('src', 'assets/2020-Copenhagen/1-tivoli.jpg');
         image.fadeIn('slow');
         $("h5").html("Tivoli");
 
       });
-      },255000)
+      },280000)
       setTimeout(function() {
         image.fadeOut('fast', function () {
+          image.attr('src', '');
+
         image.attr('src', 'assets/2020-Copenhagen/2-oresund2.jpg');
         image.fadeIn('slow');
         $("h5").html("Oresund");
 
       });
-      },260000)
+      },290000)
       setTimeout(function() {
         image.fadeOut('fast', function () {
+          image.attr('src', '');
+
         image.attr('src', 'assets/2020-Copenhagen/4-opera.jpg');
         image.fadeIn('slow');
         $("h5").html("Opera House");
 
       });
-      },265000)
+      },300000)
       setTimeout(function() {
         image.fadeOut('fast', function () {
+          image.attr('src', '');
+
         image.attr('src', 'assets/2020-Copenhagen/6-nyhavn1.jpg');
         image.fadeIn('slow');
         $("h5").html("Nyhavn");
 
       });
-      },270000)
+      },310000)
       setTimeout(function() {
         image.fadeOut('fast', function () {
+          image.attr('src', '');
+
         image.attr('src', 'assets/2020-Copenhagen/7-christiansborg2.jpg');
         image.fadeIn('slow');
         $("h5").html("Frederik VII Statue, Christiansborg Slot");
 
       });
-      },275000)
+      },320000)
       setTimeout(function() {
         image.fadeOut('fast', function () {
+          image.attr('src', '');
+
         image.attr('src', 'assets/2020-Copenhagen/8-Bella-Center-entrance.jpg');
         image.fadeIn('slow');
         $("h5").html("Bella Center");
 
       });
-      },280000)
+      },330000)
       setTimeout(function() {
         image.fadeOut('fast', function () {
+          image.attr('src', '');
+
         image.attr('src', 'assets/2020-Copenhagen/9-AC-Hotel-Bella-Sky-Copenhagen.jpg');
         image.fadeIn('slow');
         $("h5").html("AC Hotel");
 
+
+
       });
-      },285000)
+      },340000)
 }
 
 
 //Reload at end
 setTimeout(function(){
+  //$(".copenhagen").css("color","#152f3d");
+  $("#dot1world").css("box-shadow","0px 45px 30px 30px rgba(255, 255, 255, 0.406)");
+
   window.location.reload(1);
-}, 290000);
+}, 350000);
 
 
 
