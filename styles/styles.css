@@ -1,10 +1,11 @@
 @font-face {
     font-family: "Avenir";
     src: url("../font/Avenir.ttc");
+    font-weight: normal;
 }
 
 @font-face {
-    font-family: "Avenir";
+    font-family: "AvenirBold";
     src: url("../font/AvenirNextLTPro-Demi.otf");
     font-weight: bold;
 }
@@ -29,7 +30,7 @@ html {
     margin-right: 0%;
     padding-left: 0%;
     padding-right: 0%;
-    background: #16272f;
+    background: #131e23;
     position: absolute;
 }
 
@@ -42,6 +43,7 @@ html {
     padding-left: 0%;
     padding-right: 0%;
     position: absolute;
+    text-align: center;
 }
 
 #container {
@@ -54,62 +56,71 @@ html {
     height: auto;
 }
 
-#globe {
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    z-index: 10;
-}
-
 
 /*--------------TIMELINE----------------*/
 
 h1 {
-    font-size: 20px;
+    font-size: 25px;
     color: white;
+    margin-top: 38px;
 }
 
 h2 {
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 35px;
     color: white;
-    color: #d6d6d6;
-    margin-bottom: 0%;
-    margin-top: 0%;
-    padding-top: 30px;
+    /* display: flex; */
+    font-family: "AvenirBold";
+    display: none;
     text-shadow: -1px 1px 10px #c6c6c6;
 }
 
 h3 {
     font-size: 20px;
     color: #c7c7c7;
-    margin-bottom: 1%;
-    margin-top: 0%;
+    position: absolute;
+    left: 20px;
+    padding-top: 0px;
+    display: none;
 }
 
 h4 {
     font-size: 30px;
     /* position: absolute; */
-    padding-left: 14px;
+    font-family: "AvenirBold";
+    left: 40%;
     top: 0%;
     height: 1px;
     position: absolute;
-    text-shadow: -1px 1px 10px #ffffff;
+    text-shadow: 0px -5px 10px #ffffff;
     color: #fff;
     margin-top: 0%;
+    z-index: 100;
+}
+
+h5 {
+    position: absolute;
+    top: 1030px;
+    left: 20px;
+    z-index: 200;
+    /* text-align: center; */
+    font-size: 25px;
+    color: white;
+    margin: 0 auto;
+    text-shadow: -1px 1px 10px #000000;
 }
 
 h6 {
-    top: -500px;
-    font-size: 100px;
+    top: 29px;
+    font-family: "AvenirBold";
+    font-size: 150px;
     position: absolute;
     text-align: center;
     display: none;
-    left: 40%;
+    left: -100px;
     font-weight: bold;
     color: white;
-    text-shadow: -1px 1px 50px #000000;
-    z-index: 10;
+    text-shadow: 0px 0px 40px #000000;
+    z-index: 200;
 }
 
 h7 {
@@ -139,46 +150,45 @@ h7 {
     display: inline-block;
     box-shadow: 0px 1px 13px 5px rgb(35, 50, 57);
     z-index: 11;
-    top: 41%;
+    top: 74px;
 }
 
 #dotfuture {
-    box-shadow: 0px 1px 13px 5px rgba(116, 116, 116, 0.65);
+    /* box-shadow: 0px 1px 13px 5px rgba(116, 116, 116, 0.65);*/
 }
 
 #timeline {
-    height: 200px;
+    height: 95px;
     width: 100%;
     background-color: #000000ba;
-    bottom: 0%;
+    /*bottom: 0%;*/
     z-index: 10;
     position: absolute;
     display: table;
-    -webkit-box-shadow: 0px -12px 69px -14px rgba(255, 255, 255, 1);
-    -moz-box-shadow: 0px -12px 69px -14px rgba(255, 255, 255, 1);
-    box-shadow: 0px -12px 69px -14px rgba(255, 255, 255, 1);
-    overflow: hidden;
+    -webkit-box-shadow: 0px 10px 69px -14px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 10px 69px -14px rgba(255, 255, 255, 1);
+    box-shadow: 0px 10px 69px -14px rgba(255, 255, 255, 1);
+    /* overflow: hidden;*/
 }
 
 #timelineshadow {
-    height: 200px;
+    height: 95px;
     width: 100%;
-    bottom: 0%;
+    /*bottom: 0%;*/
     position: absolute;
     display: table;
-    -webkit-box-shadow: inset -480px 0px 90px 0px rgba(255, 255, 255, 0.8);
-    -moz-box-shadow: inset -480px 0px 90px 0px rgba(255, 255, 255, 0.8);
-    box-shadow: inset -480px 0px 90px 0px rgba(255, 255, 255, 0.8);
+    -webkit-box-shadow: inset -650px 0px 90px 0px rgba(255, 255, 255, 0.8);
+    -moz-box-shadow: inset -650px 0px 90px 0px rgba(255, 255, 255, 0.8);
+    box-shadow: inset -650px 0px 90px 0px rgba(255, 255, 255, 0.8);
 }
 
 #past {
     display: inline-block;
-    width: 74%;
 }
 
 #current {
     display: inline-block;
-    width: 13%;
+    width: 1%;
     top: 0%;
     height: 100%;
     text-align: right;
@@ -186,24 +196,25 @@ h7 {
 
 #pastborder {
     height: 13px;
-    bottom: 48%;
+    bottom: 0px;
     width: 100%;
     /* left: 10%; */
     /* background: hsl(0, 0%, 100%); */
     position: absolute;
     z-index: 10;
-    background-image: linear-gradient(to left, #c4c8cba6 1%, #2f55684f 20%, #ffffff 35%, #ffffff00 200%);
+    background-image: linear-gradient(to left, #1b9dff00 1%, #71bbe01a 20%, #0a1919 35%, #ffffffad 200%);
     box-shadow: -20px 1px 194px 20px rgba(255, 255, 255, 0.52)
 }
 
 .container {
-    padding-top: 2.5%;
+    width: 1250px;
+    padding-left: 5%;
 }
 
 .content {
     display: inline-block;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
     text-align: center;
 }
 
@@ -241,12 +252,12 @@ h7 {
     border-radius: 50%;
     left: -40px;
     border: 1px solid #d5d5d595;
-    top: 80px;
+    top: 72px;
     position: absolute;
     display: inline-block;
     /* align-items: center; */
     /* text-align: center; */
-    box-shadow: 0px 45px 30px 30px rgba(255, 255, 255, 0.406);
+    box-shadow: 0px 20px 30px 30px rgba(0, 0, 0, 0.406);
     z-index: 100;
     background: url(../assets/china.png) repeat-x;
     background-size: auto 100%;
@@ -265,7 +276,7 @@ h7 {
     background-color: #fff;
     border-radius: 50%;
     border: 0px solid #d5d5d5;
-    top: -200px;
+    top: 200px;
     left: 10%;
     position: absolute;
     display: inline-block;
@@ -306,17 +317,69 @@ h7 {
     animation: move-map 60s infinite linear;
 }
 
-h5 {
+
+/*
+#airplane {
+    background: url('../assets/airplane.png') repeat-x;
+    background-size: auto 100%;
     position: absolute;
-    top: -40px;
-    left: 10px;
-    text-shadow: -1px 1px 10px #000000;
-    font-size: 25px;
-    color: white;
+    top: 200px;
+}
+*/
+
+
+/*--------------DASHED LINE----------------*/
+
+#fly {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    z-index: 201;
+}
+
+.c-dashed-line {
+    width: 80;
+    height: 40;
+}
+
+.c-dashed-line__path {
+    animation: c-dashed-line-path 3s ease-in-out infinite alternate;
+    fill: none;
+    stroke: rgb(255, 255, 255);
+    stroke-dasharray: 940;
+    /* this is the entire length of the line */
+    stroke-dashoffset: 940;
+    /* this is the entire length of the line */
+    stroke-width: 10;
+}
+
+.c-dashed-line__dash {
+    fill: none;
+    stroke: rgb(111, 200, 216);
+    /* this must match the background color */
+    stroke-dasharray: 16 10;
+    /* draws a 10px dash line with a 16px gap between */
+    stroke-width: 12;
+}
+
+@keyframes c-dashed-line-path {
+    from {
+        stroke-dashoffset: 940;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
 }
 
 
 /*--------------GLOBE----------------*/
+
+#globe {
+    position: absolute;
+    top: 200px;
+    right: 750px;
+    z-index: 100;
+}
 
 .ball {
     display: inline-block;
@@ -325,7 +388,7 @@ h5 {
     height: 100%;
     margin: 0;
     border-radius: 50%;
-    position: absolute;
+    position: relative;
     -webkit-transform-style: preserve-3d;
     background: url('../assets/5-2.png') repeat-x;
     background-size: auto 100%;
@@ -333,18 +396,18 @@ h5 {
     -moz-animation: move-map 60s infinite linear;
     -o-animation: move-map 60s infinite linear;
     -ms-animation: move-map 60s infinite linear;
-    animation: move-map 60s infinite linear;
+    animation: move-map 140s infinite linear;
 }
 
 .ball:before {
     content: "";
-    position: absolute;
+    position: relative;
     top: 0%;
     left: 0%;
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    box-shadow: -40px 10px 70px 10px rgba(0, 0, 0, 0.17) inset;
+    box-shadow: -40px 10px 100px 10px rgba(0, 0, 0, 0.32) inset;
     z-index: 2;
 }
 
@@ -358,7 +421,7 @@ h5 {
     left: 0;
     -webkit-filter: blur(0);
     opacity: 0.3;
-    background: radial-gradient(circle at 50% 80%, #e0ecee00, #dae4e600 10%, #05519400 66%, #06274500 100%);
+    background: radial-gradient(circle at 50% 80%, #000000cf, #000000cf 10%, #00000033 66%, #000000e3 100%);
 }
 
 .ball .shadow {
@@ -374,8 +437,8 @@ h5 {
 }
 
 .stage {
-    width: 250px;
-    height: 245px;
+    width: 1100px;
+    height: 1050px;
     right: 0%;
     display: inline-block;
     margin: 20px;
@@ -427,11 +490,51 @@ h5 {
     }
 }
 
-@keyframes move-map {
+@keyframes move-map-china {
     0% {
         background-position: -849px 0;
     }
     100% {
         background-position: 0 0;
     }
+}
+
+@keyframes move-map-americawest {
+    0% {
+        background-position: 249px 0;
+    }
+    100% {
+        background-position: -1000px 0;
+    }
+}
+
+@keyframes move-map-americaeast {
+    0% {
+        background-position: -1509px 0;
+    }
+    100% {
+        background-position: 800 0;
+    }
+}
+
+@keyframes move-map-europe {
+    0% {
+        background-position: -409px 0;
+    }
+    100% {
+        background-position: 800 0;
+    }
+}
+
+#send {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 800px;
+    left: 20px;
+    z-index: 200;
+    background: url('../assets/send.png');
+    background-size: auto 100%;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
 }
