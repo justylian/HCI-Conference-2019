@@ -30,7 +30,12 @@ html {
     margin-right: 0%;
     padding-left: 0%;
     padding-right: 0%;
-    background: #131e23;
+    /*background: #131e23;*/
+    background: linear-gradient(303deg, #101e2f, #120d20);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
     position: absolute;
 }
 
@@ -62,7 +67,7 @@ html {
 h1 {
     font-size: 25px;
     color: white;
-    margin-top: 38px;
+    margin-top: 41px;
 }
 
 h2 {
@@ -84,14 +89,14 @@ h3 {
 }
 
 h4 {
-    font-size: 30px;
+    font-size: 33px;
     /* position: absolute; */
     font-family: "AvenirBold";
     left: 40%;
-    top: 0%;
+    top: 4px;
     height: 1px;
     position: absolute;
-    text-shadow: 0px -5px 10px #ffffff;
+    text-shadow: 0px 0px 10px #ffffff;
     color: #fff;
     margin-top: 0%;
     z-index: 100;
@@ -141,7 +146,7 @@ h7 {
     width: 15px;
     background-color: #fff;
     border-radius: 50%;
-    border: 7px solid #99A5A5;
+    border: 7px solid #a1bbbb;
     position: absolute;
     /* padding-left: 1%; */
     margin-left: -0.7%;
@@ -167,19 +172,19 @@ h7 {
     display: table;
     -webkit-box-shadow: 0px 10px 69px -14px rgba(255, 255, 255, 1);
     -moz-box-shadow: 0px 10px 69px -14px rgba(255, 255, 255, 1);
-    box-shadow: 0px 10px 69px -14px rgba(255, 255, 255, 1);
+    box-shadow: 0px 10px 69px -14px rgb(0, 0, 0);
     /* overflow: hidden;*/
 }
 
 #timelineshadow {
     height: 95px;
     width: 100%;
-    /*bottom: 0%;*/
+    /* bottom: 0%; */
     position: absolute;
     display: table;
     -webkit-box-shadow: inset -650px 0px 90px 0px rgba(255, 255, 255, 0.8);
     -moz-box-shadow: inset -650px 0px 90px 0px rgba(255, 255, 255, 0.8);
-    box-shadow: inset -650px 0px 90px 0px rgba(255, 255, 255, 0.8);
+    box-shadow: inset -650px 0px 90px 0px rgba(32, 32, 32, 0.8);
 }
 
 #past {
@@ -188,10 +193,19 @@ h7 {
 
 #current {
     display: inline-block;
-    width: 1%;
+    width: 8%;
     top: 0%;
     height: 100%;
-    text-align: right;
+    text-align: center;
+}
+
+#currentborder {
+    transform: rotate(20deg);
+    border-left: 1px solid #ffffff;
+    top: -3px;
+    left: 1280px;
+    height: 88px;
+    position: absolute;
 }
 
 #pastborder {
@@ -202,8 +216,8 @@ h7 {
     /* background: hsl(0, 0%, 100%); */
     position: absolute;
     z-index: 10;
-    background-image: linear-gradient(to left, #1b9dff00 1%, #71bbe01a 20%, #0a1919 35%, #ffffffad 200%);
-    box-shadow: -20px 1px 194px 20px rgba(255, 255, 255, 0.52)
+    background-image: linear-gradient(to left, #ffffff21 1%, #848484b5 20%, #ffffff 35%, #ffffff 200%);
+    box-shadow: -20px 1px 194px 20px rgba(255, 255, 255, 0.7);
 }
 
 .container {
@@ -221,13 +235,13 @@ h7 {
 #future {
     display: inline-block;
     right: 0%;
-    width: 13%;
+    width: 7%;
     height: 100%;
     text-align: center;
 }
 
 #h1 {
-    color: #152f3d;
+    /*color: #152f3d;*/
 }
 
 #h2 {
@@ -257,7 +271,7 @@ h7 {
     display: inline-block;
     /* align-items: center; */
     /* text-align: center; */
-    box-shadow: 0px 20px 30px 30px rgba(0, 0, 0, 0.406);
+    box-shadow: 0px 40px 40px 30px rgba(0, 0, 0, 0.406);
     z-index: 100;
     background: url(../assets/china.png) repeat-x;
     background-size: auto 100%;
@@ -376,9 +390,9 @@ h7 {
 
 #globe {
     position: absolute;
-    top: 200px;
     right: 750px;
     z-index: 100;
+    top: 200px;
 }
 
 .ball {
@@ -417,11 +431,10 @@ h7 {
     border-radius: 50%;
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
+    left: 0px;
     -webkit-filter: blur(0);
     opacity: 0.3;
-    background: radial-gradient(circle at 50% 80%, #000000cf, #000000cf 10%, #00000033 66%, #000000e3 100%);
+    background: radial-gradient(circle at 50% 80%, #b3b3b3db, #b3b3b3db 10%, #00000073 66%, #000000 100%);
 }
 
 .ball .shadow {
@@ -537,4 +550,43 @@ h7 {
     background-size: auto 100%;
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
+}
+
+
+/*--------------BACKGROUND----------------*/
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 28% 0%
+    }
+    50% {
+        background-position: 73% 100%
+    }
+    100% {
+        background-position: 28% 0%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 28% 0%
+    }
+    50% {
+        background-position: 73% 100%
+    }
+    100% {
+        background-position: 28% 0%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 28% 0%
+    }
+    50% {
+        background-position: 73% 100%
+    }
+    100% {
+        background-position: 28% 0%
+    }
 }

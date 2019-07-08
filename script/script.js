@@ -10,7 +10,7 @@ function func1() {
     var timelineglobe;
     var title;
 
-    //BEIJING
+    //-------------------------BEIJING
 
 
     //$(".ball").animate({ top: 960,left:60, width:30 ,height:30 }, 5000 );
@@ -134,7 +134,7 @@ function func1() {
 
 
 
-    //SAN DIEGO
+    //-------------------------SAN DIEGO
     setTimeout(function() {
 
         //City name show & hide
@@ -224,18 +224,46 @@ function func1() {
 
     }, 60000)
 
-    //ORLANDO
+    //-------------------------ORLANDO
     setTimeout(function() {
-        $(".ball").css("background-image", "url('assets/5orlando.png')").fadeIn('slow');
 
+        //City name show & hide
+        image.fadeOut('fast', function() {
+            image.attr('src', '');
+        });
         $("h6").html("Orlando");
-        $("h6").css("display", "block").animate({ left: 100 }, 3000);
+        $("h6").css("left", "-300px");
+        $("h6").css("font-size", "150px");
+        $("h6").css("display", "block").animate({ left: 299 }, 500);
+        $("h6").css("display", "block").animate({ fontSize: 40 }, 4000);
+
+        //spin large globe
+        $(".stage").animate({ width: 1100, height: 1050 }, 0);
+        $("#globe").animate({ right: 750, top: 200 }, 0);
+        $(".stage").animate({ width: 260, height: 250 }, 4000);
+        $("#globe").animate({ right: 0, top: 10 }, 4000);
+
+        $("#send").animate({ width: 300, height: 300, left: 20, top: 800 }, 0);
+        $("#send").animate({ width: 50, height: 50, left: 1500, top: 400 }, 2000);
+        $("#send").animate({ width: 0, height: 0, left: 1200, top: 400 }, 500);
+
+        $(".ball").css("animation", "move-map-americaeast 140s infinite linear")
+        $(".ball").css("background-image", "url('assets/5orlando.png')");
+
+        $("#dot1world").animate({ left: "350" }, 4000);
+
+    }, 65000)
+    setTimeout(function() {
+        //$(".ball").css("background-image", "url('assets/5orlando.png')").fadeIn('slow');
+
+        //$("h6").html("Orlando");
+        //$("h6").css("display", "block").animate({ left: 100 }, 3000);
 
         //$(".sandiego").css("color", "#d6d6d6");
 
         //$(".orlando1").css("color", "white");
 
-        $("#dot1world").animate({ left: "345" }, 2000); //365 520 655 805 973 1128 1295 1545 1793
+        //$("#dot1world").animate({ left: "345" }, 2000); //365 520 655 805 973 1128 1295 1545 1793
 
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -243,10 +271,10 @@ function func1() {
             image.attr('src', 'assets/2011,2019-Orlando/1-swandolphin.jpg').fadeIn('slow');
 
         });
-        $("h5").html("Orlando");
+        $("h5").html("Orlando Skyline");
 
 
-    }, 65000)
+    }, 70000)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -256,7 +284,7 @@ function func1() {
         });
         $("h5").html("Kennedy Space Center");
 
-    }, 70000)
+    }, 75000)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -266,12 +294,12 @@ function func1() {
         });
         $("h5").html("Kennedy Space Center");
 
-    }, 75000)
+    }, 80000)
 
 
 
 
-    //VEGAS
+    //-------------------------VEGAS
     setTimeout(function() {
         $(".ball").css("background-image", "url('assets/5lasvegas.png')");
 
@@ -295,7 +323,7 @@ function func1() {
             $("h5").html("Las Vegas");
 
         });
-    }, 70000)
+    }, 85000)
     setTimeout(function() {
 
         image.fadeOut('fast', function() {
@@ -306,7 +334,7 @@ function func1() {
             $("h5").html("Las Vegas Signs");
 
         });
-    }, 75000)
+    }, 90000)
     setTimeout(function() {
 
         image.fadeOut('fast', function() {
@@ -317,7 +345,7 @@ function func1() {
             $("h5").html("Eiffel Tower of Las Vegas");
 
         });
-    }, 80000)
+    }, 95000)
     setTimeout(function() {
 
         image.fadeOut('fast', function() {
@@ -328,7 +356,7 @@ function func1() {
             $("h5").html("Downtown Las Vegas");
 
         });
-    }, 85000)
+    }, 100000)
     setTimeout(function() {
 
         image.fadeOut('fast', function() {
@@ -341,11 +369,11 @@ function func1() {
 
 
         });
-    }, 90000)
+    }, 105000)
 
 
 
-    //Crete
+    //-------------------------Crete
     setTimeout(function() {
         $(".ball").css("background-image", "url('assets/5crete.png')");
 
@@ -426,7 +454,7 @@ function func1() {
 
 
 
-    //Los Angeles
+    //-------------------------Los Angeles
     setTimeout(function() {
         $(".ball").css("background-image", "url('assets/5losangeles.png')");
 
@@ -527,7 +555,7 @@ function func1() {
 
 
 
-    //Toronto
+    //-------------------------Toronto
     setTimeout(function() {
         $(".ball").css("background-image", "url('assets/5toronto.png')");
 
@@ -589,7 +617,7 @@ function func1() {
 
 
 
-    //Vancouver
+    //-------------------------Vancouver
     setTimeout(function() {
         $(".ball").css("background-image", "url('assets/5vancouver.png')");
 
@@ -662,7 +690,7 @@ function func1() {
 
 
 
-    //VEGAS
+    //-------------------------VEGAS
     setTimeout(function() {
         $(".ball").css("background-image", "url('assets/5lasvegas.png')");
 
@@ -740,7 +768,7 @@ function func1() {
 
 
 
-    //ORLANDO
+    //-------------------------ORLANDO
     setTimeout(function() {
         $(".ball").css("background-image", "url('assets/5orlando.png')");
 
@@ -790,7 +818,7 @@ function func1() {
 
 
 
-    //Copenhagen
+    //-------------------------Copenhagen
     setTimeout(function() {
         $(".ball").css("background-image", "url('assets/5copenhagen.png')");
 
