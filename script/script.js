@@ -1,8 +1,8 @@
-setTimeout(func1, 0);
+setTimeout(mainfunc, 0);
 
 
 
-function func1() {
+function mainfunc() {
     //document.getElementById("dot1").style.border="7px solid #254F50";
 
     var desc;
@@ -51,7 +51,7 @@ function func1() {
         });
         $("h5").html("Beijing Skyline ");
 
-    }, 5000)
+    }, 4000)
     setTimeout(function() {
         // $(".stage").css("display", "block").animate({ width: 250, height: 245, right: 0 }, 3000);
         //$("#globe").animate({ right: 0, top: 0 }, 3000);
@@ -136,6 +136,7 @@ function func1() {
 
     //-------------------------SAN DIEGO
     setTimeout(function() {
+        $("h5").html("");
 
         //City name show & hide
         image.fadeOut('fast', function() {
@@ -200,7 +201,7 @@ function func1() {
         });
         $("h5").html("San Diego Skyline");
 
-    }, 50000)
+    }, 49000)
     setTimeout(function() {
 
         image.fadeOut('fast', function() {
@@ -226,6 +227,7 @@ function func1() {
 
     //-------------------------ORLANDO
     setTimeout(function() {
+        $("h5").html("");
 
         //City name show & hide
         image.fadeOut('fast', function() {
@@ -234,8 +236,8 @@ function func1() {
         $("h6").html("Orlando");
         $("h6").css("left", "-300px");
         $("h6").css("font-size", "150px");
-        $("h6").css("display", "block").animate({ left: 299 }, 500);
-        $("h6").css("display", "block").animate({ fontSize: 40 }, 4000);
+        $("h6").animate({ left: 299 }, 500);
+        $("h6").animate({ fontSize: 40 }, 4000);
 
         //spin large globe
         $(".stage").animate({ width: 1100, height: 1050 }, 0);
@@ -274,7 +276,7 @@ function func1() {
         $("h5").html("Orlando Skyline");
 
 
-    }, 70000)
+    }, 69000)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -301,7 +303,36 @@ function func1() {
 
     //-------------------------VEGAS
     setTimeout(function() {
+        $("h5").html("");
+
+        //City name show & hide
+        image.fadeOut('fast', function() {
+            image.attr('src', '');
+        });
+        $("h6").html("Las Vegas");
+        $("h6").css("left", "-100px");
+        $("h6").css("font-size", "150px");
+        $("h6").css("display", "block").animate({ left: 410 }, 500);
+        $("h6").css("display", "block").animate({ fontSize: 40 }, 4000);
+
+        //spin large globe
+        $(".stage").animate({ width: 1100, height: 1050 }, 0);
+        $("#globe").animate({ right: 750, top: 200 }, 0);
+        $(".stage").animate({ width: 260, height: 250 }, 4000);
+        $("#globe").animate({ right: 0, top: 10 }, 4000);
+
+        $("#send").animate({ width: 300, height: 300, left: 20, top: 800 }, 0);
+        $("#send").animate({ width: 50, height: 50, left: 1500, top: 400 }, 2000);
+        $("#send").animate({ width: 0, height: 0, left: 1200, top: 400 }, 500);
+
+        $(".ball").css("animation", "move-map-americawest 140s infinite linear")
         $(".ball").css("background-image", "url('assets/5lasvegas.png')");
+
+        $("#dot1world").css("background-image", "url('assets/usa.png')").animate({ left: "477" }, 4000);
+
+    }, 85000)
+    setTimeout(function() {
+        $ //(".ball").css("background-image", "url('assets/5lasvegas.png')");
 
         // $("h6").html("Las Vegas");
         // $("h6").css("display", "block").animate({ top: 0 }, 3000);
@@ -313,7 +344,7 @@ function func1() {
 
         //$(".lasvegas1").css("color", "white");
 
-        $("#dot1world").animate({ left: "500" }, 2000); //365 520 655 805 973 1128 1295 1545 1793
+        //$("#dot1world").animate({ left: "500" }, 2000); //365 520 655 805 973 1128 1295 1545 1793
 
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -323,7 +354,7 @@ function func1() {
             $("h5").html("Las Vegas");
 
         });
-    }, 85000)
+    }, 89000)
     setTimeout(function() {
 
         image.fadeOut('fast', function() {
@@ -334,7 +365,7 @@ function func1() {
             $("h5").html("Las Vegas Signs");
 
         });
-    }, 90000)
+    }, 95000)
     setTimeout(function() {
 
         image.fadeOut('fast', function() {
@@ -345,7 +376,7 @@ function func1() {
             $("h5").html("Eiffel Tower of Las Vegas");
 
         });
-    }, 95000)
+    }, 100000)
     setTimeout(function() {
 
         image.fadeOut('fast', function() {
@@ -356,7 +387,7 @@ function func1() {
             $("h5").html("Downtown Las Vegas");
 
         });
-    }, 100000)
+    }, 105000)
     setTimeout(function() {
 
         image.fadeOut('fast', function() {
@@ -369,25 +400,54 @@ function func1() {
 
 
         });
-    }, 105000)
+    }, 110000)
 
 
 
     //-------------------------Crete
     setTimeout(function() {
+        $("h5").html("");
+        //City name show & hide
+        image.fadeOut('fast', function() {
+            image.attr('src', '');
+        });
+        $("h6").html("Crete");
+        $("h6").css("left", "-300px");
+        $("h6").css("font-size", "150px");
+        $("h6").css("display", "block").animate({ left: 570 }, 500);
+        $("h6").css("display", "block").animate({ fontSize: 40 }, 4000);
+
+        //spin large globe
+        $(".stage").animate({ width: 1100, height: 1050 }, 0);
+        $("#globe").animate({ right: 750, top: 200 }, 0);
+        $(".stage").animate({ width: 260, height: 250 }, 4000);
+        $("#globe").animate({ right: 0, top: 10 }, 4000);
+
+        $("#send").animate({ width: 300, height: 300, left: 20, top: 800 }, 0);
+        $("#send").animate({ width: 50, height: 50, left: 1500, top: 400 }, 2000);
+        $("#send").animate({ width: 0, height: 0, left: 1200, top: 400 }, 500);
+
+        $(".ball").css("animation", "move-map-europe 140s infinite linear")
         $(".ball").css("background-image", "url('assets/5crete.png')");
 
-        $("h6").html("Crete");
-        $("h6").css("display", "block").animate({ top: 0 }, 3000);
-        $("h6").css("display", "block").animate({ top: -400 }, 1000);
+        $("#dot1world").css("background-image", "url('assets/greece.png')").animate({ left: "600" }, 4000);
 
-        $("#dot1world").css("background-image", "url('assets/greece.png')");
+
+    }, 115000)
+    setTimeout(function() {
+        //$(".ball").css("background-image", "url('assets/5crete.png')");
+
+        // $("h6").html("Crete");
+        // $("h6").css("display", "block").animate({ top: 0 }, 3000);
+        //$("h6").css("display", "block").animate({ top: -400 }, 1000);
+
+        //$("#dot1world").css("background-image", "url('assets/greece.png')");
 
         //$(".lasvegas1").css("color", "#d6d6d6");
 
         //$(".crete").css("color", "white");
 
-        $("#dot1world").animate({ left: "635" }, 2000); //365 520 655 805 973 1128 1295 1545 1793
+        // $("#dot1world").animate({ left: "635" }, 2000); //365 520 655 805 973 1128 1295 1545 1793
 
         image.fadeOut('fast', function() {
             image.attr('src', 'assets/2014-Crete/7-chania2.jpg');
@@ -396,7 +456,7 @@ function func1() {
 
 
         });
-    }, 95000)
+    }, 119000)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -406,7 +466,7 @@ function func1() {
             $("h5").html("Knossos Palace");
 
         });
-    }, 100000)
+    }, 125000)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -416,7 +476,7 @@ function func1() {
             $("h5").html("Spinalonga");
 
         });
-    }, 105000)
+    }, 130000)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -426,7 +486,7 @@ function func1() {
             $("h5").html("Balos Beach");
 
         });
-    }, 110000)
+    }, 135000)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -436,7 +496,7 @@ function func1() {
             $("h5").html("Agios Nikolaos");
 
         });
-    }, 115000)
+    }, 140000)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -449,7 +509,7 @@ function func1() {
 
 
         });
-    }, 120000)
+    }, 145000)
 
 
 
@@ -479,7 +539,7 @@ function func1() {
 
 
         });
-    }, 125000)
+    }, 150000)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -711,7 +771,7 @@ function func1() {
 
             image.attr('src', 'assets/2013,2018-Las Vegas/1-skyline_night.jpg');
             image.fadeIn('slow');
-            $("h5").html("Las Vegas");
+            $("h5").html("Las Vegas Skyline");
 
         });
     }, 210000)
