@@ -104,24 +104,24 @@ h4 {
 
 h5 {
     position: absolute;
-    top: 1030px;
-    left: 20px;
+    top: 1020px;
+    left: 40px;
     z-index: 200;
     /* text-align: center; */
-    font-size: 25px;
+    font-size: 30px;
     color: white;
     margin: 0 auto;
-    text-shadow: 0px 7px 7px #000000
+    text-shadow: 0px 1px 3px #000000
 }
 
 h6 {
-    top: 29px;
+    top: 250px;
     font-family: "AvenirBold";
-    font-size: 150px;
+    font-size: 135px;
     position: absolute;
     text-align: center;
     display: none;
-    left: -100px;
+    left: -1000px;
     font-weight: bold;
     color: white;
     text-shadow: 0px 0px 40px #000000;
@@ -176,6 +176,7 @@ h7 {
     /*bottom: 0%;*/
     z-index: 10;
     position: absolute;
+    border-top: 1px solid white;
     display: table;
     -webkit-box-shadow: 0px 10px 69px -14px rgba(255, 255, 255, 1);
     -moz-box-shadow: 0px 10px 69px -14px rgba(255, 255, 255, 1);
@@ -192,6 +193,31 @@ h7 {
     -webkit-box-shadow: inset -650px 0px 90px 0px rgba(255, 255, 255, 0.8);
     -moz-box-shadow: inset -650px 0px 90px 0px rgba(255, 255, 255, 0.8);
     box-shadow: inset -650px 0px 90px 0px rgba(32, 32, 32, 0.8);
+}
+
+#timelineshadowdesc {
+    height: 5px;
+    left: 0px;
+    /* width: 9%; */
+    top: 1200px;
+    position: absolute;
+    /* display: table; */
+    -webkit-box-shadow: 130px 0px 100px 130px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 130px 0px 100px 130px rgba(0, 0, 0, 0.58);
+    box-shadow: 150px -48px 100px 130px rgba(0, 0, 0, 0.58)
+}
+
+#timelineshadowmap {
+    height: 95px;
+    bottom: 0px;
+    right: 0px;
+    /* width: 9%; */
+    /* bottom: 0%; */
+    position: absolute;
+    display: table;
+    -webkit-box-shadow: -60px 38px 200px 140px rgba(0, 0, 0, 0.69);
+    -moz-box-shadow: -60px 38px 200px 140px rgba(0, 0, 0, 0.69);
+    box-shadow: -60px 38px 200px 140px rgba(0, 0, 0, 0.69);
 }
 
 #past {
@@ -215,10 +241,28 @@ h7 {
     position: absolute;
 }
 
+#pastborderdashed {
+    height: 13px;
+    bottom: 0px;
+    left: 0%;
+    width: 2%;
+    /* left: 10%; */
+    /* background: hsl(0, 0%, 100%); */
+    position: absolute;
+    z-index: 10;
+    background-image: linear-gradient(to left, #ffffff21 1%, #848484b5 20%, #ffffff 35%, #ffffff 200%);
+    box-shadow: -20px 1px 194px 20px rgba(255, 255, 255, 0.7);
+    background-image: linear-gradient(to right, rgb(255, 255, 255) 23%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 8px 13px;
+    background-repeat: repeat-x;
+}
+
 #pastborder {
     height: 13px;
     bottom: 0px;
-    width: 100%;
+    width: 98%;
+    left: 2%;
     /* left: 10%; */
     /* background: hsl(0, 0%, 100%); */
     position: absolute;
@@ -242,7 +286,7 @@ h7 {
 #future {
     display: inline-block;
     right: 0%;
-    width: 7%;
+    width: 5%;
     height: 100%;
     text-align: center;
 }
@@ -397,9 +441,9 @@ h7 {
 
 #globe {
     position: absolute;
-    right: 750px;
+    right: 20px;
     z-index: 100;
-    top: 150px;
+    top: 200px;
 }
 
 .ball {
@@ -407,16 +451,20 @@ h7 {
     width: 100%;
     height: 100%;
     margin: 0;
-    border-radius: 50%;
+    border-radius: 0%;
     position: relative;
     -webkit-transform-style: preserve-3d;
-    background: url('../assets/5-2.png') repeat-x;
+    background-image: url('../assets/5beijing.png') repeat-x;
     background-size: auto 100%;
-    -webkit-animation: move-map 140s infinite linear;
+    /*
+        background-position:0 0; america
+    background-position: calc(100% - -100px) calc(100% - 10px); eurpe
+
+
+        -webkit-animation: move-map 140s infinite linear;
     -moz-animation: move-map 140s infinite linear;
     -o-animation: move-map 140s infinite linear;
-    -ms-animation: move-map 140s infinite linear;
-    animation: move-map 140s infinite linear;
+    -ms-animation: move-map 140s infinite linear;*/
 }
 
 .ball:before {
@@ -430,7 +478,7 @@ h7 {
     z-index: 2;
 }
 
-.ball:after {
+.ball.change:after {
     content: "";
     position: absolute;
     border-radius: 50%;
@@ -439,7 +487,7 @@ h7 {
     left: 0px;
     -webkit-filter: blur(0);
     opacity: 0.3;
-    background: radial-gradient(circle at 50% 80%, #b3b3b3db, #b3b3b3db 10%, #00000073 66%, #000000 100%);
+    background: radial-gradient(circle at 50% 80%, #b3b3b300, #b3b3b300 10%, #00000073 66%, #000000 100%);
 }
 
 .ball .shadow {
@@ -455,8 +503,9 @@ h7 {
 }
 
 .stage {
-    width: 1100px;
-    height: 1050px;
+    width: 1200px;
+    height: 700px;
+    border-radius: 0%;
     right: 0%;
     display: inline-block;
     margin: 20px;
@@ -474,7 +523,7 @@ h7 {
 
 @-moz-keyframes move-map {
     0% {
-        background-position: -849px 0;
+        background-position: 0 0;
     }
     100% {
         background-position: 0 0;
@@ -508,9 +557,18 @@ h7 {
     }
 }
 
-@keyframes move-map-china {
+@keyframes move-map {
     0% {
         background-position: -849px 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes move-map-globe {
+    0% {
+        background-position: calc(100% - 20px) calc(100% - 10px);
     }
     100% {
         background-position: 0 0;
@@ -526,21 +584,21 @@ h7 {
     }
 }
 
-@keyframes move-map-americaeast {
+@keyframes move-map-america {
     0% {
-        background-position: -1509px 0;
+        background-position: 100 0;
     }
     100% {
-        background-position: 800 0;
+        background-position: -800px 0;
     }
 }
 
 @keyframes move-map-europe {
     0% {
-        background-position: -409px 0;
+        background-position: calc(100% - -100px) calc(100% - 10px);
     }
     100% {
-        background-position: 800 0;
+        background-position: 800px 0;
     }
 }
 
@@ -548,10 +606,10 @@ h7 {
     width: 300px;
     height: 300px;
     position: absolute;
-    top: 800px;
-    left: 20px;
+    top: 550px;
+    left: -800px;
     z-index: 200;
-    background: url('../assets/send.png');
+    background-image: url('../assets/send.png');
     background-size: auto 100%;
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
@@ -581,6 +639,15 @@ h7 {
     100% {
         top: 30px;
         opacity: 0;
+    }
+}
+
+@keyframes rot {
+    from {
+        transform: rotate(360deg) translate(-150px) rotate(-360deg);
+    }
+    to {
+        transform: rotate(0deg) translate(-150px) rotate(0deg);
     }
 }
 
