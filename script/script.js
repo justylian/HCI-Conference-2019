@@ -12,15 +12,12 @@ function mainfunc() {
     var timelineglobe;
     var title;
 
-    var gap = 5000; //5000
-    var introgap = 2000;
-    var animationsgap = gap + 1000; //6000
-    var airplane = 2000; //2000
-    var previousstime = 0;
+    var gap = 5000; //gap between interchanging photos-5000
+    var introgap = 2000; // of each and between intros-2000
+    var initialgap = 500; //gap before first photo
+    var timesum = 0;
     //-------------------------BEIJING
-    //60 105
 
-    //$(".ball").animate({ top: 960,left:60, width:30 ,height:30 }, 5000 );
     setTimeout(function() {
 
         //City name show & hide
@@ -38,7 +35,7 @@ function mainfunc() {
 
         $("#dot1world").css("background-image", "url('assets/china.png')").animate({ left: "105" }, introgap + 1000);
 
-    }, previousstime)
+    }, timesum)
     setTimeout(function() {
             //spin large globe
             $("h6").animate({ fontSize: 40, top: 30 }, 1000);
@@ -46,10 +43,6 @@ function mainfunc() {
             $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
             $("#globe").animate({ right: 0, top: 10 }, 1000);
             $(".ball").animate({ borderRadius: '50%' }, 1000);
-
-            //$('.ball').addClass('change', 3000);
-            //$(".ball").switchClass("", "change", 1000);
-            //$('.ball').switchClass("", "change", 3000, "easeInOutQuad");
 
             $(".ball").css("animation", "move-map-globe 80s infinite linear")
 
@@ -63,7 +56,7 @@ function mainfunc() {
 
             });
 
-        }, previousstime = previousstime + introgap)
+        }, timesum = timesum + introgap)
         /*   setTimeout(function() {
 
         image = $("#mainimg");
@@ -74,7 +67,7 @@ function mainfunc() {
 
         });
 
-    }, previousstime = previousstime + gap)
+    }, timesum = timesum + gap)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -85,7 +78,7 @@ function mainfunc() {
         });
 
 
-    }, previousstime = previousstime + gap)
+    }, timesum = timesum + gap)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -95,7 +88,7 @@ function mainfunc() {
 
         });
 
-    }, previousstime = previousstime + gap)
+    }, timesum = timesum + gap)
 
     setTimeout(function() {
         image.fadeOut('fast', function() {
@@ -105,7 +98,7 @@ function mainfunc() {
             $("h5").html("The Forbidden City");
 
         });
-    }, previousstime = previousstime + gap)
+    }, timesum = timesum + gap)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -114,7 +107,7 @@ function mainfunc() {
             $("h5").html("Beijing Olympic Stadium");
 
         });
-    }, previousstime = previousstime + gap)
+    }, timesum = timesum + gap)
     setTimeout(function() {
         image.fadeOut(function() {
             image.fadeOut('fast', function() {
@@ -125,7 +118,7 @@ function mainfunc() {
 
             });
         });
-    }, previousstime = previousstime + gap)
+    }, timesum = timesum + gap)
 
 
 */
@@ -163,7 +156,7 @@ function mainfunc() {
         $(".ball").animate({ borderRadius: '0%' }, 500);
         $(".ball").animate({ "animation": "" }, 500)
 
-    }, previousstime = previousstime + gap)
+    }, timesum = timesum + gap)
 
 
 
@@ -186,7 +179,7 @@ function mainfunc() {
 
         $("#dot1world").css("background-image", "url('assets/usa.png')").animate({ left: "230" }, introgap + 1000); //*
 
-    }, previousstime = previousstime + introgap)
+    }, timesum = timesum + introgap)
 
     setTimeout(function() {
         $("h6").animate({ fontSize: 40, left: 160, top: 30 }, 1000); //*
@@ -197,74 +190,74 @@ function mainfunc() {
         $(".ball").animate({ borderRadius: '50%' }, 1000);
 
 
-    }, previousstime = previousstime + introgap)
-
-    /*
-        setTimeout(function() {
-                image.fadeOut('fast', function() {
-                    image.attr('src', '');
-
-                    image.attr('src', 'assets/2009-San Diego/3-skyline_night2.jpg').fadeIn('slow');
-                    $("h5").html("San Diego Skyline");
-
-                });
-
-            }, previousstime = previousstime + introgap)
-             setTimeout(function() {
-
-                 image.fadeOut('fast', function() {
-                     image.attr('src', '');
-
-                     image.attr('src', 'assets/2009-San Diego/5-marina.jpg').fadeIn('slow');
-                     $("h5").html("Coronado Bridge");
-
-                 });
-
-             }, previousstime = previousstime + gap)
-             setTimeout(function() {
-                 image.fadeOut('fast', function() {
-                     image.attr('src', '');
-
-                     image.attr('src', 'assets/2009-San Diego/1-sandiego-balboa.jpg').fadeIn('slow');
-                     $("h5").html("Balboa Park");
-
-                 });
+    }, timesum = timesum + introgap)
 
 
-             }, previousstime = previousstime + gap)
-              setTimeout(function() {
-                 image.fadeOut('fast', function() {
-                     image.attr('src', '');
+    setTimeout(function() {
+        image.fadeOut('fast', function() {
+            image.attr('src', '');
 
-                     image.attr('src', 'assets/2009-San Diego/2-sandiego-ship.jpg').fadeIn('slow');
-                     $("h5").html("USS Midway Museum");
+            image.attr('src', 'assets/2009-San Diego/3-skyline_night2.jpg').fadeIn('slow');
+            $("h5").html("San Diego Skyline");
 
-                 });
+        });
 
+    }, timesum = timesum + 500)
+    setTimeout(function() {
 
-             }, previousstime = previousstime + gap)
-              setTimeout(function() {
-                 image.fadeOut('fast', function() {
-                     image.attr('src', '');
+        image.fadeOut('fast', function() {
+            image.attr('src', '');
 
-                     image.attr('src', 'assets/2009-San Diego/3-sandiego-hotel-del-coronado.jpg').fadeIn('slow');
-                     $("h5").html("Hotel del Coronado");
+            image.attr('src', 'assets/2009-San Diego/5-marina.jpg').fadeIn('slow');
+            $("h5").html("Coronado Bridge");
 
-                 });
+        });
 
+    }, timesum = timesum + gap)
+    setTimeout(function() {
+        image.fadeOut('fast', function() {
+            image.attr('src', '');
 
-             }, previousstime = previousstime + gap)
-              setTimeout(function() {
-                 image.fadeOut('fast', function() {
-                     image.attr('src', '');
+            image.attr('src', 'assets/2009-San Diego/1-sandiego-balboa.jpg').fadeIn('slow');
+            $("h5").html("Balboa Park");
 
-                     image.attr('src', 'assets/2009-San Diego/6-harbour.jpg').fadeIn('slow');
-                     $("h5").html("Harbour View");
-
-                 });
+        });
 
 
-             }, previousstime = previousstime + gap)*/
+    }, timesum = timesum + gap)
+    setTimeout(function() {
+        image.fadeOut('fast', function() {
+            image.attr('src', '');
+
+            image.attr('src', 'assets/2009-San Diego/2-sandiego-ship.jpg').fadeIn('slow');
+            $("h5").html("USS Midway Museum");
+
+        });
+
+
+    }, timesum = timesum + gap)
+    setTimeout(function() {
+        image.fadeOut('fast', function() {
+            image.attr('src', '');
+
+            image.attr('src', 'assets/2009-San Diego/3-sandiego-hotel-del-coronado.jpg').fadeIn('slow');
+            $("h5").html("Hotel del Coronado");
+
+        });
+
+
+    }, timesum = timesum + gap)
+    setTimeout(function() {
+        image.fadeOut('fast', function() {
+            image.attr('src', '');
+
+            image.attr('src', 'assets/2009-San Diego/6-harbour.jpg').fadeIn('slow');
+            $("h5").html("Harbour View");
+
+        });
+
+
+    }, timesum = timesum + gap)
 
     //-------------------------ORLANDO
     //299 350
@@ -293,7 +286,7 @@ function mainfunc() {
         $(".ball").animate({ borderRadius: '0%' }, 500);
         $(".ball").animate({ "animation": "" }, 500)
 
-    }, previousstime = previousstime + gap)
+    }, timesum = timesum + gap)
 
 
 
@@ -316,7 +309,7 @@ function mainfunc() {
 
         $("#dot1world").css("background-image", "url('assets/usa.png')").animate({ left: "350" }, introgap + 1000); //*
 
-    }, previousstime = previousstime + introgap)
+    }, timesum = timesum + introgap)
 
     setTimeout(function() {
         $("h6").animate({ fontSize: 40, left: 299, top: 30 }, 1000); //*
@@ -327,7 +320,7 @@ function mainfunc() {
         $(".ball").animate({ borderRadius: '50%' }, 1000);
 
 
-    }, previousstime = previousstime + introgap)
+    }, timesum = timesum + introgap)
 
     /*     
               setTimeout(function() {
@@ -341,7 +334,7 @@ function mainfunc() {
                   });
 
 
-              }, previousstime = previousstime + introgap)
+              }, timesum = timesum + initialgap)
               setTimeout(function() {
                   image.fadeOut('fast', function() {
                       image.attr('src', '');
@@ -351,7 +344,7 @@ function mainfunc() {
 
                   });
 
-              }, previousstime = previousstime + gap)
+              }, timesum = timesum + gap)
               setTimeout(function() {
                   image.fadeOut('fast', function() {
                       image.attr('src', '');
@@ -361,7 +354,7 @@ function mainfunc() {
 
                   });
 
-              }, previousstime = previousstime + gap)
+              }, timesum = timesum + gap)
 
 
           */
@@ -393,7 +386,7 @@ function mainfunc() {
         $(".ball").animate({ borderRadius: '0%' }, 500);
         $(".ball").animate({ "animation": "" }, 500)
 
-    }, previousstime = previousstime + gap)
+    }, timesum = timesum + gap)
 
 
 
@@ -416,7 +409,7 @@ function mainfunc() {
 
         $("#dot1world").css("background-image", "url('assets/usa.png')").animate({ left: "477" }, introgap + 1000); //*
 
-    }, previousstime = previousstime + introgap)
+    }, timesum = timesum + introgap)
 
     setTimeout(function() {
         $("h6").animate({ fontSize: 40, left: 410, top: 30 }, 1000); //*
@@ -427,7 +420,7 @@ function mainfunc() {
         $(".ball").animate({ borderRadius: '50%' }, 1000);
 
 
-    }, previousstime = previousstime + introgap)
+    }, timesum = timesum + introgap)
 
 
     /*
@@ -442,7 +435,7 @@ function mainfunc() {
                     $("h5").html("Las Vegas");
 
                 });
-            }, previousstime = previousstime + introgap)
+            }, timesum = timesum + initialgap)
             setTimeout(function() {
 
                 image.fadeOut('fast', function() {
@@ -453,7 +446,7 @@ function mainfunc() {
                     $("h5").html("Las Vegas Signs");
 
                 });
-            }, previousstime = previousstime + gap)
+            }, timesum = timesum + gap)
             setTimeout(function() {
 
                 image.fadeOut('fast', function() {
@@ -464,7 +457,7 @@ function mainfunc() {
                     $("h5").html("Eiffel Tower of Las Vegas");
 
                 });
-            }, previousstime = previousstime + gap)
+            }, timesum = timesum + gap)
             setTimeout(function() {
 
                 image.fadeOut('fast', function() {
@@ -475,7 +468,7 @@ function mainfunc() {
                     $("h5").html("Downtown Las Vegas");
 
                 });
-            }, previousstime = previousstime + gap)
+            }, timesum = timesum + gap)
             setTimeout(function() {
 
                 image.fadeOut('fast', function() {
@@ -488,7 +481,7 @@ function mainfunc() {
 
 
                 });
-            }, previousstime = previousstime + gap)*/
+            }, timesum = timesum + gap)*/
 
 
 
@@ -519,7 +512,7 @@ function mainfunc() {
         $(".ball").animate({ borderRadius: '0%' }, 500);
         $(".ball").animate({ "animation": "" }, 500)
 
-    }, previousstime = previousstime + gap)
+    }, timesum = timesum + gap)
 
 
 
@@ -542,7 +535,7 @@ function mainfunc() {
 
         $("#dot1world").css("background-image", "url('assets/greece.png')").animate({ left: "600" }, introgap + 1000); //*
 
-    }, previousstime = previousstime + introgap)
+    }, timesum = timesum + introgap)
 
     setTimeout(function() {
         $("h6").animate({ fontSize: 40, left: 570, top: 30 }, 1000); //*
@@ -553,7 +546,7 @@ function mainfunc() {
         $(".ball").animate({ borderRadius: '50%' }, 1000);
 
 
-    }, previousstime = previousstime + introgap)
+    }, timesum = timesum + introgap)
 
 
 
@@ -567,7 +560,7 @@ function mainfunc() {
 
 
             });
-        }, previousstime = previousstime + introgap)
+        }, timesum = timesum + initialgap)
         setTimeout(function() {
             image.fadeOut('fast', function() {
                 image.attr('src', '');
@@ -577,7 +570,7 @@ function mainfunc() {
                 $("h5").html("Knossos Palace");
 
             });
-        }, previousstime = previousstime + gap)
+        }, timesum = timesum + gap)
         setTimeout(function() {
             image.fadeOut('fast', function() {
                 image.attr('src', '');
@@ -587,7 +580,7 @@ function mainfunc() {
                 $("h5").html("Spinalonga");
 
             });
-        }, previousstime = previousstime + gap)
+        }, timesum = timesum + gap)
         setTimeout(function() {
             image.fadeOut('fast', function() {
                 image.attr('src', '');
@@ -597,7 +590,7 @@ function mainfunc() {
                 $("h5").html("Balos Beach");
 
             });
-        }, previousstime = previousstime + gap)
+        }, timesum = timesum + gap)
         setTimeout(function() {
             image.fadeOut('fast', function() {
                 image.attr('src', '');
@@ -607,7 +600,7 @@ function mainfunc() {
                 $("h5").html("Agios Nikolaos");
 
             });
-        }, previousstime = previousstime + gap)
+        }, timesum = timesum + gap)
         setTimeout(function() {
             image.fadeOut('fast', function() {
                 image.attr('src', '');
@@ -620,7 +613,7 @@ function mainfunc() {
 
 
             });
-        }, previousstime = previousstime + gap)
+        }, timesum = timesum + gap)
 
     */
 
@@ -655,7 +648,7 @@ function mainfunc() {
         $(".ball").animate({ borderRadius: '0%' }, 500);
         $(".ball").animate({ "animation": "" }, 500)
 
-    }, previousstime = previousstime + gap)
+    }, timesum = timesum + gap)
 
 
 
@@ -678,7 +671,7 @@ function mainfunc() {
 
         $("#dot1world").css("background-image", "url('assets/usa.png')").animate({ left: "723" }, introgap + 1000); //*
 
-    }, previousstime = previousstime + introgap)
+    }, timesum = timesum + introgap)
 
     setTimeout(function() {
         $("h6").animate({ fontSize: 40, left: 635, top: 30 }, 1000); //*
@@ -689,7 +682,7 @@ function mainfunc() {
         $(".ball").animate({ borderRadius: '50%' }, 1000);
 
 
-    }, previousstime = previousstime + introgap)
+    }, timesum = timesum + introgap)
 
 
 
@@ -705,7 +698,7 @@ function mainfunc() {
                     $("h5").html("Griffith Observatory");
 
                 });
-            }, previousstime = previousstime + gap)
+            }, timesum = timesum + initialgap)
             /*setTimeout(function() {
                 image.fadeOut('fast', function() {
                     image.attr('src', '');
@@ -715,7 +708,7 @@ function mainfunc() {
                     $("h5").html("Westin Bonaventure Hotel");
 
                 });
-            }, previousstime = previousstime + gap)
+            }, timesum = timesum + gap)
             setTimeout(function() {
                 image.fadeOut('fast', function() {
                     image.attr('src', '');
@@ -725,7 +718,7 @@ function mainfunc() {
                     $("h5").html("Walt Disney Concert Hall");
 
                 });
-            }, previousstime = previousstime + gap)
+            }, timesum = timesum + gap)
             setTimeout(function() {
                 image.fadeOut('fast', function() {
                     image.attr('src', '');
@@ -735,7 +728,7 @@ function mainfunc() {
                     $("h5").html("Hollywood Sign");
 
                 });
-            }, previousstime = previousstime + gap)
+            }, timesum = timesum + gap)
             setTimeout(function() {
                 image.fadeOut('fast', function() {
                     image.attr('src', '');
@@ -745,7 +738,7 @@ function mainfunc() {
                     $("h5").html("Santa Monica Pier");
 
                 });
-            }, previousstime = previousstime + gap)
+            }, timesum = timesum + gap)
             setTimeout(function() {
                 image.fadeOut('fast', function() {
                     image.attr('src', '');
@@ -757,7 +750,7 @@ function mainfunc() {
 
 
                 });
-            }, previousstime = previousstime + gap)
+            }, timesum = timesum + gap)
             */
 
 
@@ -790,7 +783,7 @@ function mainfunc() {
         $(".ball").animate({ borderRadius: '0%' }, 500);
         $(".ball").animate({ "animation": "" }, 500)
 
-    }, previousstime = previousstime + gap)
+    }, timesum = timesum + gap)
 
 
 
@@ -813,7 +806,7 @@ function mainfunc() {
 
         $("#dot1world").css("background-image", "url('assets/canada.png')").animate({ left: "846" }, introgap + 1000); //*
 
-    }, previousstime = previousstime + introgap)
+    }, timesum = timesum + introgap)
 
     setTimeout(function() {
         $("h6").animate({ fontSize: 40, left: 795, top: 30 }, 1000); //*
@@ -824,7 +817,7 @@ function mainfunc() {
         $(".ball").animate({ borderRadius: '50%' }, 1000);
 
 
-    }, previousstime = previousstime + introgap)
+    }, timesum = timesum + introgap)
 
 
 
@@ -839,7 +832,7 @@ function mainfunc() {
                     $("h5").html("Nathan Phillips Square");
 
                 });
-            }, previousstime = previousstime + gap)
+            }, timesum = timesum + initialgap)
             /*setTimeout(function() {
                 image.fadeOut('fast', function() {
                     image.attr('src', '');
@@ -849,7 +842,7 @@ function mainfunc() {
                     $("h5").html("Harbourfront");
 
                 });
-            }, previousstime = previousstime + gap)
+            }, timesum = timesum + gap)
             setTimeout(function() {
                 image.fadeOut('fast', function() {
                     image.attr('src', '');
@@ -859,7 +852,7 @@ function mainfunc() {
                     $("h5").html("Niagara Falls");
 
                 });
-            }, previousstime = previousstime + gap)
+            }, timesum = timesum + gap)
             setTimeout(function() {
                 image.fadeOut('fast', function() {
                     image.attr('src', '');
@@ -872,7 +865,7 @@ function mainfunc() {
 
 
                 });
-            }, previousstime = previousstime + gap)
+            }, timesum = timesum + gap)
             setTimeout(function() {
                 image.fadeOut('fast', function() {
                     image.attr('src', '');
@@ -882,7 +875,7 @@ function mainfunc() {
                     $("h5").html("The Westin Harbour Castle");
 
                 });
-            }, previousstime = previousstime + gap)*/
+            }, timesum = timesum + gap)*/
 
 
 
@@ -918,7 +911,7 @@ function mainfunc() {
         $(".ball").animate({ borderRadius: '0%' }, 500);
         $(".ball").animate({ "animation": "" }, 500)
 
-    }, previousstime = previousstime + gap)
+    }, timesum = timesum + gap)
 
 
 
@@ -941,7 +934,7 @@ function mainfunc() {
 
         $("#dot1world").css("background-image", "url('assets/canada.png')").animate({ left: "970" }, introgap + 1000); //*
 
-    }, previousstime = previousstime + introgap)
+    }, timesum = timesum + introgap)
 
     setTimeout(function() {
         $("h6").animate({ fontSize: 40, left: 900, top: 30 }, 1000); //*
@@ -952,7 +945,7 @@ function mainfunc() {
         $(".ball").animate({ borderRadius: '50%' }, 1000);
 
 
-    }, previousstime = previousstime + introgap)
+    }, timesum = timesum + introgap)
 
 
 
@@ -966,7 +959,7 @@ function mainfunc() {
                    $("h5").html("Vancouver Harbour");
 
                });
-           }, previousstime = previousstime + gap)
+           }, timesum = timesum + initialgap)
           setTimeout(function() {
                image.fadeOut('fast', function() {
                    image.attr('src', '');
@@ -976,7 +969,7 @@ function mainfunc() {
                    $("h5").html("English Bay");
 
                });
-           }, previousstime = previousstime + gap)
+           }, timesum = timesum + gap)
            setTimeout(function() {
                image.fadeOut('fast', function() {
                    image.attr('src', '');
@@ -986,7 +979,7 @@ function mainfunc() {
                    $("h5").html("Science World");
 
                });
-           }, previousstime = previousstime + gap)
+           }, timesum = timesum + gap)
 
            setTimeout(function() {
                image.fadeOut('fast', function() {
@@ -997,7 +990,7 @@ function mainfunc() {
                    $("h5").html("Vancouver Harbour");
 
                });
-           }, previousstime = previousstime + gap)
+           }, timesum = timesum + gap)
            setTimeout(function() {
                image.fadeOut('fast', function() {
                    image.attr('src', '');
@@ -1007,7 +1000,7 @@ function mainfunc() {
                    $("h5").html("Downtown Vancouver");
 
                });
-           }, previousstime = previousstime + gap)
+           }, timesum = timesum + gap)
            setTimeout(function() {
                image.fadeOut('fast', function() {
                    image.attr('src', '');
@@ -1017,7 +1010,7 @@ function mainfunc() {
                    $("h5").html("Vancouver Convention center");
 
                });
-           }, previousstime = previousstime + gap)
+           }, timesum = timesum + gap)
            setTimeout(function() {
                image.fadeOut('fast', function() {
                    image.attr('src', '');
@@ -1027,7 +1020,7 @@ function mainfunc() {
                    $("h5").html("Digital Orca");
 
                });
-           }, previousstime = previousstime + gap)
+           }, timesum = timesum + gap)
            setTimeout(function() {
                image.fadeOut('fast', function() {
                    image.attr('src', '');
@@ -1037,7 +1030,7 @@ function mainfunc() {
                    $("h5").html("Vancouver Harbour");
 
                });
-           }, previousstime = previousstime + gap)
+           }, timesum = timesum + gap)
           */
 
 
@@ -1074,7 +1067,7 @@ function mainfunc() {
         $(".ball").animate({ borderRadius: '0%' }, 500);
         $(".ball").animate({ "animation": "" }, 500)
 
-    }, previousstime = previousstime + gap)
+    }, timesum = timesum + gap)
 
 
 
@@ -1097,7 +1090,7 @@ function mainfunc() {
 
         $("#dot1world").css("background-image", "url('assets/usa.png')").animate({ left: "1095" }, introgap + 1000); //*
 
-    }, previousstime = previousstime + introgap)
+    }, timesum = timesum + introgap)
 
     setTimeout(function() {
         $("h6").animate({ fontSize: 40, left: 1026, top: 30 }, 1000); //*
@@ -1108,7 +1101,7 @@ function mainfunc() {
         $(".ball").animate({ borderRadius: '50%' }, 1000);
 
 
-    }, previousstime = previousstime + introgap)
+    }, timesum = timesum + introgap)
 
 
     /*
@@ -1122,7 +1115,7 @@ function mainfunc() {
                     $("h5").html("Las Vegas Signs");
 
                 });
-            }, previousstime = previousstime + introgap)
+            }, timesum = timesum + initialgap)
             setTimeout(function() {
 
                 image.fadeOut('fast', function() {
@@ -1133,7 +1126,7 @@ function mainfunc() {
                     $("h5").html("Downtown Las Vegas");
 
                 });
-            }, previousstime = previousstime + gap)
+            }, timesum = timesum + gap)
             setTimeout(function() {
 
                 image.fadeOut('fast', function() {
@@ -1144,7 +1137,7 @@ function mainfunc() {
                     $("h5").html("Eiffel Tower of Las Vegas");
 
                 });
-            }, previousstime = previousstime + gap)
+            }, timesum = timesum + gap)
             setTimeout(function() {
 
                 image.fadeOut('fast', function() {
@@ -1157,7 +1150,7 @@ function mainfunc() {
 
 
                 });
-            }, previousstime = previousstime + gap)*/
+            }, timesum = timesum + gap)*/
 
 
 
@@ -1195,7 +1188,7 @@ function mainfunc() {
         $(".ball").animate({ borderRadius: '0%' }, 500);
         $(".ball").animate({ "animation": "" }, 500)
 
-    }, previousstime = previousstime + gap)
+    }, timesum = timesum + gap)
 
 
 
@@ -1218,7 +1211,7 @@ function mainfunc() {
 
         $("#dot1world").css("background-image", "url('assets/usa.png')").animate({ left: "1373" }, introgap + 1000); //*
 
-    }, previousstime = previousstime + introgap)
+    }, timesum = timesum + introgap)
 
     setTimeout(function() {
         $("h6").animate({ fontSize: 40, left: 1310, top: 30 }, 1000); //*
@@ -1229,10 +1222,22 @@ function mainfunc() {
         $(".ball").animate({ borderRadius: '50%' }, 1000);
 
 
-    }, previousstime = previousstime + introgap)
+    }, timesum = timesum + introgap)
 
 
     /*
+    setTimeout(function() {
+
+                  image.fadeOut('fast', function() {
+                      image.attr('src', '');
+
+                      image.attr('src', 'assets/2011,2019-Orlando/1-swandolphin.jpg').fadeIn('slow');
+                      $("h5").html("Orlando Skyline");
+
+                  });
+
+
+              }, timesum = timesum + initialgap)
         setTimeout(function() {
             image.fadeOut('fast', function() {
                 image.attr('src', '');
@@ -1242,7 +1247,7 @@ function mainfunc() {
                 $("h5").html("Kennedy Space Center");
 
             });
-        }, previousstime = previousstime + introgap)
+        }, timesum = timesum + gap)
         setTimeout(function() {
             image.fadeOut('fast', function() {
                 image.attr('src', '');
@@ -1254,7 +1259,7 @@ function mainfunc() {
 
 
             });
-        }, previousstime = previousstime + (gap * 2))
+        }, timesum = timesum + (gap * 2))
 
     */
 
@@ -1292,7 +1297,7 @@ function mainfunc() {
         $(".ball").animate({ borderRadius: '0%' }, 500);
         $(".ball").animate({ "animation": "" }, 500)
 
-    }, previousstime = previousstime + gap)
+    }, timesum = timesum + (gap * 2))
 
 
 
@@ -1315,7 +1320,7 @@ function mainfunc() {
 
         $("#dot1world").css("background-image", "url('assets/denmark.png')").animate({ left: "1497" }, introgap + 1000); //*
 
-    }, previousstime = previousstime + introgap)
+    }, timesum = timesum + introgap)
 
     setTimeout(function() {
         $("h6").animate({ fontSize: 40, left: 1395, top: 30 }, 1000); //*
@@ -1326,7 +1331,7 @@ function mainfunc() {
         $(".ball").animate({ borderRadius: '50%' }, 1000);
 
 
-    }, previousstime = previousstime + introgap)
+    }, timesum = timesum + introgap)
 
 
 
@@ -1340,7 +1345,7 @@ function mainfunc() {
                     $("h5").html("Bella Center");
 
                 });
-            }, previousstime = previousstime + (gap * 2))
+            }, timesum = timesum + initialgap)
             setTimeout(function() {
                 image.fadeOut('fast', function() {
                     image.attr('src', '');
@@ -1352,7 +1357,7 @@ function mainfunc() {
 
 
                 });
-            }, previousstime = previousstime + (gap * 2))
+            }, timesum = timesum + (gap * 2))
         setTimeout(function() {
                 image.fadeOut('fast', function() {
                     image.attr('src', '');
@@ -1362,7 +1367,7 @@ function mainfunc() {
                     $("h5").html("Tivoli");
 
                 });
-            }, previousstime = previousstime + introgap )
+            }, timesum = timesum + introgap )
             setTimeout(function() {
                 image.fadeOut('fast', function() {
                     image.attr('src', '');
@@ -1372,7 +1377,7 @@ function mainfunc() {
                     $("h5").html("Oresund");
 
                 });
-            }, previousstime = previousstime + (gap * 2))
+            }, timesum = timesum + (gap * 2))
             setTimeout(function() {
                 image.fadeOut('fast', function() {
                     image.attr('src', '');
@@ -1382,7 +1387,7 @@ function mainfunc() {
                     $("h5").html("Opera House");
 
                 });
-            }, previousstime = previousstime + (gap * 2))
+            }, timesum = timesum + (gap * 2))
             setTimeout(function() {
                 image.fadeOut('fast', function() {
                     image.attr('src', '');
@@ -1392,7 +1397,7 @@ function mainfunc() {
                     $("h5").html("Nyhavn");
 
                 });
-            }, previousstime = previousstime + (gap * 2))
+            }, timesum = timesum + (gap * 2))
             setTimeout(function() {
                 image.fadeOut('fast', function() {
                     image.attr('src', '');
@@ -1402,7 +1407,7 @@ function mainfunc() {
                     $("h5").html("Frederik VII Statue, Christiansborg Slot");
 
                 });
-            }, previousstime = previousstime + (gap * 2))
+            }, timesum = timesum + (gap * 2))
            */
 
 
@@ -1412,5 +1417,5 @@ function mainfunc() {
         $("#dot1world").css("box-shadow", "0px 45px 30px 30px rgba(255, 255, 255, 0.406)");
 
         window.location.reload(1);
-    }, previousstime = previousstime + 10000)
+    }, timesum = timesum + 10000)
 }
