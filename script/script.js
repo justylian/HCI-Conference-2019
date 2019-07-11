@@ -1,5 +1,27 @@
-setTimeout(mainfunc, 0);
+// then to call it, you would use this
+var imageSrcs = ["assets/2007-Beijing/1-beijing-skyline1.jpg", 'assets/2007-Beijing/2-beijing-templeofheaven.jpg', 'assets/2007-Beijing/4-beijing-tienanmen_night.jpg', 'assets/2007-Beijing/3-beijing-greatwall2.jpg',
+    'assets/2007-Beijing/7-beijing-birdsnest.jpg', 'assets/2007-Beijing/5-beijing-greatwall1.jpg',
+    'assets/2009-San Diego/3-skyline_night2.jpg', 'assets/2009-San Diego/5-marina.jpg', 'assets/2009-San Diego/1-sandiego-balboa.jpg', 'assets/2009-San Diego/2-sandiego-ship.jpg', 'assets/2009-San Diego/3-sandiego-hotel-del-coronado.jpg', 'assets/2009-San Diego/6-harbour.jpg', 'assets/2011,2019-Orlando/1-swandolphin.jpg', 'assets/2011,2019-Orlando/2-kennedyspacecenter-RocketGardenandengine.jpg', 'assets/2011,2019-Orlando/3-kennedyspacecenter-SpaceXCRS62.jpg'
 
+];
+
+function preloadImages(srcs) {
+    if (!preloadImages.cache) {
+        preloadImages.cache = [];
+    }
+    var img;
+    for (var i = 0; i < srcs.length; i++) {
+        img = new Image();
+        img.src = srcs[i];
+        preloadImages.cache.push(img);
+        console.log("okdd");
+    }
+}
+preloadImages(imageSrcs);
+
+
+
+setTimeout(mainfunc, 0);
 
 
 function mainfunc() {
@@ -66,8 +88,9 @@ function mainfunc() {
             $("h5").html("Temple of Heaven ");
 
         });
+        timesum = timesum + gap;
 
-    }, timesum = timesum + gap)
+    }, timesum)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -77,8 +100,9 @@ function mainfunc() {
 
         });
 
+        timesum = timesum + gap;
 
-    }, timesum = timesum + gap)
+    }, timesum)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -87,8 +111,9 @@ function mainfunc() {
             $("h5").html("The Great Wall");
 
         });
+        timesum = timesum + gap;
 
-    }, timesum = timesum + gap)
+    }, timesum)
 
     setTimeout(function() {
         image.fadeOut('fast', function() {
@@ -98,7 +123,9 @@ function mainfunc() {
             $("h5").html("The Forbidden City");
 
         });
-    }, timesum = timesum + gap)
+        timesum = timesum + gap;
+
+    }, timesum)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -107,7 +134,9 @@ function mainfunc() {
             $("h5").html("Beijing Olympic Stadium");
 
         });
-    }, timesum = timesum + gap)
+        timesum = timesum + gap;
+
+    }, timesum)
     setTimeout(function() {
         image.fadeOut(function() {
             image.fadeOut('fast', function() {
@@ -118,7 +147,8 @@ function mainfunc() {
 
             });
         });
-    }, timesum = timesum + gap)
+        timesum = timesum + gap;
+    }, timesum)
 
 
 
@@ -192,7 +222,6 @@ function mainfunc() {
 
     }, timesum = timesum + introgap)
 
-
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -201,8 +230,8 @@ function mainfunc() {
             $("h5").html("San Diego Skyline");
 
         });
-
-    }, timesum = timesum + 500)
+        timesum = timesum + initialgap;
+    }, timesum)
     setTimeout(function() {
 
         image.fadeOut('fast', function() {
@@ -212,8 +241,8 @@ function mainfunc() {
             $("h5").html("Coronado Bridge");
 
         });
-
-    }, timesum = timesum + gap)
+        timesum = timesum + gap;
+    }, timesum)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -223,8 +252,9 @@ function mainfunc() {
 
         });
 
+        timesum = timesum + gap;
 
-    }, timesum = timesum + gap)
+    }, )
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -233,9 +263,10 @@ function mainfunc() {
             $("h5").html("USS Midway Museum");
 
         });
+        timesum = timesum + gap;
 
 
-    }, timesum = timesum + gap)
+    }, timesum)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -244,9 +275,10 @@ function mainfunc() {
             $("h5").html("Hotel del Coronado");
 
         });
+        timesum = timesum + gap;
 
 
-    }, timesum = timesum + gap)
+    }, timesum)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -256,8 +288,9 @@ function mainfunc() {
 
         });
 
+        timesum = timesum + gap;
 
-    }, timesum = timesum + gap)
+    }, timesum)
 
     //-------------------------ORLANDO
     //299 350
@@ -303,9 +336,9 @@ function mainfunc() {
         imagesend = $("#send");
         imagesend.css('background-image', 'url(assets/send.png)'); //*
 
-        imagesend.animate({ width: 200, height: 200, left: 620, top: 430 }, 0); //*
-        imagesend.animate({ width: 50, height: 50, left: 750, top: 350 }, 1000); //*
-        imagesend.animate({ width: 0, height: 0, left: 750, top: 400 }, 400); //*
+        imagesend.animate({ width: 200, height: 200, left: 650, top: 430 }, 0); //*
+        imagesend.animate({ width: 50, height: 50, left: 750, top: 450 }, 1000); //*
+        imagesend.animate({ width: 0, height: 0, left: 750, top: 450 }, 400); //*
 
         $("#dot1world").css("background-image", "url('assets/usa.png')").animate({ left: "350" }, introgap + 1000); //*
 
@@ -322,7 +355,6 @@ function mainfunc() {
 
     }, timesum = timesum + introgap)
 
-
     setTimeout(function() {
 
         image.fadeOut('fast', function() {
@@ -334,7 +366,7 @@ function mainfunc() {
         });
 
 
-    }, timesum = timesum + initialgap)
+    }, timesum = timesum + 500)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -601,19 +633,7 @@ function mainfunc() {
 
         });
     }, timesum = timesum + gap)
-    setTimeout(function() {
-        image.fadeOut('fast', function() {
-            image.attr('src', '');
 
-            image.attr('src', 'assets/2014-Crete/14-openong_session2.jpeg');
-            image.fadeIn('slow');
-            $("h5").html("Opening Session");
-
-
-
-
-        });
-    }, timesum = timesum + gap)
 
 
 
@@ -665,7 +685,7 @@ function mainfunc() {
         imagesend = $("#send");
         imagesend.css('background-image', 'url(assets/sendflip.png)'); //*
 
-        imagesend.animate({ width: 200, height: 200, left: 1300, top: 400 }, 0); //*
+        imagesend.animate({ width: 200, height: 200, left: 1350, top: 400 }, 0); //*
         imagesend.animate({ width: 50, height: 50, left: 500, top: 350 }, 1000); //*
         imagesend.animate({ width: 0, height: 0, left: 630, top: 400 }, 400); //*
 
@@ -929,8 +949,8 @@ function mainfunc() {
         imagesend.css('background-image', 'url(assets/sendflip.png)'); //*
 
         imagesend.animate({ width: 200, height: 200, left: 1100, top: 320 }, 0); //*
-        imagesend.animate({ width: 50, height: 50, left: 660, top: 300 }, 1000); //*
-        imagesend.animate({ width: 0, height: 0, left: 660, top: 300 }, 400); //*
+        imagesend.animate({ width: 50, height: 50, left: 660, top: 320 }, 1000); //*
+        imagesend.animate({ width: 0, height: 0, left: 660, top: 320 }, 400); //*
 
         $("#dot1world").css("background-image", "url('assets/canada.png')").animate({ left: "970" }, introgap + 1000); //*
 
@@ -1205,11 +1225,11 @@ function mainfunc() {
         imagesend = $("#send");
         imagesend.css('background-image', 'url(assets/send.png)'); //*
 
-        imagesend.animate({ width: 200, height: 200, left: 690, top: 400 }, 0); //*
+        imagesend.animate({ width: 200, height: 200, left: 710, top: 400 }, 0); //*
         imagesend.animate({ width: 50, height: 50, left: 740, top: 390 }, 1000); //*
         imagesend.animate({ width: 0, height: 0, left: 740, top: 390 }, 400); //*
 
-        $("#dot1world").css("background-image", "url('assets/usa.png')").animate({ left: "1373" }, introgap + 1000); //*
+        $("#dot1world").css("background-image", "url('assets/usa.png')").animate({ left: "1368" }, introgap + 1000); //*
 
     }, timesum = timesum + introgap)
 
@@ -1314,9 +1334,9 @@ function mainfunc() {
         imagesend = $("#send");
         imagesend.css('background-image', 'url(assets/send.png)'); //*
 
-        imagesend.animate({ width: 200, height: 200, left: 780, top: 430 }, 0); //*
-        imagesend.animate({ width: 50, height: 50, left: 1120, top: 300 }, 1000); //*
-        imagesend.animate({ width: 0, height: 0, left: 1150, top: 300 }, 400); //*
+        imagesend.animate({ width: 200, height: 200, left: 800, top: 430 }, 0); //*
+        imagesend.animate({ width: 50, height: 50, left: 1360, top: 280 }, 1000); //*
+        imagesend.animate({ width: 0, height: 0, left: 1370, top: 280 }, 400); //*
 
         $("#dot1world").css("background-image", "url('assets/denmark.png')").animate({ left: "1497" }, introgap + 1000); //*
 

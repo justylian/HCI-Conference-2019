@@ -611,8 +611,6 @@ h7 {
     z-index: 200;
     background-image: url('../assets/send.png');
     background-size: auto 100%;
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222);
 }
 
 #stream {
