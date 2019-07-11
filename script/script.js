@@ -40,7 +40,9 @@ function mainfunc() {
     var title;
 
     var gap = 5000; //gap between interchanging photos-5000
-    var introgap = 2000; // of each and between intros-2000
+    var futuregap = 10000; //gap between future interchanging photos-5000
+
+    var introgap = 2000; //  between intros-2000
     var initialgap = 500; //gap before first photo
     var timesum = 0;
 
@@ -401,7 +403,7 @@ function mainfunc() {
         });
 
 
-    }, timesum = timesum + 500)
+    }, timesum = timesum + initialgap)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -1336,7 +1338,7 @@ function mainfunc() {
             $("h5").html("Kennedy Space Center");
 
         });
-    }, timesum = timesum + gap)
+    }, timesum = timesum + futuregap)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -1348,7 +1350,7 @@ function mainfunc() {
 
 
         });
-    }, timesum = timesum + (gap * 2))
+    }, timesum = timesum + futuregap)
 
 
 
@@ -1386,7 +1388,7 @@ function mainfunc() {
         $(".ball").animate({ borderRadius: '0%' }, 500);
         $(".ball").animate({ "animation": "" }, 500)
 
-    }, timesum = timesum + (gap * 2))
+    }, timesum = timesum + gap)
 
 
 
@@ -1449,7 +1451,7 @@ function mainfunc() {
 
 
         });
-    }, timesum = timesum + (gap * 2))
+    }, timesum = timesum + futuregap)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -1459,7 +1461,7 @@ function mainfunc() {
             $("h5").html("Tivoli");
 
         });
-    }, timesum = timesum + introgap)
+    }, timesum = timesum + futuregap)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -1469,7 +1471,7 @@ function mainfunc() {
             $("h5").html("Oresund");
 
         });
-    }, timesum = timesum + (gap * 2))
+    }, timesum = timesum + futuregap)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -1479,7 +1481,7 @@ function mainfunc() {
             $("h5").html("Opera House");
 
         });
-    }, timesum = timesum + (gap * 2))
+    }, timesum = timesum + futuregap)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -1489,7 +1491,7 @@ function mainfunc() {
             $("h5").html("Nyhavn");
 
         });
-    }, timesum = timesum + (gap * 2))
+    }, timesum = timesum + futuregap)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -1499,7 +1501,7 @@ function mainfunc() {
             $("h5").html("Frederik VII Statue, Christiansborg Slot");
 
         });
-    }, timesum = timesum + (gap * 2))
+    }, timesum = timesum + futuregap)
 
 
 
