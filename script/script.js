@@ -1,7 +1,12 @@
 // then to call it, you would use this
 var imageSrcs = ["assets/2007-Beijing/1-beijing-skyline1.jpg", 'assets/2007-Beijing/2-beijing-templeofheaven.jpg', 'assets/2007-Beijing/4-beijing-tienanmen_night.jpg', 'assets/2007-Beijing/3-beijing-greatwall2.jpg',
     'assets/2007-Beijing/7-beijing-birdsnest.jpg', 'assets/2007-Beijing/5-beijing-greatwall1.jpg',
-    'assets/2009-San Diego/3-skyline_night2.jpg', 'assets/2009-San Diego/5-marina.jpg', 'assets/2009-San Diego/1-sandiego-balboa.jpg', 'assets/2009-San Diego/2-sandiego-ship.jpg', 'assets/2009-San Diego/3-sandiego-hotel-del-coronado.jpg', 'assets/2009-San Diego/6-harbour.jpg', 'assets/2011,2019-Orlando/1-swandolphin.jpg', 'assets/2011,2019-Orlando/2-kennedyspacecenter-RocketGardenandengine.jpg', 'assets/2011,2019-Orlando/3-kennedyspacecenter-SpaceXCRS62.jpg'
+    'assets/2009-San Diego/3-skyline_night2.jpg', 'assets/2009-San Diego/5-marina.jpg', 'assets/2009-San Diego/1-sandiego-balboa.jpg', 'assets/2009-San Diego/2-sandiego-ship.jpg', 'assets/2009-San Diego/3-sandiego-hotel-del-coronado.jpg', 'assets/2009-San Diego/6-harbour.jpg', 'assets/2011,2019-Orlando/1-swandolphin.jpg', 'assets/2011,2019-Orlando/2-kennedyspacecenter-RocketGardenandengine.jpg', 'assets/2011,2019-Orlando/3-kennedyspacecenter-SpaceXCRS62.jpg',
+    'assets/2013,2018-Las Vegas/1-skyline_night.jpg', 'assets/2013,2018-Las Vegas/2-signs.jpg', 'assets/2013,2018-Las Vegas/3-road.jpg', 'assets/2013,2018-Las Vegas/7-city_night.jpg', 'assets/2013,2018-Las Vegas/8-bellagio.jpg', 'assets/2014-Crete/1-spinalonga.jpg', 'assets/2014-Crete/4-knossos.jpg', 'assets/2014-Crete/7-chania2.jpg', 'assets/2014-Crete/9-balos.jpg',
+    'assets/2014-Crete/11-agiosnikolaos.jpg', 'assets/2014-Crete/1-hollywood.jpg', 'assets/2015-Los Angeles/3-the-westin-bonaventure-hotel-and-suites-los-angeles-griffith.jpg', 'assets/2015-Los Angeles/4-the-westin-bonaventure-hotel-and-suites-los-angeles-exterior.jpg', 'assets/2015-Los Angeles/5-waltdisney.jpg', 'assets/2015-Los Angeles/9-santamonica.jpg', 'assets/2015-Los Angeles/10-observatory.png', 'assets/2016-Toronto/1-toronto-niagara.jpg', 'assets/2016-Toronto/1-torontosign2.jpg',
+    'assets/2016-Toronto/4-skyline_night.jpg', 'assets/2016-Toronto/5-harbour.jpg', 'assets/2016-Toronto/6-gooderham_building.jpg', 'assets/2016-Toronto/7-westinharbourcastle.jpg', 'assets/2017-Vancouver/1-vancouver-digitalorca.jpg', 'assets/2017-Vancouver/1-vancouver-harbour.jpg', 'assets/2017-Vancouver/2-downtown-vancouver.jpg', 'assets/2017-Vancouver/3-vancouver-convcenter.jpg', 'assets/2017-Vancouver/4-vancouver-harbour2.jpg',
+    'assets/2017-Vancouver/5-vancouver-harbour1.jpg', 'assets/2017-Vancouver/8-harbour.jpg', 'assets/2017-Vancouver/9-bay_night.jpg', 'assets/2020-Copenhagen/1-tivoli.jpg', 'assets/2020-Copenhagen/2-oresund2.jpg', 'assets/2020-Copenhagen/4-opera.jpg', 'assets/2020-Copenhagen/5-nyhavn2.jpg', '6-nyhavn1.jpg', 'assets/2020-Copenhagen/7-christiansborg2.jpg',
+    'assets/2020-Copenhagen/8-Bella-Center-entrance.jpg', 'assets/2020-Copenhagen/9-AC-Hotel-Bella-Sky-Copenhagen.jpg'
 
 ];
 
@@ -14,7 +19,7 @@ function preloadImages(srcs) {
         img = new Image();
         img.src = srcs[i];
         preloadImages.cache.push(img);
-        console.log("okdd");
+        //console.log("okdd");
     }
 }
 preloadImages(imageSrcs);
