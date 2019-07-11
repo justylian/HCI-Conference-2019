@@ -38,7 +38,16 @@ function mainfunc() {
     var introgap = 2000; // of each and between intros-2000
     var initialgap = 500; //gap before first photo
     var timesum = 0;
-    //-------------------------BEIJING
+
+
+
+
+
+    //-------------------------BEIJING-2007-------------------------
+
+
+
+
 
     setTimeout(function() {
 
@@ -47,9 +56,9 @@ function mainfunc() {
         $("h6").animate({ left: 60 }, 1000);
 
         //+easein
+        $("#send").css("animation", "rot 3s infinite linear");
         $("#send").animate({ width: 50, height: 50, left: 1710, top: 550 }, 1800);
         $("#send").animate({ width: 0, height: 0, left: 1700, top: 550 }, 500);
-        $("#send").css("animation", "rot 3s infinite linear");
 
         $(".ball").css("background-image", "url('assets/5beijing.png')");
         $(".ball").css("background-position", "calc(100% - 20px) calc(100% - 10px)");
@@ -67,8 +76,8 @@ function mainfunc() {
         $(".ball").animate({ borderRadius: '50%' }, 1000);
 
         $(".ball").css("animation", "move-map-globe 80s infinite linear")
-
-
+        $("#ballshadow").show(500);
+        // $("#ballshadow").animate({ display: "block" }, 1000);
         image = $("#mainimg");
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -78,8 +87,10 @@ function mainfunc() {
 
         });
 
+
     }, timesum = timesum + introgap)
     setTimeout(function() {
+        $("#send").css("animation", "");
 
         image = $("#mainimg");
         image.fadeOut('fast', function() {
@@ -88,9 +99,9 @@ function mainfunc() {
             $("h5").html("Temple of Heaven ");
 
         });
-        timesum = timesum + gap;
+        //timesum = timesum + gap;
 
-    }, timesum)
+    }, timesum = timesum + gap)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -100,9 +111,9 @@ function mainfunc() {
 
         });
 
-        timesum = timesum + gap;
+        //timesum = timesum + gap;
 
-    }, timesum)
+    }, timesum = timesum + gap)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -111,9 +122,9 @@ function mainfunc() {
             $("h5").html("The Great Wall");
 
         });
-        timesum = timesum + gap;
+        //timesum = timesum + gap;
 
-    }, timesum)
+    }, timesum = timesum + gap)
 
     setTimeout(function() {
         image.fadeOut('fast', function() {
@@ -123,9 +134,9 @@ function mainfunc() {
             $("h5").html("The Forbidden City");
 
         });
-        timesum = timesum + gap;
+        //timesum = timesum + gap;
 
-    }, timesum)
+    }, timesum = timesum + gap)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -134,9 +145,9 @@ function mainfunc() {
             $("h5").html("Beijing Olympic Stadium");
 
         });
-        timesum = timesum + gap;
+        //timesum = timesum + gap;
 
-    }, timesum)
+    }, timesum = timesum + gap)
     setTimeout(function() {
         image.fadeOut(function() {
             image.fadeOut('fast', function() {
@@ -147,8 +158,8 @@ function mainfunc() {
 
             });
         });
-        timesum = timesum + gap;
-    }, timesum)
+        //timesum = timesum + gap;
+    }, timesum = timesum + gap)
 
 
 
@@ -159,10 +170,12 @@ function mainfunc() {
 
 
 
-    //TO DO SHADOW GLOBE, PHOTOS SERVER
 
-    //-------------------------SAN DIEGO
-    //160 230
+    //-------------------------SAN DIEGO-2009-------------------------
+
+
+
+
     setTimeout(function() {
         //background mainimg clear
         image.fadeOut('fast', function() {
@@ -181,6 +194,8 @@ function mainfunc() {
         $("h6").html("San Diego").animate({ left: 60 }, 1000); //*
 
         //map-globe bring to centre
+        $("#ballshadow").hide(500);
+
         $(".stage").animate({ width: 1200, height: 700, borderRadius: '0%' }, 500);
         $("#globe").animate({ right: 20, top: 200 }, 500);
         $(".ball").animate({ borderRadius: '0%' }, 500);
@@ -202,7 +217,7 @@ function mainfunc() {
 
         imagesend = $("#send");
         imagesend.css('background-image', 'url(assets/sendflip.png)'); //*
-
+        imagesend.css("animation", "rot 3s infinite linear");
         imagesend.animate({ width: 200, height: 200, left: 1900, top: 380 }, 0); //*
         imagesend.animate({ width: 50, height: 50, left: 600, top: 410 }, 1000); //*
         imagesend.animate({ width: 0, height: 0, left: 620, top: 430 }, 400); //*
@@ -218,6 +233,9 @@ function mainfunc() {
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
         $("#globe").animate({ right: 0, top: 10 }, 1000);
         $(".ball").animate({ borderRadius: '50%' }, 1000);
+        $("#ballshadow").show(500);
+
+        imagesend.css("animation", "");
 
 
     }, timesum = timesum + introgap)
@@ -230,8 +248,8 @@ function mainfunc() {
             $("h5").html("San Diego Skyline");
 
         });
-        timesum = timesum + initialgap;
-    }, timesum)
+        //timesum = timesum + initialgap;
+    }, timesum = timesum + initialgap)
     setTimeout(function() {
 
         image.fadeOut('fast', function() {
@@ -241,8 +259,8 @@ function mainfunc() {
             $("h5").html("Coronado Bridge");
 
         });
-        timesum = timesum + gap;
-    }, timesum)
+        //timesum = timesum + gap;
+    }, timesum = timesum + gap)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -252,9 +270,9 @@ function mainfunc() {
 
         });
 
-        timesum = timesum + gap;
+        //timesum = timesum + gap;
 
-    }, )
+    }, timesum = timesum + gap)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -263,10 +281,10 @@ function mainfunc() {
             $("h5").html("USS Midway Museum");
 
         });
-        timesum = timesum + gap;
+        //timesum = timesum + gap;
 
 
-    }, timesum)
+    }, timesum = timesum + gap)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -275,10 +293,10 @@ function mainfunc() {
             $("h5").html("Hotel del Coronado");
 
         });
-        timesum = timesum + gap;
+        //timesum = timesum + gap;
 
 
-    }, timesum)
+    }, timesum = timesum + gap)
     setTimeout(function() {
         image.fadeOut('fast', function() {
             image.attr('src', '');
@@ -288,12 +306,20 @@ function mainfunc() {
 
         });
 
-        timesum = timesum + gap;
+        //timesum = timesum + gap;
 
-    }, timesum)
+    }, timesum = timesum + gap)
 
-    //-------------------------ORLANDO
-    //299 350
+
+
+
+
+
+    //-------------------------ORLANDO-2011-------------------------
+
+
+
+
 
     setTimeout(function() {
         //background mainimg clear
@@ -312,6 +338,7 @@ function mainfunc() {
         //city name->new entry
         $("h6").html("Orlando").animate({ left: 60 }, 1000); //*
 
+        $("#ballshadow").hide(500);
 
         //map-globe bring to centre
         $(".stage").animate({ width: 1200, height: 700, borderRadius: '0%' }, 500);
@@ -336,6 +363,7 @@ function mainfunc() {
         imagesend = $("#send");
         imagesend.css('background-image', 'url(assets/send.png)'); //*
 
+        imagesend.css("animation", "rot 3s infinite linear");
         imagesend.animate({ width: 200, height: 200, left: 650, top: 430 }, 0); //*
         imagesend.animate({ width: 50, height: 50, left: 750, top: 450 }, 1000); //*
         imagesend.animate({ width: 0, height: 0, left: 750, top: 450 }, 400); //*
@@ -351,7 +379,9 @@ function mainfunc() {
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
         $("#globe").animate({ right: 0, top: 10 }, 1000);
         $(".ball").animate({ borderRadius: '50%' }, 1000);
+        $("#ballshadow").show(500);
 
+        imagesend.css("animation", "");
 
     }, timesum = timesum + introgap)
 
@@ -391,8 +421,10 @@ function mainfunc() {
 
 
 
-    //-------------------------VEGAS
-    //410 477
+    //-------------------------VEGAS-2013-------------------------
+
+
+
 
     setTimeout(function() {
         //background mainimg clear
@@ -411,6 +443,7 @@ function mainfunc() {
         //city name->new entry
         $("h6").html("Las Vegas").animate({ left: 60 }, 1000); //*
 
+        $("#ballshadow").hide(500);
 
         //map-globe bring to centre
         $(".stage").animate({ width: 1200, height: 700, borderRadius: '0%' }, 500);
@@ -434,9 +467,10 @@ function mainfunc() {
 
         imagesend = $("#send");
         imagesend.css('background-image', 'url(assets/sendflip.png)'); //*
+        imagesend.css("animation", "rot 3s infinite linear");
 
         imagesend.animate({ width: 200, height: 200, left: 1000, top: 350 }, 0); //*
-        imagesend.animate({ width: 50, height: 50, left: 600, top: 450 }, 1000); //*
+        imagesend.animate({ width: 50, height: 50, left: 600, top: 380 }, 1000); //*
         imagesend.animate({ width: 0, height: 0, left: 680, top: 380 }, 400); //*
 
         $("#dot1world").css("background-image", "url('assets/usa.png')").animate({ left: "477" }, introgap + 1000); //*
@@ -450,6 +484,8 @@ function mainfunc() {
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
         $("#globe").animate({ right: 0, top: 10 }, 1000);
         $(".ball").animate({ borderRadius: '50%' }, 1000);
+        imagesend.css("animation", "");
+        $("#ballshadow").show(500);
 
 
     }, timesum = timesum + introgap)
@@ -517,8 +553,14 @@ function mainfunc() {
 
 
 
-    //-------------------------Crete
-    //570 600
+
+
+
+    //-------------------------CRETE-2014-------------------------
+
+
+
+
 
     setTimeout(function() {
         //background mainimg clear
@@ -537,6 +579,7 @@ function mainfunc() {
         //city name->new entry
         $("h6").html("Crete").animate({ left: 60 }, 1000); //*
 
+        $("#ballshadow").hide(500);
 
         //map-globe bring to centre
         $(".stage").animate({ width: 1200, height: 700, borderRadius: '0%' }, 500);
@@ -561,6 +604,7 @@ function mainfunc() {
         imagesend = $("#send");
         imagesend.css('background-image', 'url(assets/send.png)'); //*
 
+        imagesend.css("animation", "rot 3s infinite linear");
         imagesend.animate({ width: 200, height: 200, left: 700, top: 400 }, 0); //*
         imagesend.animate({ width: 50, height: 50, left: 1300, top: 400 }, 1000); //*
         imagesend.animate({ width: 0, height: 0, left: 1200, top: 400 }, 400); //*
@@ -576,7 +620,9 @@ function mainfunc() {
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
         $("#globe").animate({ right: 0, top: 10 }, 1000);
         $(".ball").animate({ borderRadius: '50%' }, 1000);
+        imagesend.css("animation", "");
 
+        $("#ballshadow").show(500);
 
     }, timesum = timesum + introgap)
 
@@ -638,8 +684,7 @@ function mainfunc() {
 
 
 
-    //-------------------------Los Angeles
-    //690 723
+    //-------------------------LOS ANGELES-2015-------------------------
 
 
 
@@ -661,6 +706,7 @@ function mainfunc() {
         //city name->new entry
         $("h6").html("Los Angeles").animate({ left: 60 }, 1000); //*
 
+        $("#ballshadow").hide(500);
 
         //map-globe bring to centre
         $(".stage").animate({ width: 1200, height: 700, borderRadius: '0%' }, 500);
@@ -684,6 +730,7 @@ function mainfunc() {
 
         imagesend = $("#send");
         imagesend.css('background-image', 'url(assets/sendflip.png)'); //*
+        imagesend.css("animation", "rot 3s infinite linear");
 
         imagesend.animate({ width: 200, height: 200, left: 1350, top: 400 }, 0); //*
         imagesend.animate({ width: 50, height: 50, left: 500, top: 350 }, 1000); //*
@@ -700,6 +747,8 @@ function mainfunc() {
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
         $("#globe").animate({ right: 0, top: 10 }, 1000);
         $(".ball").animate({ borderRadius: '50%' }, 1000);
+        imagesend.css("animation", "");
+        $("#ballshadow").show(500);
 
 
     }, timesum = timesum + introgap)
@@ -775,8 +824,10 @@ function mainfunc() {
 
 
 
-    //-------------------------Toronto
-    // 815 846
+    //-------------------------TORONTO-2016-------------------------
+
+
+
 
 
     setTimeout(function() {
@@ -796,6 +847,7 @@ function mainfunc() {
         //city name->new entry
         $("h6").html("Toronto").animate({ left: 60 }, 1000); //*
 
+        $("#ballshadow").hide(500);
 
         //map-globe bring to centre
         $(".stage").animate({ width: 1200, height: 700, borderRadius: '0%' }, 500);
@@ -819,6 +871,7 @@ function mainfunc() {
 
         imagesend = $("#send");
         imagesend.css('background-image', 'url(assets/send.png)'); //*
+        imagesend.css("animation", "rot 3s infinite linear");
 
         imagesend.animate({ width: 200, height: 200, left: 650, top: 400 }, 0); //*
         imagesend.animate({ width: 50, height: 50, left: 900, top: 350 }, 1000); //*
@@ -835,6 +888,8 @@ function mainfunc() {
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
         $("#globe").animate({ right: 0, top: 10 }, 1000);
         $(".ball").animate({ borderRadius: '50%' }, 1000);
+        imagesend.css("animation", "");
+        $("#ballshadow").show(500);
 
 
     }, timesum = timesum + introgap)
@@ -899,8 +954,7 @@ function mainfunc() {
 
 
 
-    //-------------------------Vancouver
-    //937 970
+    //-------------------------VANCOUVER-2017-------------------------
 
 
 
@@ -924,6 +978,7 @@ function mainfunc() {
         //city name->new entry
         $("h6").html("Vancouver").animate({ left: 60 }, 1000); //*
 
+        $("#ballshadow").hide(500);
 
         //map-globe bring to centre
         $(".stage").animate({ width: 1200, height: 700, borderRadius: '0%' }, 500);
@@ -947,6 +1002,7 @@ function mainfunc() {
 
         imagesend = $("#send");
         imagesend.css('background-image', 'url(assets/sendflip.png)'); //*
+        imagesend.css("animation", "rot 3s infinite linear");
 
         imagesend.animate({ width: 200, height: 200, left: 1100, top: 320 }, 0); //*
         imagesend.animate({ width: 50, height: 50, left: 660, top: 320 }, 1000); //*
@@ -963,6 +1019,8 @@ function mainfunc() {
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
         $("#globe").animate({ right: 0, top: 10 }, 1000);
         $(".ball").animate({ borderRadius: '50%' }, 1000);
+        imagesend.css("animation", "");
+        $("#ballshadow").show(500);
 
 
     }, timesum = timesum + introgap)
@@ -1057,8 +1115,7 @@ function mainfunc() {
 
 
 
-    //-------------------------VEGAS
-    //1066 1095 
+    //-------------------------VEGAS-2018-------------------------
 
 
 
@@ -1080,6 +1137,7 @@ function mainfunc() {
         //city name->new entry
         $("h6").html("Las Vegas").animate({ left: 60 }, 1000); //*
 
+        $("#ballshadow").hide(500);
 
         //map-globe bring to centre
         $(".stage").animate({ width: 1200, height: 700, borderRadius: '0%' }, 500);
@@ -1103,6 +1161,7 @@ function mainfunc() {
 
         imagesend = $("#send");
         imagesend.css('background-image', 'url(assets/send.png)'); //*
+        imagesend.css("animation", "rot 3s infinite linear");
 
         imagesend.animate({ width: 200, height: 200, left: 800, top: 350 }, 0); //*
         imagesend.animate({ width: 50, height: 50, left: 690, top: 390 }, 1000); //*
@@ -1120,6 +1179,8 @@ function mainfunc() {
         $("#globe").animate({ right: 0, top: 10 }, 1000);
         $(".ball").animate({ borderRadius: '50%' }, 1000);
 
+        imagesend.css("animation", "");
+        $("#ballshadow").show(500);
 
     }, timesum = timesum + introgap)
 
@@ -1178,8 +1239,7 @@ function mainfunc() {
 
 
 
-    //-------------------------ORLANDO
-    //1340 1372
+    //-------------------------ORLANDO-2019-------------------------
 
 
 
@@ -1201,6 +1261,7 @@ function mainfunc() {
         //city name->new entry
         $("h6").html("Orlando").animate({ left: 60 }, 1000); //*
 
+        $("#ballshadow").hide(500);
 
         //map-globe bring to centre
         $(".stage").animate({ width: 1200, height: 700, borderRadius: '0%' }, 500);
@@ -1224,8 +1285,9 @@ function mainfunc() {
 
         imagesend = $("#send");
         imagesend.css('background-image', 'url(assets/send.png)'); //*
+        imagesend.css("animation", "rot 3s infinite linear");
 
-        imagesend.animate({ width: 200, height: 200, left: 710, top: 400 }, 0); //*
+        imagesend.animate({ width: 200, height: 200, left: 740, top: 400 }, 0); //*
         imagesend.animate({ width: 50, height: 50, left: 740, top: 390 }, 1000); //*
         imagesend.animate({ width: 0, height: 0, left: 740, top: 390 }, 400); //*
 
@@ -1240,6 +1302,8 @@ function mainfunc() {
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
         $("#globe").animate({ right: 0, top: 10 }, 1000);
         $(".ball").animate({ borderRadius: '50%' }, 1000);
+        imagesend.css("animation", "");
+        $("#ballshadow").show(500);
 
 
     }, timesum = timesum + introgap)
@@ -1285,8 +1349,7 @@ function mainfunc() {
 
 
 
-    //-------------------------Copenhagen
-    //1485 1517
+    //-------------------------COPENHAGEN-2020-------------------------
 
 
 
@@ -1310,6 +1373,7 @@ function mainfunc() {
         //city name->new entry
         $("h6").html("Copenhagen").animate({ left: 60 }, 1000); //*
 
+        $("#ballshadow").hide(500);
 
         //map-globe bring to centre
         $(".stage").animate({ width: 1200, height: 700, borderRadius: '0%' }, 500);
@@ -1333,6 +1397,7 @@ function mainfunc() {
 
         imagesend = $("#send");
         imagesend.css('background-image', 'url(assets/send.png)'); //*
+        imagesend.css("animation", "rot 3s infinite linear");
 
         imagesend.animate({ width: 200, height: 200, left: 800, top: 430 }, 0); //*
         imagesend.animate({ width: 50, height: 50, left: 1360, top: 280 }, 1000); //*
@@ -1349,6 +1414,8 @@ function mainfunc() {
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
         $("#globe").animate({ right: 0, top: 10 }, 1000);
         $(".ball").animate({ borderRadius: '50%' }, 1000);
+        imagesend.css("animation", "");
+        $("#ballshadow").show(500);
 
 
     }, timesum = timesum + introgap)
