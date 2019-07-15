@@ -1,0 +1,507 @@
+{
+    "Beijing": [{
+            "ID": "1-beijing-skyline1",
+            "Image": "assets/2007-Beijing/1-beijing-skyline1.jpg",
+            "Label": "Beijing Skyline",
+            "City": "Beijing",
+            "Year": "2007",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "2-beijing-templeofheaven",
+            "Image": "assets/2007-Beijing/2-beijing-templeofheaven.jpg",
+            "Label": "Temple of Heaven",
+            "City": "Beijing",
+            "Year": "2007",
+            "X": "1920",
+            "Y": "1080"
+        },
+
+        {
+            "ID": "3-beijing-greatwall2",
+            "Image": "assets/2007-Beijing/3-beijing-greatwall2.jpg",
+            "Label": "The Great Wall",
+            "City": "Beijing",
+            "Year": "2007",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "4-beijing-tienanmen_night",
+            "Image": "assets/2007-Beijing/4-beijing-tienanmen_night.jpg",
+            "Label": "Tienanmen Square",
+            "City": "Beijing",
+            "Year": "2007",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "5-beijing-greatwall1",
+            "Image": "assets/2007-Beijing/5-beijing-greatwall1.jpg",
+            "Label": "The Great Wall",
+            "City": "Beijing",
+            "Year": "2007",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "6-beijing-forbiddencity2",
+            "Image": "assets/2007-Beijing/6-beijing-forbiddencity2.jpg",
+            "Label": "The Forbidden City",
+            "City": "Beijing",
+            "Year": "2007",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "7-beijing-birdsnest",
+            "Image": "assets/2007-Beijing/7-beijing-birdsnest.jpg",
+            "Label": "Beijing Olympic Stadium",
+            "City": "Beijing",
+            "Year": "2007",
+            "X": "1920",
+            "Y": "1080"
+        }
+    ],
+    "SanDiego": [{
+            "ID": "1-sandiego-harbour",
+            "Image": "assets/2009-SanDiego/1-sandiego-harbour.jpg",
+            "Label": "San Diego Harbour",
+            "City": "San Diego",
+            "Year": "2009",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "2-sandiego-ship",
+            "Image": "assets/2009-SanDiego/2-sandiego-ship.jpg",
+            "Label": "USS Midway Museum",
+            "City": "San Diego",
+            "Year": "2009",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "3-sandiego-hotel-del-coronado",
+            "Image": "assets/2009-SanDiego/3-sandiego-hotel-del-coronado.jpg",
+            "Label": "Hotel del Coronado",
+            "City": "San Diego",
+            "Year": "2009",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "4-sandiego-skyline_night2",
+            "Image": "assets/2009-SanDiego/4-sandiego-skyline_night2.jpg",
+            "Label": "San Diego Skyline",
+            "City": "San Diego",
+            "Year": "2009",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "5-sandiego-marina",
+            "Image": "assets/2009-SanDiego/5-sandiego-marina.jpg",
+            "Label": "Coronado Bridge",
+            "City": "San Diego",
+            "Year": "2009",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "6-sandiego-balboa",
+            "Image": "assets/2009-SanDiego/6-sandiego-balboa.jpg",
+            "Label": "Balboa Park",
+            "City": "San Diego",
+            "Year": "2009",
+            "X": "1920",
+            "Y": "1080"
+        }
+    ],
+    "Orlando": [{
+            "ID": "1-orlando-swandolphin",
+            "Image": "assets/2011,2019-Orlando/1-orlando-swandolphin.jpg",
+            "Label": "Walt Disney World Swan and Dolphin Resorts",
+            "City": "Orlando",
+            "Year": "2011,2019",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "2-orlando-kennedyspacecenter-RocketGardenandengine",
+            "Image": "assets/2011,2019-Orlando/2-orlando-kennedyspacecenter-RocketGardenandengine.jpg",
+            "Label": "Kennedy Space Center",
+            "City": "Orlando",
+            "Year": "2011,2019",
+            "X": "1920",
+            "Y": "1080"
+        }, {
+            "ID": "3-orlando-kennedyspacecenter-SpaceXCRS62",
+            "Image": "assets/2011,2019-Orlando/3-orlando-kennedyspacecenter-SpaceXCRS62.jpg",
+            "Label": "Kennedy Space Center",
+            "City": "Orlando",
+            "Year": "2011,2019",
+            "X": "1920",
+            "Y": "1080"
+        }
+    ],
+    "LasVegas": [{
+            "ID": "1-lasvegas-skyline_night",
+            "Image": "assets/2013,2018-LasVegas/1-lasvegas-skyline_night.jpg",
+            "Label": "Las Vegas Aerial View",
+            "City": "Las Vegas",
+            "Year": "2013,2018",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "2-lasvegas-signs",
+            "Image": "assets/2013,2018-LasVegas/2-lasvegas-signs.jpg",
+            "Label": "Las Vegas Signs",
+            "City": "Las Vegas",
+            "Year": "2013,2018",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "3-lasvegas-road",
+            "Image": "assets/2013,2018-LasVegas/3-lasvegas-road.jpg",
+            "Label": "Downtown Las Vegas",
+            "City": "Las Vegas",
+            "Year": "2013,2018",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "4-lasvegas-city_night",
+            "Image": "assets/2013,2018-LasVegas/4-lasvegas-city_night.jpg",
+            "Label": "Eiffel Tower of Las Vegas",
+            "City": "Las Vegas",
+            "Year": "2013,2018",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "5-lasvegas-bellagio",
+            "Image": "assets/2013,2018-LasVegas/5-lasvegas-bellagio.jpg",
+            "Label": "Bellagio Fountains",
+            "City": "Las Vegas",
+            "Year": "2013,2018",
+            "X": "1920",
+            "Y": "1080"
+        }
+    ],
+    "Crete": [{
+            "ID": "1-crete-spinalonga",
+            "Image": "assets/2014-Crete/1-crete-spinalonga.jpg",
+            "Label": "Spinalonga Island",
+            "City": "Crete",
+            "Year": "2014",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "2-crete-knossos",
+            "Image": "assets/2014-Crete/2-crete-knossos.jpg",
+            "Label": "Knossos Palace",
+            "City": "Crete",
+            "Year": "2014",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "3-crete-chania2",
+            "Image": "assets/2014-Crete/3-crete-chania2.jpg",
+            "Label": "Chania Harbour",
+            "City": "Crete",
+            "Year": "2014",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "4-crete-balos",
+            "Image": "assets/2014-Crete/4-crete-balos.jpg",
+            "Label": "Balos Beach",
+            "City": "Crete",
+            "Year": "2014",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "5-crete-agiosnikolaos",
+            "Image": "assets/2014-Crete/5-crete-agiosnikolaos.jpg",
+            "Label": "Agios Nikolaos",
+            "City": "Crete",
+            "Year": "2014",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "6-crete-koule",
+            "Image": "assets/2014-Crete/6-crete-koule.jpg",
+            "Label": "Heraklion Fortress",
+            "City": "Crete",
+            "Year": "2014",
+            "X": "1920",
+            "Y": "1080"
+        }
+    ],
+    "LosAngeles": [{
+            "ID": "1-losangeles-hollywood",
+            "Image": "assets/2015-LosAngeles/1-losangeles-hollywood.jpg",
+            "Label": "Hollywood Sign",
+            "City": "Los Angeles",
+            "Year": "2015",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "2-losangeles-observatory",
+            "Image": "assets/2015-LosAngeles/2-losangeles-observatory.png",
+            "Label": "Los Angeles Skyline",
+            "City": "Los Angeles",
+            "Year": "2015",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "3-losangeles-the-westin-bonaventure-hotel-and-suites-los-angeles-griffith",
+            "Image": "assets/2015-LosAngeles/3-losangeles-the-westin-bonaventure-hotel-and-suites-los-angeles-griffith.jpg",
+            "Label": "Griffith Observatory",
+            "City": "Los Angeles",
+            "Year": "2015",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "4-losangeles-the-westin-bonaventure-hotel-and-suites-los-angeles-exterior",
+            "Image": "assets/2015-LosAngeles/4-losangeles-the-westin-bonaventure-hotel-and-suites-los-angeles-exterior.jpg",
+            "Label": "Westin Bonaventure Hotel",
+            "City": "Los Angeles",
+            "Year": "2015",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "5-losangeles-waltdisney",
+            "Image": "assets/2015-LosAngeles/5-losangeles-waltdisney.jpg",
+            "Label": "Walt Disney Concert Hall",
+            "City": "Los Angeles",
+            "Year": "2015",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "6-losangeles-santamonica",
+            "Image": "assets/2015-LosAngeles/6-losangeles-santamonica.jpg",
+            "Label": "Santa Monica Pier",
+            "City": "Los Angeles",
+            "Year": "2015",
+            "X": "1920",
+            "Y": "1080"
+        }
+    ],
+    "Toronto": [{
+            "ID": "1-toronto-harbour",
+            "Image": "assets/2016-Toronto/1-toronto-harbour.jpg",
+            "Label": "Harbourfront",
+            "City": "Toronto",
+            "Year": "2016",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "2-toronto-torontosign2",
+            "Image": "assets/2016-Toronto/2-toronto-torontosign2.jpg",
+            "Label": "Nathan Phillips Square",
+            "City": "Toronto",
+            "Year": "2016",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "3-toronto-skyline_night",
+            "Image": "assets/2016-Toronto/3-toronto-skyline_night.jpg",
+            "Label": "Toronto at Night",
+            "City": "Toronto",
+            "Year": "2016",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "4-toronto-niagara",
+            "Image": "assets/2016-Toronto/4-toronto-niagara.jpg",
+            "Label": "Niagara Falls",
+            "City": "Toronto",
+            "Year": "2016",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "5-toronto-gooderham_building",
+            "Image": "assets/2016-Toronto/5-toronto-gooderham_building.jpg",
+            "Label": "Gooderham Building",
+            "City": "Toronto",
+            "Year": "2016",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "6-toronto-westinharbourcastle",
+            "Image": "assets/2016-Toronto/6-toronto-westinharbourcastle.jpg",
+            "Label": "The Westin Harbour Castle",
+            "City": "Toronto",
+            "Year": "2016",
+            "X": "1920",
+            "Y": "1080"
+        }
+    ],
+    "Vancouver": [{
+            "ID": "1-vancouver-digitalorca",
+            "Image": "assets/2017-Vancouver/1-vancouver-digitalorca.jpg",
+            "Label": "Digital Orca",
+            "City": "Vancouver",
+            "Year": "2017",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "2-vancouver-harbour",
+            "Image": "assets/2017-Vancouver/2-vancouver-harbour.jpg",
+            "Label": "Vancouver Harbour",
+            "City": "Vancouver",
+            "Year": "2017",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "3-vancouver-convcenter",
+            "Image": "assets/2017-Vancouver/3-vancouver-convcenter.jpg",
+            "Label": "Vancouver Convention Center",
+            "City": "Vancouver",
+            "Year": "2017",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "4-vancouver-downtown-vancouver",
+            "Image": "assets/2017-Vancouver/4-vancouver-downtown-vancouver.jpg",
+            "Label": "Downtown Vancouver",
+            "City": "Vancouver",
+            "Year": "2017",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "5-vancouver-harbour1",
+            "Image": "assets/2017-Vancouver/5-vancouver-harbour1.jpg",
+            "Label": "Stanley Park",
+            "City": "Vancouver",
+            "Year": "2017",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "6-vancouver-englishbay",
+            "Image": "assets/2017-Vancouver/6-vancouver-englishbay.jpg",
+            "Label": "English Bay",
+            "City": "Vancouver",
+            "Year": "2017",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "7-vancouver-bay_night",
+            "Image": "assets/2017-Vancouver/7-vancouver-bay_night.jpg",
+            "Label": "Science World",
+            "City": "Vancouver",
+            "Year": "2017",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "8-vancouver-harbour2",
+            "Image": "assets/2017-Vancouver/8-vancouver-harbour2.jpg",
+            "Label": "Vancouver Harbour",
+            "City": "Vancouver",
+            "Year": "2017",
+            "X": "1920",
+            "Y": "1080"
+        }
+    ],
+    "Copenhagen": [{
+            "ID": "1-copenhagen-Bella-Center-entrance",
+            "Image": "assets/2020-Copenhagen/1-copenhagen-Bella-Center-entrance.jpg",
+            "Label": "Bella Center",
+            "City": "Copenhagen",
+            "Year": "2020",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "2-copenhagen-AC-Hotel-Bella-Sky-Copenhagen",
+            "Image": "assets/2020-Copenhagen/2-copenhagen-AC-Hotel-Bella-Sky-Copenhagen.jpg",
+            "Label": "AC Hotel",
+            "City": "Copenhagen",
+            "Year": "2020",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "4-copenhagen-opera",
+            "Image": "assets/2020-Copenhagen/4-copenhagen-opera.jpg",
+            "Label": "Copenhagen Opera House",
+            "City": "Copenhagen",
+            "Year": "2020",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "5-copenhagen-nyhavn2",
+            "Image": "assets/2020-Copenhagen/5-copenhagen-nyhavn2.jpg",
+            "Label": "Nyhavn",
+            "City": "Copenhagen",
+            "Year": "2020",
+            "X": "1920",
+            "Y": "1080"
+        },
+
+        {
+            "ID": "7-copenhagen-christiansborg2",
+            "Image": "assets/2020-Copenhagen/7-copenhagen-christiansborg2.jpg",
+            "Label": "Frederik VII Statue, Christiansborg Slot",
+            "City": "Copenhagen",
+            "Year": "2020",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "8-copenhagen-oresund2",
+            "Image": "assets/2020-Copenhagen/8-copenhagen-oresund2.jpg",
+            "Label": "Oresund",
+            "City": "Copenhagen",
+            "Year": "2020",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "9-copenhagen-tivoli",
+            "Image": "assets/2020-Copenhagen/9-copenhagen-tivoli.jpg",
+            "Label": "Tivoli",
+            "City": "Copenhagen",
+            "Year": "2020",
+            "X": "1920",
+            "Y": "1080"
+        },
+        {
+            "ID": "6-copenhagen-nyhavn1",
+            "Image": "assets/2020-Copenhagen/6-copenhagen-nyhavn1.jpg",
+            "Label": "Nyhavn",
+            "City": "Copenhagen",
+            "Year": "2020",
+            "X": "1920",
+            "Y": "1080"
+        }
+    ]
+}

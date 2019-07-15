@@ -6,7 +6,16 @@
     <title>HCI Demo</title>
     <script src="script/jquery.js"></script>
     <script type="text/javascript" src="script/jquery-ui.js"></script>
-
+    <script>
+        var conf;
+        var futuregap = 10000;
+        var gap = 5000;
+        $.getJSON("./config.json", function(jsonc) {
+            conf = jsonc; // = new Array();
+            gap = conf.ImageDuration;
+            futuregap = gap * 2;
+        });
+    </script>
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
 
     <script type="text/javascript" src="script/script.js"></script>
