@@ -222,8 +222,8 @@ function mainfunc() {
 
         //+easein
         $("#send").css("animation", "rot 3s infinite linear");
-        $("#send").animate({ width: 50, height: 50, left: 1690, top: 550 }, 1800);
-        $("#send").animate({ width: 0, height: 0, left: 1680, top: 550 }, 500);
+        $("#send").animate({ width: 50, height: 50, left: 1680, top: 550 }, 1800);
+        $("#send").animate({ width: 0, height: 0, left: 1670, top: 550 }, 500);
         $("#globe").animate({ right: 20, top: 200 }, 0);
 
         $(".ball").css("background-image", "url('assets/5beijing.png')");
@@ -330,7 +330,7 @@ function mainfunc() {
         imagesend = $("#send");
         imagesend.css('background-image', 'url(assets/sendflip.png)'); //*
         imagesend.css("animation", "rot 3s infinite linear");
-        imagesend.animate({ width: 200, height: 200, left: 1900, top: 380 }, 0); //*
+        imagesend.animate({ width: 200, height: 200, left: 1860, top: 380 }, 0); //*
         imagesend.animate({ width: 50, height: 50, left: 600, top: 410 }, 1000); //*
         imagesend.animate({ width: 0, height: 0, left: 620, top: 430 }, 400); //*
 
@@ -416,8 +416,8 @@ function mainfunc() {
 
         imagesend.css("animation", "rot 3s infinite linear");
         imagesend.animate({ width: 200, height: 200, left: 710, top: 430 }, 0); //*
-        imagesend.animate({ width: 50, height: 50, left: 750, top: 450 }, 1000); //*
-        imagesend.animate({ width: 0, height: 0, left: 750, top: 450 }, 400); //*
+        imagesend.animate({ width: 50, height: 50, left: 750, top: 440 }, 1000); //*
+        imagesend.animate({ width: 0, height: 0, left: 750, top: 440 }, 400); //*
 
         $("#dot1world").css("background-image", "url('assets/usa.png')").animate({ left: "350" }, introgap + 1000); //*
 
