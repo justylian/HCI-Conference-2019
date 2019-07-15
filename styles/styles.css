@@ -167,6 +167,7 @@ h6 {
     background-color: #000000ba;
     /*bottom: 0%;*/
     z-index: 10;
+    top: 0px;
     position: absolute;
     border-top: 1px solid white;
     display: table;
@@ -355,6 +356,7 @@ h6 {
 #ballshadow {
     content: "";
     position: absolute;
+    border: 1px solid #8080807d;
     border-radius: 50%;
     width: 260px;
     height: 250px;

@@ -1,6 +1,7 @@
 {
-    "ImageDuration": "1000",
-    "FutureImageDuration": "1000",
+    "ImageDuration": "3000",
+    "FutureImageDuration": "5000",
+    "MapDuration": "2000",
     "Description": [{
         "Left": "40px",
         "Top": "1020px",
@@ -9,5 +10,8 @@
     "Globe": [{
         "Right": "0px",
         "Top": "10px"
+    }],
+    "Timeline": [{
+        "Top": "0"
     }]
 }

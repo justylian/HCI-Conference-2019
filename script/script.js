@@ -222,8 +222,8 @@ function mainfunc() {
 
         //+easein
         $("#send").css("animation", "rot 3s infinite linear");
-        $("#send").animate({ width: 50, height: 50, left: 1680, top: 550 }, 1800);
-        $("#send").animate({ width: 0, height: 0, left: 1670, top: 550 }, 500);
+        $("#send").animate({ width: 50, height: 50, left: 1680, top: 580 }, 1800);
+        $("#send").animate({ width: 0, height: 0, left: 1670, top: 580 }, 500);
         $("#globe").animate({ right: 20, top: 200 }, 0);
 
         $(".ball").css("background-image", "url('assets/5beijing.png')");
@@ -235,7 +235,7 @@ function mainfunc() {
     }, 0)
     setTimeout(function() {
         //spin large globe
-        $("h6").animate({ fontSize: 40, top: 30 }, 1000);
+        $("h6").animate({ fontSize: 40, top: citytop }, 1000);
 
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
         $("#globe").animate({ right: globeright, top: globetop }, 1000);
@@ -259,7 +259,7 @@ function mainfunc() {
 
 
 
-    }, timesum = timesum + introgap)
+    }, timesum = timesum + parseInt(mapstill))
 
 
     setTimeout(function() {
@@ -331,15 +331,15 @@ function mainfunc() {
         imagesend.css('background-image', 'url(assets/sendflip.png)'); //*
         imagesend.css("animation", "rot 3s infinite linear");
         imagesend.animate({ width: 200, height: 200, left: 1860, top: 380 }, 0); //*
-        imagesend.animate({ width: 50, height: 50, left: 600, top: 410 }, 1000); //*
-        imagesend.animate({ width: 0, height: 0, left: 620, top: 430 }, 400); //*
+        imagesend.animate({ width: 50, height: 50, left: 620, top: 410 }, 1000); //*
+        imagesend.animate({ width: 0, height: 0, left: 640, top: 430 }, 400); //*
 
         $("#dot1world").css("background-image", "url('assets/usa.png')").animate({ left: "230" }, introgap + 1000); //*
 
     }, timesum = timesum + introgap)
 
     setTimeout(function() {
-        $("h6").animate({ fontSize: 40, left: 160, top: 30 }, 1000); //*
+        $("h6").animate({ fontSize: 40, left: 160, top: citytop }, 1000); //*
 
 
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
@@ -350,7 +350,7 @@ function mainfunc() {
         imagesend.css("animation", "");
 
 
-    }, timesum = timesum + introgap)
+    }, timesum = timesum + parseInt(mapstill))
 
     setTimeout(function() {
         showImages();
@@ -424,7 +424,7 @@ function mainfunc() {
     }, timesum = timesum + introgap)
 
     setTimeout(function() {
-        $("h6").animate({ fontSize: 40, left: 299, top: 30 }, 1000); //*
+        $("h6").animate({ fontSize: 40, left: 299, top: citytop }, 1000); //*
 
 
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
@@ -434,7 +434,7 @@ function mainfunc() {
 
         imagesend.css("animation", "");
 
-    }, timesum = timesum + introgap)
+    }, timesum = timesum + parseInt(mapstill))
 
     setTimeout(function() {
         showImages();
@@ -504,7 +504,7 @@ function mainfunc() {
     }, timesum = timesum + introgap)
 
     setTimeout(function() {
-        $("h6").animate({ fontSize: 40, left: 410, top: 30 }, 1000); //*
+        $("h6").animate({ fontSize: 40, left: 410, top: citytop }, 1000); //*
 
 
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
@@ -514,7 +514,7 @@ function mainfunc() {
         $("#ballshadow").show(500);
 
 
-    }, timesum = timesum + introgap)
+    }, timesum = timesum + parseInt(mapstill))
 
 
 
@@ -591,7 +591,7 @@ function mainfunc() {
     }, timesum = timesum + introgap)
 
     setTimeout(function() {
-        $("h6").animate({ fontSize: 40, left: 570, top: 30 }, 1000); //*
+        $("h6").animate({ fontSize: 40, left: 570, top: citytop }, 1000); //*
 
 
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
@@ -601,7 +601,7 @@ function mainfunc() {
 
         $("#ballshadow").show(500);
 
-    }, timesum = timesum + introgap)
+    }, timesum = timesum + parseInt(mapstill))
 
 
 
@@ -676,7 +676,7 @@ function mainfunc() {
     }, timesum = timesum + introgap)
 
     setTimeout(function() {
-        $("h6").animate({ fontSize: 40, left: 635, top: 30 }, 1000); //*
+        $("h6").animate({ fontSize: 40, left: 635, top: citytop }, 1000); //*
 
 
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
@@ -686,7 +686,7 @@ function mainfunc() {
         $("#ballshadow").show(500);
 
 
-    }, timesum = timesum + introgap)
+    }, timesum = timesum + parseInt(mapstill))
 
 
 
@@ -754,7 +754,7 @@ function mainfunc() {
         imagesend.css('background-image', 'url(assets/send.png)'); //*
         imagesend.css("animation", "rot 3s infinite linear");
 
-        imagesend.animate({ width: 200, height: 200, left: 650, top: 400 }, 0); //*
+        imagesend.animate({ width: 200, height: 200, left: 680, top: 400 }, 0); //*
         imagesend.animate({ width: 50, height: 50, left: 900, top: 350 }, 1000); //*
         imagesend.animate({ width: 0, height: 0, left: 800, top: 350 }, 400); //*
 
@@ -763,7 +763,7 @@ function mainfunc() {
     }, timesum = timesum + introgap)
 
     setTimeout(function() {
-        $("h6").animate({ fontSize: 40, left: 795, top: 30 }, 1000); //*
+        $("h6").animate({ fontSize: 40, left: 795, top: citytop }, 1000); //*
 
 
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
@@ -773,7 +773,7 @@ function mainfunc() {
         $("#ballshadow").show(500);
 
 
-    }, timesum = timesum + introgap)
+    }, timesum = timesum + parseInt(mapstill))
 
 
 
@@ -848,7 +848,7 @@ function mainfunc() {
     }, timesum = timesum + introgap)
 
     setTimeout(function() {
-        $("h6").animate({ fontSize: 40, left: 900, top: 30 }, 1000); //*
+        $("h6").animate({ fontSize: 40, left: 900, top: citytop }, 1000); //*
 
 
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
@@ -858,7 +858,7 @@ function mainfunc() {
         $("#ballshadow").show(500);
 
 
-    }, timesum = timesum + introgap)
+    }, timesum = timesum + parseInt(mapstill))
 
 
 
@@ -932,7 +932,7 @@ function mainfunc() {
     }, timesum = timesum + introgap)
 
     setTimeout(function() {
-        $("h6").animate({ fontSize: 40, left: 1026, top: 30 }, 1000); //*
+        $("h6").animate({ fontSize: 40, left: 1026, top: citytop }, 1000); //*
 
 
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
@@ -942,7 +942,7 @@ function mainfunc() {
         imagesend.css("animation", "");
         $("#ballshadow").show(500);
 
-    }, timesum = timesum + introgap)
+    }, timesum = timesum + parseInt(mapstill))
 
 
 
@@ -1021,7 +1021,7 @@ function mainfunc() {
     }, timesum = timesum + introgap)
 
     setTimeout(function() {
-        $("h6").animate({ fontSize: 40, left: 1310, top: 30 }, 1000); //*
+        $("h6").animate({ fontSize: 40, left: 1310, top: citytop }, 1000); //*
 
 
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
@@ -1031,7 +1031,7 @@ function mainfunc() {
         $("#ballshadow").show(500);
 
 
-    }, timesum = timesum + introgap)
+    }, timesum = timesum + parseInt(mapstill))
 
 
 
@@ -1103,15 +1103,15 @@ function mainfunc() {
         imagesend.css("animation", "rot 3s infinite linear");
 
         imagesend.animate({ width: 200, height: 200, left: 800, top: 430 }, 0); //*
-        imagesend.animate({ width: 50, height: 50, left: 1120, top: 280 }, 1000); //*
-        imagesend.animate({ width: 0, height: 0, left: 1130, top: 280 }, 400); //*
+        imagesend.animate({ width: 50, height: 50, left: 1130, top: 280 }, 1000); //*
+        imagesend.animate({ width: 0, height: 0, left: 1140, top: 280 }, 400); //*
 
         $("#dot1world").css("background-image", "url('assets/denmark.png')").animate({ left: "1497" }, introgap + 1000); //*
 
     }, timesum = timesum + introgap)
 
     setTimeout(function() {
-        $("h6").animate({ fontSize: 40, left: 1395, top: 30 }, 1500); //*
+        $("h6").animate({ fontSize: 40, left: 1395, top: citytop }, 1500); //*
 
 
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
@@ -1121,7 +1121,7 @@ function mainfunc() {
         $("#ballshadow").show(500);
 
 
-    }, timesum = timesum + introgap)
+    }, timesum = timesum + parseInt(mapstill))
 
 
 

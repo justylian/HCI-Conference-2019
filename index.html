@@ -10,12 +10,18 @@
         var conf;
         var futuregap = 10000;
         var gap = 5000;
+        var mapstill = 2000;
         var globeright = "0px";
         var globetop = "10px";
+        var citytop = "30";
+        var timelinetop = "0";
+        var titletop = "4";
+
         $.getJSON("./config.json", function(jsonc) {
             conf = jsonc; // = new Array();
             gap = conf.ImageDuration;
             futuregap = conf.FutureImageDuration;
+            mapstill = conf.MapDuration;
 
             $("h5").css("left", conf.Description[0].Left);
             $("h5").css("top", conf.Description[0].Top);
@@ -25,6 +31,15 @@
             globeright = conf.Globe[0].Right;
             $("#globe").css("top", conf.Globe[0].Top);
             globetop = conf.Globe[0].Top;
+
+            // $("#globe").css("top", conf.Globe[0].Top);
+
+            citytop = (parseInt(citytop) + parseInt(conf.Timeline[0].Top)) + "px";
+            //console.log(citytop);
+            $("h4").css("top", (parseInt(titletop) + parseInt(conf.Timeline[0].Top))) + "px";
+            $("#timeline").css("top", conf.Timeline[0].Top + "px");
+
+            //console.log(mapstill);
         });
     </script>
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
