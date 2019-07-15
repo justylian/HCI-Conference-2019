@@ -1111,7 +1111,7 @@ function mainfunc() {
     }, timesum = timesum + introgap)
 
     setTimeout(function() {
-        $("h6").animate({ fontSize: 40, left: 1395, top: 30 }, 1000); //*
+        $("h6").animate({ fontSize: 40, left: 1395, top: 30 }, 1500); //*
 
 
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
