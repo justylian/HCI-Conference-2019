@@ -194,8 +194,8 @@ h6 {
     top: 1200px;
     position: absolute;
     /* display: table; */
-    -webkit-box-shadow: 130px 0px 100px 130px rgba(0, 0, 0, 0.58);
-    -moz-box-shadow: 130px 0px 100px 130px rgba(0, 0, 0, 0.58);
+    -webkit-box-shadow: 150px -48px 100px 130px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 150px -48px 100px 130px rgba(0, 0, 0, 0.58);
     box-shadow: 150px -48px 100px 130px rgba(0, 0, 0, 0.58)
 }
 
@@ -530,7 +530,7 @@ h6 {
     position: absolute;
     top: 550px;
     left: -800px;
-    z-index: 200;
+    z-index: 220;
     background-image: url('../assets/send.png');
     background-size: auto 100%;
     -webkit-filter: drop-shadow(5px 5px 5px #222);

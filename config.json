@@ -1,3 +1,13 @@
 {
-    "ImageDuration": "1000"
+    "ImageDuration": "1000",
+    "FutureImageDuration": "2000",
+    "Description": [{
+        "Left": "40px",
+        "Top": "1020px",
+        "FontSize": "30px"
+    }],
+    "Globe": [{
+        "Right": "0px",
+        "Top": "10px"
+    }]
 }

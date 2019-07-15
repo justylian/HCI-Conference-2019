@@ -10,10 +10,21 @@
         var conf;
         var futuregap = 10000;
         var gap = 5000;
+        var globeright = "0px";
+        var globetop = "10px";
         $.getJSON("./config.json", function(jsonc) {
             conf = jsonc; // = new Array();
             gap = conf.ImageDuration;
-            futuregap = gap * 2;
+            futuregap = conf.FutureImageDuration;
+
+            $("h5").css("left", conf.Description[0].Left);
+            $("h5").css("top", conf.Description[0].Top);
+            $("h5").css("font-size", conf.Description[0].FontSize);
+
+            $("#globe").css("right", conf.Globe[0].Right);
+            globeright = conf.Globe[0].Right;
+            $("#globe").css("top", conf.Globe[0].Top);
+            globetop = conf.Globe[0].Top;
         });
     </script>
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />

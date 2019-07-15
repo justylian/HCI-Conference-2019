@@ -162,13 +162,13 @@ function showFutureImages() {
 //-------------------PRELOADING------------------
 
 var imageSrcs = ["assets/2007-Beijing/1-beijing-skyline1.jpg", 'assets/2007-Beijing/2-beijing-templeofheaven.jpg', 'assets/2007-Beijing/4-beijing-tienanmen_night.jpg', 'assets/2007-Beijing/3-beijing-greatwall2.jpg',
-    'assets/2007-Beijing/7-beijing-birdsnest.jpg', 'assets/2007-Beijing/5-beijing-greatwall1.jpg',
-    'assets/2009-San Diego/3-skyline_night2.jpg', 'assets/2009-San Diego/5-marina.jpg', 'assets/2009-San Diego/1-sandiego-balboa.jpg', 'assets/2009-San Diego/2-sandiego-ship.jpg', 'assets/2009-San Diego/3-sandiego-hotel-del-coronado.jpg', 'assets/2009-San Diego/6-harbour.jpg', 'assets/2011,2019-Orlando/1-swandolphin.jpg', 'assets/2011,2019-Orlando/2-kennedyspacecenter-RocketGardenandengine.jpg', 'assets/2011,2019-Orlando/3-kennedyspacecenter-SpaceXCRS62.jpg',
-    'assets/2013,2018-Las Vegas/1-skyline_night.jpg', 'assets/2013,2018-Las Vegas/2-signs.jpg', 'assets/2013,2018-Las Vegas/3-road.jpg', 'assets/2013,2018-Las Vegas/7-city_night.jpg', 'assets/2013,2018-Las Vegas/8-bellagio.jpg', 'assets/2014-Crete/1-spinalonga.jpg', 'assets/2014-Crete/4-knossos.jpg', 'assets/2014-Crete/7-chania2.jpg', 'assets/2014-Crete/9-balos.jpg',
-    'assets/2014-Crete/11-agiosnikolaos.jpg', 'assets/2014-Crete/1-hollywood.jpg', 'assets/2015-Los Angeles/3-the-westin-bonaventure-hotel-and-suites-los-angeles-griffith.jpg', 'assets/2015-Los Angeles/4-the-westin-bonaventure-hotel-and-suites-los-angeles-exterior.jpg', 'assets/2015-Los Angeles/5-waltdisney.jpg', 'assets/2015-Los Angeles/9-santamonica.jpg', 'assets/2015-Los Angeles/10-observatory.png', 'assets/2016-Toronto/1-toronto-niagara.jpg', 'assets/2016-Toronto/1-torontosign2.jpg',
-    'assets/2016-Toronto/4-skyline_night.jpg', 'assets/2016-Toronto/5-harbour.jpg', 'assets/2016-Toronto/6-gooderham_building.jpg', 'assets/2016-Toronto/7-westinharbourcastle.jpg', 'assets/2017-Vancouver/1-vancouver-digitalorca.jpg', 'assets/2017-Vancouver/1-vancouver-harbour.jpg', 'assets/2017-Vancouver/2-downtown-vancouver.jpg', 'assets/2017-Vancouver/3-vancouver-convcenter.jpg', 'assets/2017-Vancouver/4-vancouver-harbour2.jpg',
-    'assets/2017-Vancouver/5-vancouver-harbour1.jpg', 'assets/2017-Vancouver/8-harbour.jpg', 'assets/2017-Vancouver/9-bay_night.jpg', 'assets/2020-Copenhagen/1-tivoli.jpg', 'assets/2020-Copenhagen/2-oresund2.jpg', 'assets/2020-Copenhagen/4-opera.jpg', 'assets/2020-Copenhagen/5-nyhavn2.jpg', '6-nyhavn1.jpg', 'assets/2020-Copenhagen/7-christiansborg2.jpg',
-    'assets/2020-Copenhagen/8-Bella-Center-entrance.jpg', 'assets/2020-Copenhagen/9-AC-Hotel-Bella-Sky-Copenhagen.jpg'
+    'assets/2007-Beijing/7-beijing-birdsnest.jpg', 'assets/2007-Beijing/5-beijing-greatwall1.jpg', 'assets/2007-Beijing/6-beijing-forbiddencity2.jpg',
+    'assets/2009-SanDiego/6-sandiego-balboa.jpg', 'assets/2009-SanDiego/2-sandiego-ship.jpg', 'assets/2009-SanDiego/1-sandiego-harbour.jpg', 'assets/2009-SanDiego/3-sandiego-hotel-del-coronado.jpg', 'assets/2009-SanDiego/5-sandiego-marina.jpg', 'assets/2009-SanDiego/4-sandiego-skyline_night2.jpg', 'assets/2011,2019-Orlando/1-orlando-swandolphin.jpg', 'assets/2011,2019-Orlando/2-orlando-kennedyspacecenter-RocketGardenandengine.jpg', 'assets/2011,2019-Orlando/3-orlando-kennedyspacecenter-SpaceXCRS62.jpg',
+    'assets/2013,2018-LasVegas/1-lasvegas-skyline_night.jpg', 'assets/2013,2018-LasVegas/4-lasvegas-city_night.jpg', 'assets/2013,2018-LasVegas/5-lasvegas-bellagio.jpg', 'assets/2013,2018-LasVegas/3-lasvegas-road.jpg', 'assets/2013,2018-LasVegas/2-lasvegas-signs.jpg', 'assets/2014-Crete/5-crete-agiosnikolaos.jpg', 'assets/2014-Crete/2-crete-knossos.jpg', 'assets/2014-Crete/4-crete-balos.jpg', 'assets/2014-Crete/3-crete-chania2.jpg',
+    'assets/2014-Crete/6-crete-koule.jpg', 'assets/2014-Crete/1-crete-spinalonga.jpg', 'assets/2015-LosAngeles/2-losangeles-observatory.png', 'assets/2015-LosAngeles/6-losangeles-santamonica.jpg', 'assets/2015-LosAngeles/4-losangeles-the-westin-bonaventure-hotel-and-suites-los-angeles-exterior.jpg', 'assets/2015-LosAngeles/1-losangeles-hollywood.jpg', 'assets/2015-LosAngeles/5-losangeles-waltdisney.jpg', 'assets/2015-LosAngeles/3-losangeles-the-westin-bonaventure-hotel-and-suites-los-angeles-griffith.jpg', 'assets/2016-Toronto/2-toronto-torontosign2.jpg', 'assets/2016-Toronto/5-toronto-gooderham_building.jpg',
+    'assets/2016-Toronto/4-toronto-niagara.jpg', 'assets/2016-Toronto/6-toronto-westinharbourcastle.jpg', 'assets/2016-Toronto/3-toronto-skyline_night.jpg', 'assets/2017-Vancouver/2-vancouver-harbour.jpg', 'assets/2017-Vancouver/1-vancouver-digitalorca.jpg', 'assets/2017-Vancouver/2-vancouver-harbour.jpg', 'assets/2017-Vancouver/4-vancouver-downtown-vancouver.jpg', 'assets/2017-Vancouver/3-vancouver-convcenter.jpg', 'assets/2017-Vancouver/8-vancouver-harbour2.jpg',
+    'assets/2017-Vancouver/5-vancouver-harbour1.jpg', 'assets/2017-Vancouver/6-vancouver-englishbay.jpg', 'assets/2017-Vancouver/7-vancouver-bay_night.jpg', 'assets/2020-Copenhagen/6-copenhagen-nyhavn1.jpg', 'assets/2020-Copenhagen/2-copenhagen-AC-Hotel-Bella-Sky-Copenhagen.jpg', 'assets/2020-Copenhagen/1-copenhagen-Bella-Center-entrance.jpg', 'assets/2020-Copenhagen/9-copenhagen-tivoli.jpg', 'assets/2020-Copenhagen/7-copenhagen-christiansborg2.jpg',
+    'assets/2020-Copenhagen/5-copenhagen-nyhavn2.jpg', 'assets/2020-Copenhagen/8-copenhagen-oresund2.jpg', 'assets/2020-Copenhagen/4-copenhagen-opera.jpg'
 
 ];
 
@@ -184,7 +184,7 @@ function preloadImages(srcs) {
         //console.log("okdd");
     }
 }
-//preloadImages(imageSrcs);
+preloadImages(imageSrcs);
 
 
 //-------------------MAIN------------------
@@ -222,8 +222,9 @@ function mainfunc() {
 
         //+easein
         $("#send").css("animation", "rot 3s infinite linear");
-        $("#send").animate({ width: 50, height: 50, left: 1710, top: 550 }, 1800);
-        $("#send").animate({ width: 0, height: 0, left: 1700, top: 550 }, 500);
+        $("#send").animate({ width: 50, height: 50, left: 1690, top: 550 }, 1800);
+        $("#send").animate({ width: 0, height: 0, left: 1680, top: 550 }, 500);
+        $("#globe").animate({ right: 20, top: 200 }, 0);
 
         $(".ball").css("background-image", "url('assets/5beijing.png')");
         $(".ball").css("background-position", "calc(100% - 20px) calc(100% - 10px)");
@@ -231,13 +232,13 @@ function mainfunc() {
 
         $("#dot1world").css("background-image", "url('assets/china.png')").animate({ left: "105" }, introgap + 1000);
 
-    }, 100)
+    }, 0)
     setTimeout(function() {
         //spin large globe
         $("h6").animate({ fontSize: 40, top: 30 }, 1000);
 
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
-        $("#globe").animate({ right: 0, top: 10 }, 1000);
+        $("#globe").animate({ right: globeright, top: globetop }, 1000);
         $(".ball").animate({ borderRadius: '50%' }, 1000);
 
         $(".ball").css("animation", "move-map-globe 50s infinite linear")
@@ -342,7 +343,7 @@ function mainfunc() {
 
 
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
-        $("#globe").animate({ right: 0, top: 10 }, 1000);
+        $("#globe").animate({ right: globeright, top: globetop }, 1000);
         $(".ball").animate({ borderRadius: '50%' }, 1000);
         $("#ballshadow").show(500);
 
@@ -414,7 +415,7 @@ function mainfunc() {
         imagesend.css('background-image', 'url(assets/send.png)'); //*
 
         imagesend.css("animation", "rot 3s infinite linear");
-        imagesend.animate({ width: 200, height: 200, left: 650, top: 430 }, 0); //*
+        imagesend.animate({ width: 200, height: 200, left: 710, top: 430 }, 0); //*
         imagesend.animate({ width: 50, height: 50, left: 750, top: 450 }, 1000); //*
         imagesend.animate({ width: 0, height: 0, left: 750, top: 450 }, 400); //*
 
@@ -427,7 +428,7 @@ function mainfunc() {
 
 
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
-        $("#globe").animate({ right: 0, top: 10 }, 1000);
+        $("#globe").animate({ right: globeright, top: globetop }, 1000);
         $(".ball").animate({ borderRadius: '50%' }, 1000);
         $("#ballshadow").show(500);
 
@@ -507,7 +508,7 @@ function mainfunc() {
 
 
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
-        $("#globe").animate({ right: 0, top: 10 }, 1000);
+        $("#globe").animate({ right: globeright, top: globetop }, 1000);
         $(".ball").animate({ borderRadius: '50%' }, 1000);
         imagesend.css("animation", "");
         $("#ballshadow").show(500);
@@ -581,7 +582,7 @@ function mainfunc() {
         imagesend.css('background-image', 'url(assets/send.png)'); //*
 
         imagesend.css("animation", "rot 3s infinite linear");
-        imagesend.animate({ width: 200, height: 200, left: 700, top: 400 }, 0); //*
+        imagesend.animate({ width: 200, height: 200, left: 720, top: 400 }, 0); //*
         imagesend.animate({ width: 50, height: 50, left: 1300, top: 400 }, 1000); //*
         imagesend.animate({ width: 0, height: 0, left: 1200, top: 400 }, 400); //*
 
@@ -594,7 +595,7 @@ function mainfunc() {
 
 
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
-        $("#globe").animate({ right: 0, top: 10 }, 1000);
+        $("#globe").animate({ right: globeright, top: globetop }, 1000);
         $(".ball").animate({ borderRadius: '50%' }, 1000);
         imagesend.css("animation", "");
 
@@ -679,7 +680,7 @@ function mainfunc() {
 
 
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
-        $("#globe").animate({ right: 0, top: 10 }, 1000);
+        $("#globe").animate({ right: globeright, top: globetop }, 1000);
         $(".ball").animate({ borderRadius: '50%' }, 1000);
         imagesend.css("animation", "");
         $("#ballshadow").show(500);
@@ -766,7 +767,7 @@ function mainfunc() {
 
 
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
-        $("#globe").animate({ right: 0, top: 10 }, 1000);
+        $("#globe").animate({ right: globeright, top: globetop }, 1000);
         $(".ball").animate({ borderRadius: '50%' }, 1000);
         imagesend.css("animation", "");
         $("#ballshadow").show(500);
@@ -851,7 +852,7 @@ function mainfunc() {
 
 
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
-        $("#globe").animate({ right: 0, top: 10 }, 1000);
+        $("#globe").animate({ right: globeright, top: globetop }, 1000);
         $(".ball").animate({ borderRadius: '50%' }, 1000);
         imagesend.css("animation", "");
         $("#ballshadow").show(500);
@@ -935,7 +936,7 @@ function mainfunc() {
 
 
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
-        $("#globe").animate({ right: 0, top: 10 }, 1000);
+        $("#globe").animate({ right: globeright, top: globetop }, 1000);
         $(".ball").animate({ borderRadius: '50%' }, 1000);
 
         imagesend.css("animation", "");
@@ -1024,7 +1025,7 @@ function mainfunc() {
 
 
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
-        $("#globe").animate({ right: 0, top: 10 }, 1000);
+        $("#globe").animate({ right: globeright, top: globetop }, 1000);
         $(".ball").animate({ borderRadius: '50%' }, 1000);
         imagesend.css("animation", "");
         $("#ballshadow").show(500);
@@ -1114,7 +1115,7 @@ function mainfunc() {
 
 
         $(".stage").animate({ width: 260, height: 250, borderRadius: '50%' }, 1000);
-        $("#globe").animate({ right: 0, top: 10 }, 1000);
+        $("#globe").animate({ right: globeright, top: globetop }, 1000);
         $(".ball").animate({ borderRadius: '50%' }, 1000);
         imagesend.css("animation", "");
         $("#ballshadow").show(500);
@@ -1139,8 +1140,8 @@ function mainfunc() {
     //Reload at end
     setTimeout(function() {
         //$(".copenhagen").css("color","#152f3d");
-        $("#dot1world").css("box-shadow", "0px 45px 30px 30px rgba(255, 255, 255, 0.406)");
+        //$("#dot1world").css("box-shadow", "0px 45px 30px 30px rgba(255, 255, 255, 0.406)");
 
         window.location.reload(1);
-    }, timesum = timesum + (futuregap * lengthCopenhagen) + 1000)
+    }, timesum = timesum + (futuregap * lengthCopenhagen))
 }
