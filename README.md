@@ -1,7 +1,7 @@
 # HCI Conference Demo
  Timeline of HCI conferences 2007-2020
  
- Editable:
+ >Editable:
  images.json,
  config.json
 
@@ -9,6 +9,6 @@
 
 
 
-Run with:
+>Run with:
 
  "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=~/chromeTemp
