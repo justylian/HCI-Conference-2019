@@ -1,7 +1,7 @@
 {
-    "ImageDuration": "3000",
+    "ImageDuration": "1000",
     "FutureImageDuration": "5000",
-    "MapDuration": "2000",
+    "MapDuration": "2200",
     "Description": [{
         "Left": "40px",
         "Top": "1020px",

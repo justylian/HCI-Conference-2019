@@ -10,7 +10,7 @@
         var conf;
         var futuregap = 10000;
         var gap = 5000;
-        var mapstill = 2000;
+        var mapstill = 2200;
         var globeright = "0px";
         var globetop = "10px";
         var citytop = "30";
@@ -20,8 +20,9 @@
         $.getJSON("./config.json", function(jsonc) {
             conf = jsonc; // = new Array();
             gap = conf.ImageDuration;
-            futuregap = conf.FutureImageDuration;
             mapstill = conf.MapDuration;
+            futuregap = conf.FutureImageDuration;
+
 
             $("h5").css("left", conf.Description[0].Left);
             $("h5").css("top", conf.Description[0].Top);
@@ -41,6 +42,78 @@
 
             //console.log(mapstill);
         });
+    </script>
+    <script>
+        var obj;
+        var lengthBeijing;
+        var lengthSanDiego;
+        var lengthOrlando;
+        var lengthLosAngeles;
+        var lengthCrete;
+        var lengthToronto;
+        var lengthVancouver;
+        var lengthLasVegas;
+        var lengthCopenhagen;
+        var gapBeijing;
+        var gapSanDiego;
+        var gapOrlando;
+        var gapLosAngeles;
+        var gapCrete;
+        var gapToronto;
+        var gapVancouver;
+        var gapLasVegas;
+        var gapCopenhagen;
+
+        $.getJSON("./images.json", function(json) {
+            obj = json; // = new Array();
+            lengthBeijing = obj.Beijing.length;
+            gapBeijing = gap * lengthBeijing;
+            lengthSanDiego = obj.SanDiego.length;
+            gapSanDiego = gap * lengthSanDiego;
+            lengthOrlando = obj.Orlando.length;
+            gapOrlando = gap * lengthOrlando;
+            lengthLosAngeles = obj.LosAngeles.length;
+            gapLosAngeles = gap * lengthLosAngeles;
+            lengthCrete = obj.Crete.length;
+            gapCrete = gap * lengthCrete;
+            lengthToronto = obj.Toronto.length;
+            gapToronto = gap * lengthToronto;
+            lengthVancouver = obj.Vancouver.length;
+            gapVancouver = gap * lengthVancouver;
+            lengthLasVegas = obj.LasVegas.length;
+            gapLasVegas = gap * lengthLasVegas;
+            lengthCopenhagen = obj.Copenhagen.length;
+            gapCopenhagen = gap * lengthCopenhagen;
+            console.log(lengthCopenhagen);
+        });
+    </script>
+    <script>
+        //-------------------PRELOADING------------------
+
+        var imageSrcs = ["assets/2007-Beijing/1-beijing-skyline1.jpg", 'assets/2007-Beijing/2-beijing-templeofheaven.jpg', 'assets/2007-Beijing/4-beijing-tienanmen_night.jpg', 'assets/2007-Beijing/3-beijing-greatwall2.jpg',
+            'assets/2007-Beijing/7-beijing-birdsnest.jpg', 'assets/2007-Beijing/5-beijing-greatwall1.jpg', 'assets/2007-Beijing/6-beijing-forbiddencity2.jpg',
+            'assets/2009-SanDiego/6-sandiego-balboa.jpg', 'assets/2009-SanDiego/2-sandiego-ship.jpg', 'assets/2009-SanDiego/1-sandiego-harbour.jpg', 'assets/2009-SanDiego/3-sandiego-hotel-del-coronado.jpg', 'assets/2009-SanDiego/5-sandiego-marina.jpg', 'assets/2009-SanDiego/4-sandiego-skyline_night2.jpg', 'assets/2011,2019-Orlando/1-orlando-swandolphin.jpg', 'assets/2011,2019-Orlando/2-orlando-kennedyspacecenter-RocketGardenandengine.jpg', 'assets/2011,2019-Orlando/3-orlando-kennedyspacecenter-SpaceXCRS62.jpg',
+            'assets/2013,2018-LasVegas/1-lasvegas-skyline_night.jpg', 'assets/2013,2018-LasVegas/4-lasvegas-city_night.jpg', 'assets/2013,2018-LasVegas/5-lasvegas-bellagio.jpg', 'assets/2013,2018-LasVegas/3-lasvegas-road.jpg', 'assets/2013,2018-LasVegas/2-lasvegas-signs.jpg', 'assets/2014-Crete/5-crete-agiosnikolaos.jpg', 'assets/2014-Crete/2-crete-knossos.jpg', 'assets/2014-Crete/4-crete-balos.jpg', 'assets/2014-Crete/3-crete-chania2.jpg',
+            'assets/2014-Crete/6-crete-koule.jpg', 'assets/2014-Crete/1-crete-spinalonga.jpg', 'assets/2015-LosAngeles/2-losangeles-observatory.png', 'assets/2015-LosAngeles/6-losangeles-santamonica.jpg', 'assets/2015-LosAngeles/4-losangeles-the-westin-bonaventure-hotel-and-suites-los-angeles-exterior.jpg', 'assets/2015-LosAngeles/1-losangeles-hollywood.jpg', 'assets/2015-LosAngeles/5-losangeles-waltdisney.jpg', 'assets/2015-LosAngeles/3-losangeles-the-westin-bonaventure-hotel-and-suites-los-angeles-griffith.jpg', 'assets/2016-Toronto/2-toronto-torontosign2.jpg', 'assets/2016-Toronto/5-toronto-gooderham_building.jpg',
+            'assets/2016-Toronto/4-toronto-niagara.jpg', 'assets/2016-Toronto/6-toronto-westinharbourcastle.jpg', 'assets/2016-Toronto/3-toronto-skyline_night.jpg', 'assets/2017-Vancouver/2-vancouver-harbour.jpg', 'assets/2017-Vancouver/1-vancouver-digitalorca.jpg', 'assets/2017-Vancouver/2-vancouver-harbour.jpg', 'assets/2017-Vancouver/4-vancouver-downtown-vancouver.jpg', 'assets/2017-Vancouver/3-vancouver-convcenter.jpg', 'assets/2017-Vancouver/8-vancouver-harbour2.jpg',
+            'assets/2017-Vancouver/5-vancouver-harbour1.jpg', 'assets/2017-Vancouver/6-vancouver-englishbay.jpg', 'assets/2017-Vancouver/7-vancouver-bay_night.jpg', 'assets/2020-Copenhagen/6-copenhagen-nyhavn1.jpg', 'assets/2020-Copenhagen/2-copenhagen-AC-Hotel-Bella-Sky-Copenhagen.jpg', 'assets/2020-Copenhagen/1-copenhagen-Bella-Center-entrance.jpg', 'assets/2020-Copenhagen/9-copenhagen-tivoli.jpg', 'assets/2020-Copenhagen/7-copenhagen-christiansborg2.jpg',
+            'assets/2020-Copenhagen/5-copenhagen-nyhavn2.jpg', 'assets/2020-Copenhagen/8-copenhagen-oresund2.jpg', 'assets/2020-Copenhagen/4-copenhagen-opera.jpg'
+
+        ];
+
+        function preloadImages(srcs) {
+            if (!preloadImages.cache) {
+                preloadImages.cache = [];
+            }
+            var img;
+            for (var i = 0; i < srcs.length; i++) {
+                img = new Image();
+                img.src = srcs[i];
+                preloadImages.cache.push(img);
+                //console.log("okdd");
+            }
+        }
+        preloadImages(imageSrcs);
     </script>
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
 

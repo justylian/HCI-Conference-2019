@@ -214,6 +214,7 @@ h6 {
 }
 
 #past {
+    width: 1250px;
     display: inline-block;
 }
 
@@ -229,7 +230,7 @@ h6 {
     transform: rotate(20deg);
     border-left: 1px solid #ffffff;
     top: -3px;
-    left: 1280px;
+    left: 1257px;
     height: 88px;
     position: absolute;
 }
@@ -420,11 +421,11 @@ h6 {
     background-image: url(../assets/china.png) repeat-x;
     background-size: auto 100%;
     -webkit-transform-style: preserve-3d;
-    -webkit-animation: move-map 60s infinite linear;
-    -moz-animation: move-map 60s infinite linear;
-    -o-animation: move-map 60s infinite linear;
-    -ms-animation: move-map 60s infinite linear;
-    animation: move-map 60s infinite linear;
+    -webkit-animation: move-map 80s infinite linear;
+    -moz-animation: move-map 80s infinite linear;
+    -o-animation: move-map 80s infinite linear;
+    -ms-animation: move-map 80s infinite linear;
+    animation: move-map 80s infinite linear;
 }
 
 
