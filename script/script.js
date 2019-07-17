@@ -193,7 +193,7 @@ $(window).bind("load", function() {
             $("#globe").animate({ right: globeright, top: globetop }, 1000);
             $(".ball").animate({ borderRadius: '50%' }, 1000);
 
-            $(".ball").css("animation", "move-map-globe 50s infinite linear")
+            $(".ball").css("animation", "move-map-globe 30s infinite linear")
             $("#ballshadow").show(500);
             // $("#ballshadow").animate({ display: "block" }, 1000);
 
@@ -273,18 +273,20 @@ $(window).bind("load", function() {
 
             //change
             imagemap = $(".ball");
-            imagemap.fadeOut('slow', function() {
-                imagemap.css("background-image", "url('assets/5sandiego.png')").fadeIn('fast'); //*
-                imagemap.css("animation", "move-map-globe 50s infinite linear").fadeIn('slow');
+            imagemap.fadeOut('fast', function() {
+                imagemap.css("background-image", "url('assets/5sandiego.png')"); //*
+                imagemap.css("animation", "move-map-globe 30s infinite linear").fadeIn('slow');
             });
 
 
             imagesend = $("#send");
             imagesend.css('background-image', 'url(assets/sendflip.png)'); //*
             imagesend.css("animation", "rot 3s infinite linear");
-            imagesend.animate({ width: 200, height: 200, left: 1860, top: 380 }, 0); //*
-            imagesend.animate({ width: 50, height: 50, left: 620, top: 420 }, 1000); //*
-            imagesend.animate({ width: 0, height: 0, left: 640, top: 440 }, 400); //*
+
+            imagesend.animate({ width: 50, height: 50, left: 1850, top: 440 }, 0); //*
+            imagesend.animate({ width: 200, height: 200, left: 1850, top: 440 }, 100); //*
+            imagesend.animate({ width: 50, height: 50, left: 610, top: 450 }, 1000); //*
+            imagesend.animate({ width: 0, height: 0, left: 630, top: 480 }, 400); //*
 
             $("#dot1world").css("background-image", "url('assets/usa.png')").animate({ left: "225" }, introgap + 1000); //*
 
@@ -357,9 +359,9 @@ $(window).bind("load", function() {
 
             //change
             imagemap = $(".ball");
-            imagemap.fadeOut('slow', function() {
-                imagemap.css("background-image", "url('assets/5orlando.png')").fadeIn('fast'); //*
-                imagemap.css("animation", "move-map-globe 50s infinite linear").fadeIn('slow');
+            imagemap.fadeOut('fast', function() {
+                imagemap.css("background-image", "url('assets/5orlando.png')"); //*
+                imagemap.css("animation", "move-map-globe 30s infinite linear").fadeIn('slow');
             });
 
 
@@ -367,9 +369,10 @@ $(window).bind("load", function() {
             imagesend.css('background-image', 'url(assets/send.png)'); //*
 
             imagesend.css("animation", "rot 3s infinite linear");
-            imagesend.animate({ width: 200, height: 200, left: 710, top: 430 }, 0); //*
-            imagesend.animate({ width: 50, height: 50, left: 750, top: 440 }, 1000); //*
-            imagesend.animate({ width: 0, height: 0, left: 750, top: 440 }, 400); //*
+            imagesend.animate({ width: 50, height: 50, left: 850, top: 500 }, 0); //*
+            imagesend.animate({ width: 200, height: 200, left: 850, top: 500 }, 100); //*
+            imagesend.animate({ width: 50, height: 50, left: 750, top: 470 }, 1000); //*
+            imagesend.animate({ width: 0, height: 0, left: 750, top: 470 }, 400); //*
 
             $("#dot1world").css("background-image", "url('assets/usa.png')").animate({ left: "345" }, introgap + 1000); //*
 
@@ -437,9 +440,9 @@ $(window).bind("load", function() {
 
             //change
             imagemap = $(".ball");
-            imagemap.fadeOut('slow', function() {
-                imagemap.css("background-image", "url('assets/5lasvegas.png')").fadeIn('fast'); //*
-                imagemap.css("animation", "move-map-globe 50s infinite linear").fadeIn('slow');
+            imagemap.fadeOut('fast', function() {
+                imagemap.css("background-image", "url('assets/5lasvegas.png')"); //*
+                imagemap.css("animation", "move-map-globe 30s infinite linear").fadeIn('slow');
             });
 
 
@@ -447,9 +450,11 @@ $(window).bind("load", function() {
             imagesend.css('background-image', 'url(assets/sendflip.png)'); //*
             imagesend.css("animation", "rot 3s infinite linear");
 
-            imagesend.animate({ width: 200, height: 200, left: 1000, top: 350 }, 0); //*
-            imagesend.animate({ width: 50, height: 50, left: 630, top: 420 }, 1000); //*
-            imagesend.animate({ width: 0, height: 0, left: 660, top: 390 }, 400); //*
+            imagesend.animate({ width: 50, height: 50, left: 1050, top: 460 }, 0); //*
+            imagesend.animate({ width: 200, height: 200, left: 1050, top: 460 }, 100); //*
+
+            imagesend.animate({ width: 50, height: 50, left: 630, top: 500 }, 1000); //*
+            imagesend.animate({ width: 0, height: 0, left: 660, top: 420 }, 400); //*
 
             $("#dot1world").css("background-image", "url('assets/usa.png')").animate({ left: "470" }, introgap + 1000); //*
 
@@ -524,9 +529,9 @@ $(window).bind("load", function() {
 
             //change
             imagemap = $(".ball");
-            imagemap.fadeOut('slow', function() {
-                imagemap.css("background-image", "url('assets/5crete.png')").fadeIn('fast'); //*
-                imagemap.css("animation", "move-map-globe 50s infinite linear").fadeIn('slow');
+            imagemap.fadeOut('fast', function() {
+                imagemap.css("background-image", "url('assets/5crete.png')"); //*
+                imagemap.css("animation", "move-map-globe 30s infinite linear").fadeIn('slow');
             });
 
 
@@ -534,9 +539,10 @@ $(window).bind("load", function() {
             imagesend.css('background-image', 'url(assets/send.png)'); //*
 
             imagesend.css("animation", "rot 3s infinite linear");
-            imagesend.animate({ width: 200, height: 200, left: 720, top: 400 }, 0); //*
-            imagesend.animate({ width: 50, height: 50, left: 1300, top: 400 }, 1000); //*
-            imagesend.animate({ width: 0, height: 0, left: 1200, top: 400 }, 400); //*
+            imagesend.animate({ width: 50, height: 50, left: 890, top: 430 }, 0); //*
+            imagesend.animate({ width: 200, height: 200, left: 890, top: 430 }, 100);
+            imagesend.animate({ width: 50, height: 50, left: 1320, top: 440 }, 1000); //*
+            imagesend.animate({ width: 0, height: 0, left: 1190, top: 440 }, 400); //*
 
             $("#dot1world").css("background-image", "url('assets/greece.png')").animate({ left: "594" }, introgap + 1000); //*
 
@@ -609,9 +615,9 @@ $(window).bind("load", function() {
 
             //change
             imagemap = $(".ball");
-            imagemap.fadeOut('slow', function() {
-                imagemap.css("background-image", "url('assets/5losangeles.png')").fadeIn('fast'); //*
-                imagemap.css("animation", "move-map-globe 50s infinite linear").fadeIn('slow');
+            imagemap.fadeOut('fast', function() {
+                imagemap.css("background-image", "url('assets/5losangeles.png')"); //*
+                imagemap.css("animation", "move-map-globe 30s infinite linear").fadeIn('slow');
             });
 
 
@@ -619,9 +625,10 @@ $(window).bind("load", function() {
             imagesend.css('background-image', 'url(assets/sendflip.png)'); //*
             imagesend.css("animation", "rot 3s infinite linear");
 
-            imagesend.animate({ width: 200, height: 200, left: 1370, top: 400 }, 0); //*
-            imagesend.animate({ width: 50, height: 50, left: 500, top: 440 }, 1000); //*
-            imagesend.animate({ width: 0, height: 0, left: 620, top: 400 }, 400); //*
+            imagesend.animate({ width: 50, height: 50, left: 1450, top: 420 }, 0);
+            imagesend.animate({ width: 200, height: 200, left: 1370, top: 420 }, 100); //*
+            imagesend.animate({ width: 50, height: 50, left: 500, top: 460 }, 1000); //*
+            imagesend.animate({ width: 0, height: 0, left: 620, top: 420 }, 400); //*
 
             $("#dot1world").css("background-image", "url('assets/usa.png')").animate({ left: "714" }, introgap + 1000); //*
 
@@ -696,9 +703,9 @@ $(window).bind("load", function() {
 
             //change
             imagemap = $(".ball");
-            imagemap.fadeOut('slow', function() {
-                imagemap.css("background-image", "url('assets/5toronto.png')").fadeIn('fast'); //*
-                imagemap.css("animation", "move-map-globe 50s infinite linear").fadeIn('slow');
+            imagemap.fadeOut('fast', function() {
+                imagemap.css("background-image", "url('assets/5toronto.png')"); //*
+                imagemap.css("animation", "move-map-globe 30s infinite linear").fadeIn('slow');
             });
 
 
@@ -706,9 +713,10 @@ $(window).bind("load", function() {
             imagesend.css('background-image', 'url(assets/send.png)'); //*
             imagesend.css("animation", "rot 3s infinite linear");
 
-            imagesend.animate({ width: 200, height: 200, left: 680, top: 400 }, 0); //*
-            imagesend.animate({ width: 50, height: 50, left: 900, top: 350 }, 1000); //*
-            imagesend.animate({ width: 0, height: 0, left: 800, top: 350 }, 400); //*
+            imagesend.animate({ width: 50, height: 50, left: 780, top: 400 }, 0); //*
+            imagesend.animate({ width: 200, height: 200, left: 780, top: 400 }, 100);
+            imagesend.animate({ width: 50, height: 50, left: 860, top: 380 }, 1000); //*
+            imagesend.animate({ width: 0, height: 0, left: 780, top: 380 }, 400); //*
 
             $("#dot1world").css("background-image", "url('assets/canada.png')").animate({ left: "837" }, introgap + 1000); //*
 
@@ -781,9 +789,9 @@ $(window).bind("load", function() {
 
             //change
             imagemap = $(".ball");
-            imagemap.fadeOut('slow', function() {
-                imagemap.css("background-image", "url('assets/5vancouver.png')").fadeIn('fast'); //*
-                imagemap.css("animation", "move-map-globe 50s infinite linear").fadeIn('slow');
+            imagemap.fadeOut('fast', function() {
+                imagemap.css("background-image", "url('assets/5vancouver.png')"); //*
+                imagemap.css("animation", "move-map-globe 30s infinite linear").fadeIn('slow');
             });
 
 
@@ -791,9 +799,10 @@ $(window).bind("load", function() {
             imagesend.css('background-image', 'url(assets/sendflip.png)'); //*
             imagesend.css("animation", "rot 3s infinite linear");
 
-            imagesend.animate({ width: 200, height: 200, left: 1100, top: 320 }, 0); //*
-            imagesend.animate({ width: 50, height: 50, left: 600, top: 380 }, 1000); //*
-            imagesend.animate({ width: 0, height: 0, left: 650, top: 320 }, 400); //*
+            imagesend.animate({ width: 50, height: 50, left: 1100, top: 380 }, 0); //*
+            imagesend.animate({ width: 200, height: 200, left: 1100, top: 380 }, 100);
+            imagesend.animate({ width: 50, height: 50, left: 600, top: 400 }, 1000); //*
+            imagesend.animate({ width: 0, height: 0, left: 650, top: 370 }, 400); //*
 
             $("#dot1world").css("background-image", "url('assets/canada.png')").animate({ left: "957" }, introgap + 1000); //*
 
@@ -865,9 +874,9 @@ $(window).bind("load", function() {
 
             //change
             imagemap = $(".ball");
-            imagemap.fadeOut('slow', function() {
-                imagemap.css("background-image", "url('assets/5lasvegas.png')").fadeIn('fast'); //*
-                imagemap.css("animation", "move-map-globe 50s infinite linear").fadeIn('slow');
+            imagemap.fadeOut('fast', function() {
+                imagemap.css("background-image", "url('assets/5lasvegas.png')"); //*
+                imagemap.css("animation", "move-map-globe 30s infinite linear").fadeIn('slow');
             });
 
 
@@ -875,9 +884,10 @@ $(window).bind("load", function() {
             imagesend.css('background-image', 'url(assets/send.png)'); //*
             imagesend.css("animation", "rot 3s infinite linear");
 
-            imagesend.animate({ width: 200, height: 200, left: 800, top: 350 }, 0); //*
-            imagesend.animate({ width: 50, height: 50, left: 760, top: 350 }, 1000); //*
-            imagesend.animate({ width: 0, height: 0, left: 670, top: 390 }, 400); //*
+            imagesend.animate({ width: 50, height: 50, left: 820, top: 350 }, 0); //*
+            imagesend.animate({ width: 200, height: 200, left: 820, top: 350 }, 100);
+            imagesend.animate({ width: 50, height: 50, left: 700, top: 400 }, 1000); //*
+            imagesend.animate({ width: 0, height: 0, left: 640, top: 400 }, 400); //*
 
             $("#dot1world").css("background-image", "url('assets/usa.png')").animate({ left: "1083" }, introgap + 1000); //*
 
@@ -954,9 +964,9 @@ $(window).bind("load", function() {
 
             //change
             imagemap = $(".ball");
-            imagemap.fadeOut('slow', function() {
-                imagemap.css("background-image", "url('assets/5orlando.png')").fadeIn('fast'); //*
-                imagemap.css("animation", "move-map-globe 50s infinite linear").fadeIn('slow');
+            imagemap.fadeOut('fast', function() {
+                imagemap.css("background-image", "url('assets/5orlando.png')"); //*
+                imagemap.css("animation", "move-map-globe 30s infinite linear").fadeIn('slow');
             });
 
 
@@ -964,9 +974,11 @@ $(window).bind("load", function() {
             imagesend.css('background-image', 'url(assets/send.png)'); //*
             imagesend.css("animation", "rot 3s infinite linear");
 
-            imagesend.animate({ width: 200, height: 200, left: 740, top: 400 }, 0); //*
-            imagesend.animate({ width: 50, height: 50, left: 740, top: 430 }, 1000); //*
-            imagesend.animate({ width: 0, height: 0, left: 740, top: 410 }, 400); //*
+            imagesend.animate({ width: 50, height: 50, left: 830, top: 400 }, 0); //*
+            imagesend.animate({ width: 200, height: 200, left: 830, top: 400 }, 100); //*
+
+            imagesend.animate({ width: 50, height: 50, left: 730, top: 470 }, 1000); //*
+            imagesend.animate({ width: 0, height: 0, left: 730, top: 470 }, 400); //*
 
             $("#dot1world").css("background-image", "url('assets/usa.png')").animate({ left: "1307" }, introgap + 1000); //*
 
@@ -1044,9 +1056,9 @@ $(window).bind("load", function() {
 
             //change
             imagemap = $(".ball");
-            imagemap.fadeOut('slow', function() {
-                imagemap.css("background-image", "url('assets/5copenhagen.png')").fadeIn('fast'); //*
-                imagemap.css("animation", "move-map-globe 50s infinite linear").fadeIn('slow');
+            imagemap.fadeOut('fast', function() {
+                imagemap.css("background-image", "url('assets/5copenhagen.png')"); //*
+                imagemap.css("animation", "move-map-globe 30s infinite linear").fadeIn('slow');
             });
 
 
@@ -1054,9 +1066,11 @@ $(window).bind("load", function() {
             imagesend.css('background-image', 'url(assets/send.png)'); //*
             imagesend.css("animation", "rot 3s infinite linear");
 
-            imagesend.animate({ width: 200, height: 200, left: 800, top: 430 }, 0); //*
-            imagesend.animate({ width: 50, height: 50, left: 1130, top: 290 }, 1000); //*
-            imagesend.animate({ width: 0, height: 0, left: 1140, top: 290 }, 400); //*
+            imagesend.animate({ width: 50, height: 50, left: 900, top: 430 }, 0); //*
+            imagesend.animate({ width: 200, height: 200, left: 900, top: 430 }, 100); //*
+
+            imagesend.animate({ width: 50, height: 50, left: 1120, top: 320 }, 1000); //*
+            imagesend.animate({ width: 0, height: 0, left: 1130, top: 320 }, 400); //*
 
             $("#dot1world").css("background-image", "url('assets/denmark.png')").animate({ left: "1432" }, introgap + 1000); //*
 
