@@ -323,17 +323,24 @@ h6 {
 }
 
 .ball {
-    display: inline-block;
+    display: block;
     width: 100%;
     height: 100%;
     margin: 0;
     left: 0;
     top: 0;
     border-radius: 0%;
+<<<<<<< HEAD
     background-repeat: repeat-x;
     position: absolute;
     -webkit-transform-style: preserve-3d;
     background-position: calc(100% - 20px) calc(100% - 10px);
+=======
+    left: 0;
+    top: 0;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+>>>>>>> b5f035e3df5859b62c00f927130792467ed51354
     background-size: auto 100%;
     /*
 
@@ -346,6 +353,7 @@ h6 {
 .ball:before {
     content: "";
     position: relative;
+<<<<<<< HEAD
     left: 0%;
     top: 0%;
     width: 100%;
@@ -359,6 +367,8 @@ h6 {
     position: relative;
     left: 0;
     top: 0;
+=======
+>>>>>>> b5f035e3df5859b62c00f927130792467ed51354
     width: 100%;
     height: 100%;
     box-shadow: -40px 10px 100px 10px rgba(0, 0, 0, 0.32) inset;
@@ -379,6 +389,8 @@ h6 {
     background: radial-gradient(circle at 50% 80%, #b3b3b300, #b3b3b300 10%, #00000073 66%, #000000 100%);
 }
 
+
+/*
 .ball .shadow {
     position: absolute;
     width: 100%;
@@ -390,6 +402,7 @@ h6 {
     transform: rotateX(90deg) translateZ(-150px);
     z-index: -1;
 }
+*/
 
 .stage {
     width: 1200px;
@@ -432,10 +445,17 @@ h6 {
     background-repeat: repeat-x;
     background-size: auto 130%;
     -webkit-transform-style: preserve-3d;
+<<<<<<< HEAD
     -webkit-animation: move-map 40s infinite linear;
     -moz-animation: move-map 40s infinite linear;
     -o-animation: move-map 40s infinite linear;
     -ms-animation: move-map 40s infinite linear;
+=======
+    -webkit-animation: move-map 80s infinite linear;
+    -moz-animation: move-map 80s infinite linear;
+    -o-animation: move-map 80s infinite linear;
+    -ms-animation: move-map 80s infinite linear;
+>>>>>>> b5f035e3df5859b62c00f927130792467ed51354
     animation: move-map 40s infinite linear;
 }
 
