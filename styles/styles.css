@@ -323,19 +323,17 @@ h6 {
 }
 
 .ball {
-    display: inline-block;
+    display: block;
     width: 100%;
     height: 100%;
     margin: 0;
     border-radius: 0%;
-    position: relative;
+    left: 0;
+    top: 0;
+    position: absolute;
     -webkit-transform-style: preserve-3d;
-    background-image: url('../assets/5beijing.png') repeat-x;
     background-size: auto 100%;
     /*
-        background-position:0 0; america
-    background-position: calc(100% - -100px) calc(100% - 10px); eurpe
-
 
         -webkit-animation: move-map 140s infinite linear;
     -moz-animation: move-map 140s infinite linear;
@@ -346,7 +344,6 @@ h6 {
 .ball:before {
     content: "";
     position: relative;
-    left: 0%;
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -368,6 +365,8 @@ h6 {
     background: radial-gradient(circle at 50% 80%, #b3b3b300, #b3b3b300 10%, #00000073 66%, #000000 100%);
 }
 
+
+/*
 .ball .shadow {
     position: absolute;
     width: 100%;
@@ -379,6 +378,7 @@ h6 {
     transform: rotateX(90deg) translateZ(-150px);
     z-index: -1;
 }
+*/
 
 .stage {
     width: 1200px;
@@ -425,7 +425,7 @@ h6 {
     -moz-animation: move-map 80s infinite linear;
     -o-animation: move-map 80s infinite linear;
     -ms-animation: move-map 80s infinite linear;
-    animation: move-map 80s infinite linear;
+    animation: move-map 40s infinite linear;
 }
 
 
