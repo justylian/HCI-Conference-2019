@@ -204,11 +204,10 @@ $(window).bind("load", function() {
             $("#globe").animate({ right: 20, top: 200 }, 0);
 
             imagemap2.css("background-image", "url('assets/5beijing.png')");
-<<<<<<< HEAD
+
             //$(".ball").css("background-position", " calc(100%) calc(100% - 10px)");
-=======
+
             $(".ball").css("background-position", "calc(100% - 20px) calc(100% - 10px)");
->>>>>>> b5f035e3df5859b62c00f927130792467ed51354
 
             // $(".ball").css("background-position", "-50px 0");
 
@@ -223,10 +222,8 @@ $(window).bind("load", function() {
             $("#globe").animate({ right: globeright, top: globetop }, 1000);
             $(".ball").animate({ borderRadius: '50%' }, 1000);
 
-<<<<<<< HEAD
-=======
+
             $(".ball").css("animation", "move-map-globe 50s infinite linear")
->>>>>>> b5f035e3df5859b62c00f927130792467ed51354
             $("#ballshadow").show(500);
             // $("#ballshadow").animate({ display: "block" }, 1000);
 
@@ -273,10 +270,9 @@ $(window).bind("load", function() {
 
 
         setTimeout(function() {
-<<<<<<< HEAD
+
             $(".ball").animate({ animation: "none" }, 150);
-=======
->>>>>>> b5f035e3df5859b62c00f927130792467ed51354
+
 
             getSlide('SanDiego');
 
@@ -336,7 +332,7 @@ $(window).bind("load", function() {
 
 
 
-<<<<<<< HEAD
+
             //imagemap2.animate({ "animation": "" }, 0)
 
 
@@ -345,12 +341,11 @@ $(window).bind("load", function() {
             //imagemap1.fadeIn('slow', function() {});
             imagemap1.animate({ opacity: 1.0 })
 
-=======
+
 
 
             imagemap1.css("background-image", "url('assets/5sandiego.png')");
             imagemap1.fadeIn('slow', function() {});
->>>>>>> b5f035e3df5859b62c00f927130792467ed51354
             imagemap2.animate({ opacity: 0 })
 
             // imagemap2.fadeOut('slow', function() {
@@ -377,13 +372,11 @@ $(window).bind("load", function() {
             imagesend.css('background-image', 'url(assets/sendflip.png)'); //*
             imagesend.css("animation", "rot 3s infinite linear");
 
-<<<<<<< HEAD
+
             imagesend.animate({ width: 50, height: 50, left: 1830, top: 420 }, 0); //*
             imagesend.animate({ width: 200, height: 200, left: 1830, top: 420 }, 100); //*
-=======
             imagesend.animate({ width: 50, height: 50, left: 1830, top: 440 }, 0); //*
             imagesend.animate({ width: 200, height: 200, left: 1830, top: 440 }, 100); //*
->>>>>>> b5f035e3df5859b62c00f927130792467ed51354
             imagesend.animate({ width: 50, height: 50, left: 610, top: 450 }, 1000); //*
             imagesend.animate({ width: 0, height: 0, left: 630, top: 480 }, 400); //*
 
@@ -433,12 +426,9 @@ $(window).bind("load", function() {
 
 
         setTimeout(function() {
-<<<<<<< HEAD
             $(".ball").animate({ animation: "none" }, 150);
 
 
-=======
->>>>>>> b5f035e3df5859b62c00f927130792467ed51354
 
             // $(".ball").css("background-image", "url('assets/5orlando.png')");
             // $(".ball").css("background-position", "calc(100% - 20px) calc(100% - 10px)");
@@ -492,13 +482,11 @@ $(window).bind("load", function() {
             //$(".ball").css("background-image", "url('assets/5sandiego.png')");
             imagemap2.animate({ opacity: 1.0 })
             imagemap2.css("background-image", "url('assets/5orlando.png')");
-<<<<<<< HEAD
+
             //imagemap2.fadeIn('slow', function() {});
             imagemap2.animate({ opacity: 1.0 })
 
-=======
             imagemap2.fadeIn('slow', function() {});
->>>>>>> b5f035e3df5859b62c00f927130792467ed51354
             imagemap1.animate({ opacity: 0 })
 
 
@@ -599,13 +587,12 @@ $(window).bind("load", function() {
             //change
             imagemap1.animate({ opacity: 1.0 })
             imagemap1.css("background-image", "url('assets/5lasvegas.png')");
-<<<<<<< HEAD
+
             //imagemap1.fadeIn('slow', function() {});
             imagemap1.animate({ opacity: 1.0 })
 
-=======
+
             imagemap1.fadeIn('slow', function() {});
->>>>>>> b5f035e3df5859b62c00f927130792467ed51354
             imagemap2.animate({ opacity: 0 })
 
 
@@ -707,13 +694,11 @@ $(window).bind("load", function() {
             //change
             imagemap2.animate({ opacity: 1.0 })
             imagemap2.css("background-image", "url('assets/5crete.png')");
-<<<<<<< HEAD
+
             //  imagemap2.fadeIn('slow', function() {});
             imagemap2.animate({ opacity: 1.0 })
 
-=======
             imagemap2.fadeIn('slow', function() {});
->>>>>>> b5f035e3df5859b62c00f927130792467ed51354
             imagemap1.animate({ opacity: 0 })
 
 
@@ -810,13 +795,12 @@ $(window).bind("load", function() {
             //change
             imagemap1.animate({ opacity: 1.0 })
             imagemap1.css("background-image", "url('assets/5losangeles.png')");
-<<<<<<< HEAD
+
             // imagemap1.fadeIn('slow', function() {});
             imagemap1.animate({ opacity: 1.0 })
 
-=======
+
             imagemap1.fadeIn('slow', function() {});
->>>>>>> b5f035e3df5859b62c00f927130792467ed51354
             imagemap2.animate({ opacity: 0 })
 
 
@@ -917,13 +901,12 @@ $(window).bind("load", function() {
 
             imagemap2.animate({ opacity: 1.0 })
             imagemap2.css("background-image", "url('assets/5toronto.png')");
-<<<<<<< HEAD
+
             // imagemap2.fadeIn('slow', function() {});
             imagemap2.animate({ opacity: 1.0 })
 
-=======
+
             imagemap2.fadeIn('slow', function() {});
->>>>>>> b5f035e3df5859b62c00f927130792467ed51354
             imagemap1.animate({ opacity: 0 })
 
 
@@ -1021,13 +1004,12 @@ $(window).bind("load", function() {
             //change
             imagemap1.animate({ opacity: 1.0 })
             imagemap1.css("background-image", "url('assets/5vancouver.png')");
-<<<<<<< HEAD
+
             //imagemap1.fadeIn('slow', function() {});
             imagemap1.animate({ opacity: 1.0 })
 
-=======
+
             imagemap1.fadeIn('slow', function() {});
->>>>>>> b5f035e3df5859b62c00f927130792467ed51354
             imagemap2.animate({ opacity: 0 })
 
 
@@ -1038,13 +1020,12 @@ $(window).bind("load", function() {
 
             imagesend.animate({ width: 50, height: 50, left: 1100, top: 380 }, 0); //*
             imagesend.animate({ width: 200, height: 200, left: 1100, top: 380 }, 100);
-<<<<<<< HEAD
+
             imagesend.animate({ width: 50, height: 50, left: 530, top: 380 }, 1000); //*
             imagesend.animate({ width: 0, height: 0, left: 630, top: 370 }, 400); //*
-=======
+
             imagesend.animate({ width: 50, height: 50, left: 600, top: 380 }, 1000); //*
             imagesend.animate({ width: 0, height: 0, left: 660, top: 370 }, 400); //*
->>>>>>> b5f035e3df5859b62c00f927130792467ed51354
 
             $("#dot1world").animate({ left: "957" }, introgap + 1000); //*
 
@@ -1127,15 +1108,14 @@ $(window).bind("load", function() {
 
             imagemap2.animate({ opacity: 1.0 })
             imagemap2.css("background-image", "url('assets/5lasvegas.png')");
-<<<<<<< HEAD
+
             //imagemap2.fadeIn('slow', function() {});
             imagemap2.animate({ opacity: 1.0 })
 
 
 
-=======
+
             imagemap2.fadeIn('slow', function() {});
->>>>>>> b5f035e3df5859b62c00f927130792467ed51354
             imagemap1.animate({ opacity: 0 })
 
             //change
@@ -1236,13 +1216,12 @@ $(window).bind("load", function() {
         setTimeout(function() {
             imagemap1.animate({ opacity: 1.0 })
             imagemap1.css("background-image", "url('assets/5orlando.png')");
-<<<<<<< HEAD
+
             //imagemap1.fadeIn('slow', function() {});
             imagemap1.animate({ opacity: 1.0 })
 
-=======
+
             imagemap1.fadeIn('slow', function() {});
->>>>>>> b5f035e3df5859b62c00f927130792467ed51354
             imagemap2.animate({ opacity: 0 })
 
 
@@ -1256,13 +1235,12 @@ $(window).bind("load", function() {
             imagesend.animate({ width: 50, height: 50, left: 870, top: 400 }, 0); //*
             imagesend.animate({ width: 200, height: 200, left: 780, top: 400 }, 100); //*
 
-<<<<<<< HEAD
+
             imagesend.animate({ width: 50, height: 50, left: 790, top: 470 }, 1000); //*
             imagesend.animate({ width: 0, height: 0, left: 750, top: 470 }, 400); //*
-=======
+
             imagesend.animate({ width: 50, height: 50, left: 750, top: 470 }, 1000); //*
             imagesend.animate({ width: 0, height: 0, left: 770, top: 470 }, 400); //*
->>>>>>> b5f035e3df5859b62c00f927130792467ed51354
 
             $("#dot1world").css("background-image", "url('assets/usa.png')").animate({ left: "1307" }, introgap + 1000); //*
 
@@ -1352,13 +1330,12 @@ $(window).bind("load", function() {
 
             imagemap2.animate({ opacity: 1.0 })
             imagemap2.css("background-image", "url('assets/5copenhagen.png')");
-<<<<<<< HEAD
+
             //imagemap2.fadeIn('slow', function() {});
             imagemap2.animate({ opacity: 1.0 })
 
-=======
+
             imagemap2.fadeIn('slow', function() {});
->>>>>>> b5f035e3df5859b62c00f927130792467ed51354
             imagemap1.animate({ opacity: 0 })
 
             imagesend = $("#send");
