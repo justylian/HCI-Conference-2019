@@ -2,7 +2,7 @@
 Thesis Side Project
  Timeline of HCI conferences 2007-2020
  
- Design and development of a HCI International Conferences reminisce since 2007 through a revolving timeline in a web-app    form. The creation was projected in the 2019 HCI International Conference in Orlando, Florida for the HCI Laboratory of the  Institute of Computer Science in FORTH.
+ Design and development of a HCI International Conferences reminiscence since 2007 through a revolving timeline in a web-app    form. The creation was projected in the 2019 HCI International Conference in Orlando, Florida for the HCI Laboratory of the  Institute of Computer Science in FORTH.
  
  
  ## Screenshots
